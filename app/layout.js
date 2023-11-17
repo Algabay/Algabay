@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/Header";
-import TvwTop from "@/Components/TvwTop";
+import WidgetTop from "@/Components/WidgetTop";
 import NewsSection from "@/Components/NewsSection";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        <TvwTop />
+        <WidgetTop />
 
         {children}
       </body>

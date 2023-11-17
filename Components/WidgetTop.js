@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
+import styles from "./styles/WidgetTop.css";
 
-const TvwTop = () => {
+const WidgetTop = () => {
   useEffect(() => {
     // Check if the script has already been appended
     if (
@@ -44,4 +45,4 @@ const TvwTop = () => {
   );
 };
 
-export default TvwTop;
+export default WidgetTop;

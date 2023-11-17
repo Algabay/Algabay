@@ -28,9 +28,9 @@ const NewsSection = () => {
       <div className="grid gap-8 grid-cols-4 mx-12 my-4">
         {data.map((value, index) => (
           <React.Fragment key={index}>
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
               <img
-                className="h-48 w-full object-cover rounded-md mb-4"
+                className="h-48 w-full object-cover rounded-md mb-4 shadow"
                 src={value.urlToImage}
                 alt={value.title}
               />
