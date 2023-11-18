@@ -8,10 +8,10 @@ const Banner = () => {
     <div className="h-90 flex flex-row relative pt-24 pb-2">
       <div className="my-10 px-24 flex-grow">
         <h3 className="text-xl md:text-3xl text-gray-700 font-light lg:text-5xl mr-10">
-          Simplified Investments
+          Simplified&nbsp;Investments
         </h3>
 
-        <h3 className="text-xl md:text-3xl textColor font-semibold lg:text-5xl mt-4 mr-10">
+        <h3 className="text-xl md:text-3xl text-gray-700 font-light lg:text-5xl mt-4 mr-10">
           with AI
         </h3>
 
@@ -29,7 +29,7 @@ const Banner = () => {
             ✔ Optimize your Portfolio and get Smart AI Suggestions.
           </h5>
         </div>
-        <button className="mt-6 px-6 py-2 buttonColor text-white rounded-lg hover:bg-blue-500">
+        <button className="mt-6  px-6 py-2 buttonColor rounded-lg hover:bg-blue-500">
           Get Started
         </button>
       </div>

@@ -35,7 +35,7 @@ const Header = () => {
         </Link>
 
         <div className="flex gap-8 mr-8 mt-2">
-          <Link href="/Signup">
+          <Link href="">
             <button className="text-black border border-gray-300 px-2 py-1 rounded-md text-md hover:bg-blue-50 mb-2 ">
               Sign&nbsp;In
             </button>

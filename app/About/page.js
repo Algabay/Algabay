@@ -1,11 +1,13 @@
 "use client";
 import React from "react";
 import AboutPageBanner from "@/Components/AboutPageBanner";
+import Footer from "@/Components/Footer";
 
 const About = () => {
   return (
-    <div className="align-center text-center mt-11">
+    <div className="absolute">
       <AboutPageBanner />
+      <Footer />
     </div>
   );
 };

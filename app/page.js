@@ -4,6 +4,7 @@ import NewsSection from "@/Components/NewsSection";
 import Banner from "@/Components/Banner";
 import WidgetBanner from "@/Components/WidgetBanner";
 import WidgetTop from "@/Components/WidgetTop";
+import Footer from "@/Components/Footer";
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <Banner />
 
       <NewsSection />
+      <Footer />
     </div>
   );
 };
