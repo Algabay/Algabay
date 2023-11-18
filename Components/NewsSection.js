@@ -25,17 +25,22 @@ const NewsSection = () => {
   return (
     <>
       {/* Render your news cards */}
-      <div className="grid gap-8 grid-cols-4 mx-12 my-4">
+      <div className="grid gap-8 grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mx-14 my-4">
         {data.map((value, index) => (
           <React.Fragment key={index}>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-blue-50 p-6 rounded-lg shadow-md">
+              {/* 
               <img
-                className="h-48 w-full object-cover rounded-md mb-4 shadow"
+                className="h-44 w-full object-cover rounded-md mb-4 shadow"
                 src={value.urlToImage}
                 alt={value.title}
-              />
-              <h5 className="text-xl font-semibold mb-2">{value.title}</h5>
-              <p className="text-gray-600">{value.description}</p>
+              />*/}
+              <div className="h-auto mb-5">
+                <h6 className="text-md font-semibold mb-2">{value.title}</h6>
+              </div>
+              <div className="h-auto w-auto">
+                <p className="text-gray-600">{value.description}</p>
+              </div>
             </div>
           </React.Fragment>
         ))}

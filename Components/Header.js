@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import styles from "./styles/Header.css";
 
 const Header = () => {
   return (
@@ -13,11 +12,11 @@ const Header = () => {
 
         <div className="flex gap-8 mr-10">
           <Link href="/Signup">
-            <button className="text-black-400 border-2 border-stone-200 px-2 py-1 rounded-md text-sm">
-              Sign&nbsp;Up
+            <button className="text-black border border-gray-300 px-2 py-1 rounded-md text-md hover:bg-blue-50">
+              Sign&nbsp;In
             </button>
           </Link>
-          <Link href="/About" className="mt-2 text-sm">
+          <Link href="/About" className="mt-2 text-md">
             About&nbsp;Us
           </Link>
         </div>

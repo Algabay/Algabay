@@ -4,7 +4,6 @@ import styles from "./styles/WidgetTop.css";
 
 const WidgetTop = () => {
   useEffect(() => {
-    // Check if the script has already been appended
     if (
       document.querySelector(".tradingview-widget-container__widget").children
         .length === 0
@@ -38,9 +37,8 @@ const WidgetTop = () => {
   }, []);
 
   return (
-    <div className="tradingview-widget-container">
+    <div className="tradingview-widget-top">
       <div className="tradingview-widget-container__widget"></div>
-      <div className="tradingview-widget-copyright"></div>
     </div>
   );
 };
