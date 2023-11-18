@@ -9,6 +9,7 @@ const page = () => {
   return (
     <div>
       <Banner />
+
       <NewsSection />
     </div>
   );

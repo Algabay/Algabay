@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.textColor{
+    color:#3a96ff;
+}
+.buttonColor{
+    color: white;
+    background-color: #3a96ff;
+}

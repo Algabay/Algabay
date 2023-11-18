@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
+import AboutPageBanner from "@/Components/AboutPageBanner";
 
 const About = () => {
   return (
     <div className="align-center text-center mt-11">
-      welcome to the about section of algabay
+      <AboutPageBanner />
     </div>
   );
 };

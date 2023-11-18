@@ -25,7 +25,7 @@ const NewsSection = () => {
   return (
     <>
       {/* Render your news cards */}
-      <div className="grid gap-8 grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mx-14 my-4">
+      <div className="grid gap-8 grid-cols-2 md:grid-cols-3 xl:grid-cols-4 px-24 my-6">
         {data.map((value, index) => (
           <React.Fragment key={index}>
             <div className="bg-blue-50 p-6 rounded-lg shadow-md">

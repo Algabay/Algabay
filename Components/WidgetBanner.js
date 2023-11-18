@@ -32,10 +32,19 @@ const WidgetBanner = () => {
         "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
       }
     `;
-    document.querySelector(".tradingview-WidgetBanner").appendChild(script);
+
+    const widgetBannerElement = document.querySelector(
+      ".tradingview-WidgetBanner"
+    );
+
+    if (widgetBannerElement) {
+      widgetBannerElement.appendChild(script);
+    }
 
     return () => {
-      document.querySelector(".tradingview-WidgetBanner").removeChild(script);
+      if (widgetBannerElement && widgetBannerElement.contains(script)) {
+        widgetBannerElement.removeChild(script);
+      }
     };
   }, []);
 
