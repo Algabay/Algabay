@@ -25,12 +25,13 @@ const Banner = () => {
           <h5 className="my-2">
             ✔ Stay ahead of the market with market updates.
           </h5>
-          <h5 className="my-2">
-            ✔ Optimize your Portfolio and get Smart AI Suggestions.
+          <h5 className="mb-6">
+            ✔ Optimize your Portfolio with AI Suggestions.
           </h5>
+          <h5 className="text-xl pt-4">Chat with Algabay GPT →</h5>
         </div>
-        <button className="mt-6  px-6 py-2 buttonColor rounded-lg hover:bg-blue-500">
-          Get Started
+        <button className="px-6 py-2 buttonColor rounded-lg hover:bg-blue-500">
+          Coming soon
         </button>
       </div>
       <div className="mr-24 my-8 z-0">

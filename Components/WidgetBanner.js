@@ -20,7 +20,7 @@ const WidgetBanner = () => {
         "showSymbolLogo": false,
         "showFloatingTooltip": false,
         "width": "450",
-        "height": "390",
+        "height": "450",
         "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
         "plotLineColorFalling": "rgba(41, 98, 255, 1)",
         "gridLineColor": "rgba(240, 243, 250, 0)",
