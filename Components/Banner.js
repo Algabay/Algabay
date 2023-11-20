@@ -1,12 +1,11 @@
 "use client";
 import React from "react";
-import styles from "./styles/Banner.css";
-import WidgetBanner from "./WidgetBanner"; // Assuming you have a WidgetBanner component
+import WidgetBanner from "./WidgetBanner";
 
 const Banner = () => {
   return (
     <div className="h-90 flex flex-row relative pt-24 pb-2">
-      <div className="my-10 px-24 flex-grow">
+      <div className="my-10 ml-10 first-letter: px-24 flex-grow">
         <h3 className="text-xl md:text-3xl text-gray-700 font-light lg:text-5xl mr-10">
           Simplified&nbsp;Investments
         </h3>

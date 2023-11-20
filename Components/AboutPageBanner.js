@@ -20,15 +20,24 @@ const AboutPageBanner = () => {
             financial landscape.
             <br />
             <br />@ Follow algabay&ensp;
-            <a href="https://twitter.com/biswarupz" className="underline ">
+            <a
+              href="https://twitter.com/Algabayofficial"
+              className="underline "
+            >
               Twitter
             </a>
             <br />@ Follow algabay&ensp;
-            <a href="https://twitter.com/biswarupz" className="underline ">
+            <a
+              href="https://www.linkedin.com/company/algabay"
+              className="underline "
+            >
               Linkedin
             </a>
             <br />@ Follow algabay&ensp;
-            <a href="https://twitter.com/biswarupz" className="underline ">
+            <a
+              href="https://www.instagram.com/algabayofficial/"
+              className="underline "
+            >
               Instagram
             </a>
           </p>
@@ -65,7 +74,10 @@ const AboutPageBanner = () => {
                 Twitter
               </a>
               <br />@ Connect&ensp;
-              <a href="https://twitter.com/biswarupz" className="underline ">
+              <a
+                href="https://www.linkedin.com/in/biswarup-sen/"
+                className="underline "
+              >
                 Linkedin
               </a>
             </p>
@@ -86,11 +98,14 @@ const AboutPageBanner = () => {
               in understanding market dynamics and trends.
               <br />
               <br />@ Follow&ensp;
-              <a href="https://twitter.com/biswarupz" className="underline ">
+              <a href="https://twitter.com/Saiyu0643" className="underline ">
                 Twitter
               </a>
               <br />@ Connect&ensp;
-              <a href="https://twitter.com/biswarupz" className="underline ">
+              <a
+                href="https://www.linkedin.com/in/sai-sharan-4b5383252/"
+                className="underline "
+              >
                 Linkedin
               </a>
             </p>
@@ -109,11 +124,14 @@ const AboutPageBanner = () => {
               worked in several startups before joining Algabay.
               <br />
               <br />@ Follow&ensp;
-              <a href="https://twitter.com/biswarupz" className="underline ">
+              <a href="https://twitter.com/adarshxs" className="underline ">
                 Twitter
               </a>
               <br />@ Connect&ensp;
-              <a href="https://twitter.com/biswarupz" className="underline ">
+              <a
+                href="https://www.linkedin.com/in/adarshxs/"
+                className="underline "
+              >
                 Linkedin
               </a>
             </p>
