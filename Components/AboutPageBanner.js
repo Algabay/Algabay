@@ -13,7 +13,7 @@ const AboutPageBanner = () => {
             </span>{" "}
             <br />
             <br />
-            At algabay, we revolutionize equity research with Language Models,
+            At Algabay, we revolutionize equity research with Language Models,
             offering unparalleled access to non-financial data. Democratizing
             financial insights, we empower everyone with comprehensive market
             knowledge, fostering informed decisions and a more inclusive
@@ -119,7 +119,7 @@ const AboutPageBanner = () => {
               <br />
               As the CTO and Co-Founder of Algabay AI, Adarsh brings his deep
               expertise in machine learning and AI to the company, with over 4
-              years of experience in ML, ethical hacking, MERN stack, applied
+              years of experience in ML, ethical hacking, applied
               AI, and research. He is an active open source contributor and has
               worked in several startups before joining Algabay.
               <br />
