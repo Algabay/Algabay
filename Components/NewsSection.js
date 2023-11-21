@@ -28,16 +28,22 @@ const NewsSection = () => {
 
   return (
     <>
-      <div className="px-24 my-4"> {/* Apply the same horizontal padding as the news grid */}
-        <select value={category} onChange={handleCategoryChange} className="border border-gray-300 rounded p-2">
-          <option value="business">Business</option>
-          <option value="entertainment">Entertainment</option>
-          <option value="health">Health</option>
-          <option value="science">Science</option>
-          <option value="sports">Sports</option>
-          <option value="technology">Technology</option>
-        </select>
-      </div>
+      <div className="px-24 my-4 flex flex-col"> {/* Apply the same horizontal padding as the news grid */}
+      <label htmlFor="news-category" className="text-lg font-semibold mb-2 text-gray-700">Select News Category</label>
+      <select
+        id="news-category"
+        value={category}
+        onChange={handleCategoryChange}
+        className="border border-gray-300 rounded-lg p-2 cursor-pointer hover:border-gray-400 focus:ring-2 focus:ring-indigo-200 transition-all"
+      >
+        <option value="business">Business</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="health">Health</option>
+        <option value="science">Science</option>
+        <option value="sports">Sports</option>
+        <option value="technology">Technology</option>
+      </select>
+    </div>
       <div className="grid gap-8 grid-cols-1 px-24 my-6 pb-10">
         {data.map((value, index) => (
           <React.Fragment key={index}>
