@@ -4,13 +4,13 @@ import axios from "axios";
 
 const NewsSection = () => {
   const [data, setData] = useState([]);
+  const [category, setCategory] = useState('business'); // State for selected category
 
   useEffect(() => {
-    // Function to fetch news when the component mounts
     const getNews = async () => {
       try {
         const response = await axios.get(
-          "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=70e6994d3ba24c2bb4b6631f73daa0a2"
+          `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=70e6994d3ba24c2bb4b6631f73daa0a2`
         );
         setData(response.data.articles);
       } catch (error) {
@@ -18,12 +18,26 @@ const NewsSection = () => {
       }
     };
 
-    // Call the function to fetch news
     getNews();
-  }, []); // The empty dependency array ensures that this effect runs once when the component mounts
+  }, [category]); // Depend on category state
+
+  // Handler for category change
+  const handleCategoryChange = (e) => {
+    setCategory(e.target.value);
+  };
 
   return (
     <>
+      <div className="px-24 my-4"> {/* Apply the same horizontal padding as the news grid */}
+        <select value={category} onChange={handleCategoryChange} className="border border-gray-300 rounded p-2">
+          <option value="business">Business</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="health">Health</option>
+          <option value="science">Science</option>
+          <option value="sports">Sports</option>
+          <option value="technology">Technology</option>
+        </select>
+      </div>
       <div className="grid gap-8 grid-cols-1 px-24 my-6 pb-10">
         {data.map((value, index) => (
           <React.Fragment key={index}>
