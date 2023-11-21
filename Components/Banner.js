@@ -19,7 +19,7 @@ const Banner = () => {
             ✔ Get AI Summaries for Instant Market overview.
           </h5>
           <h5 className="my-2">
-            ✔ Chat with our LLM-powered Finance GPT Model.
+            ✔ Chat with our LLM-powered Finance ChatBot.
           </h5>
           <h5 className="my-2">
             ✔ Stay ahead of the market with market updates.
