@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDIbnJ4Ebfo6NB9MdOlFuIr7g1U9At_TnE",
-  authDomain: "algabay-auth.firebaseapp.com",
-  projectId: "algabay-auth",
-  storageBucket: "algabay-auth.appspot.com",
-  messagingSenderId: "44208267254",
-  appId: "1:44208267254:web:5a3becf1224915a1e1b1d7",
+  apiKey: "AIzaSyCeebSVmTPoiYZ_yyEtvVNzZiOTPK02RXA",
+  authDomain: "algabay-ai-auth.firebaseapp.com",
+  projectId: "algabay-ai-auth",
+  storageBucket: "algabay-ai-auth.appspot.com",
+  messagingSenderId: "1037554339952",
+  appId: "1:1037554339952:web:bed0c908602305e16c64b5",
 };
 
 const app = initializeApp(firebaseConfig);
