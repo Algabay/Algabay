@@ -5,6 +5,7 @@ import Banner from "@/Components/Banner";
 import WidgetBanner from "@/Components/WidgetBanner";
 import WidgetTop from "@/Components/WidgetTop";
 import Footer from "@/Components/Footer";
+import Prizes from "@/Components/Prizes";
 
 const page = () => {
   return (
@@ -12,6 +13,7 @@ const page = () => {
       <Banner />
 
       <NewsSection />
+      <Prizes />
       <Footer />
     </div>
   );

@@ -7,7 +7,8 @@ const About = () => {
   return (
     <div className="absolute">
       <AboutPageBanner />
-      <Footer />
+      <div className="shadow-inner"><Footer /></div>
+      
     </div>
   );
 };

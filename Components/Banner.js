@@ -7,7 +7,7 @@ const Banner = () => {
     <div className="h-90 flex flex-row relative pt-24 pb-2">
       <div className="my-10 ml-10 first-letter: px-24 flex-grow">
         <h3 className="text-xl md:text-3xl text-gray-700 font-light lg:text-5xl mr-10">
-          Simplified&nbsp;Investments
+          Simplify&nbsp;Investments
         </h3>
 
         <h3 className="text-xl md:text-3xl text-gray-700 font-light lg:text-5xl mt-4 mr-10">
