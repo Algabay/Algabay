@@ -10,9 +10,9 @@ const NewsSection = () => {
     const getNews = async () => {
       try {
         const response = await axios.get(
-          `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=70e6994d3ba24c2bb4b6631f73daa0a2`
+          `http://api.mediastack.com/v1/news?access_key=f78bc7636cbcfce62ecb4e4b57f0206c&categories=${category}`
         );
-        setData(response.data.articles);
+        setData(response.data.data);
       } catch (error) {
         console.error("Error fetching news:", error);
       }
@@ -25,11 +25,9 @@ const NewsSection = () => {
   const handleCategoryChange = (e) => {
     setCategory(e.target.value);
   };
-
   return (
     <>
       <div className="px-24 my-4 flex flex-col">
-        {" "}
         {/* Apply the same horizontal padding as the news grid */}
         <label
           htmlFor="news-category"
@@ -55,11 +53,17 @@ const NewsSection = () => {
         {data.map((value, index) => (
           <React.Fragment key={index}>
             <div className="flex bg-white border border-gray-300 p-6 rounded-lg shadow">
-              {value.urlToImage && (
+              {value.image ? (
                 <img
                   className="h-32 w-32 object-cover rounded-md shadow"
-                  src={value.urlToImage}
+                  src={value.image}
                   alt={value.title}
+                />
+              ) : (
+                <img
+                  className="h-32 w-32 object-cover rounded-md shadow"
+                  src="/newsLogo.png"
+                  alt="News Logo"
                 />
               )}
 
