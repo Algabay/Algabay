@@ -10,9 +10,7 @@ const NewsSection = () => {
     const getNews = async () => {
       try {
         const response = await axios.get(
-        
-        `http://api.mediastack.com/v1/news?access_key=f78bc7636cbcfce62ecb4e4b57f0206c&categories=${category}`
-        
+          `http://api.mediastack.com/v1/news?access_key=f78bc7636cbcfce62ecb4e4b57f0206c&categories=${category}`
         );
         setData(response.data.data);
       } catch (error) {
@@ -30,10 +28,9 @@ const NewsSection = () => {
   return (
     <>
       <div className="px-24 my-4 flex flex-col">
-      algabay-sub
-
+        algabay-sub
         {/* Apply the same horizontal padding as the news grid */}
-       main
+        main
         <label
           htmlFor="news-category"
           className="text-lg font-semibold mb-2 text-gray-700"
@@ -87,3 +84,5 @@ const NewsSection = () => {
 };
 
 export default NewsSection;
+
+//msi h gian mewri bandi ka naam sai
