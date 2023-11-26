@@ -8,6 +8,20 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Algabay AI | Finance and Equity Research Platform",
   description: "Simplified Investment With Algabay",
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/favicon.png",
+        href: "/favicon.png",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/favicon.png",
+        href: "/favicon.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
