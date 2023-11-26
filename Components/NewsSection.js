@@ -10,10 +10,11 @@ const NewsSection = () => {
     const getNews = async () => {
       try {
         const response = await axios.get(
+        algabay-sub
         `http://api.mediastack.com/v1/news?access_key=f78bc7636cbcfce62ecb4e4b57f0206c&categories=${category}`
-          
+         main
         );
-        setData(response.data.articles);
+        setData(response.data.data);
       } catch (error) {
         console.error("Error fetching news:", error);
       }
@@ -29,6 +30,10 @@ const NewsSection = () => {
   return (
     <>
       <div className="px-24 my-4 flex flex-col">
+      algabay-sub
+
+        {/* Apply the same horizontal padding as the news grid */}
+       main
         <label
           htmlFor="news-category"
           className="text-lg font-semibold mb-2 text-gray-700"
