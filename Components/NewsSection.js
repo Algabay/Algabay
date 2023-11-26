@@ -10,8 +10,8 @@ const NewsSection = () => {
     const getNews = async () => {
       try {
         const response = await axios.get(
-          //`http://api.mediastack.com/v1/news?access_key=f78bc7636cbcfce62ecb4e4b57f0206c&categories=${category}`
-          `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=70e6994d3ba24c2bb4b6631f73daa0a2`
+        `http://api.mediastack.com/v1/news?access_key=f78bc7636cbcfce62ecb4e4b57f0206c&categories=${category}`
+          
         );
         setData(response.data.articles);
       } catch (error) {
