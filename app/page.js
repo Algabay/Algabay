@@ -6,14 +6,18 @@ import WidgetBanner from "@/Components/WidgetBanner";
 import WidgetTop from "@/Components/WidgetTop";
 import Footer from "@/Components/Footer";
 import Prizes from "@/Components/Prizes";
+import DummyNews from "@/Components/DummyNews";
 
 const page = () => {
   return (
     <div>
       <Banner />
 
-      <NewsSection />
+      {/*<NewsSection />*/}
+
+      <DummyNews />
       <Prizes />
+
       <Footer />
     </div>
   );

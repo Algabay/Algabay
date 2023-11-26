@@ -10,9 +10,10 @@ const NewsSection = () => {
     const getNews = async () => {
       try {
         const response = await axios.get(
-          `http://api.mediastack.com/v1/news?access_key=f78bc7636cbcfce62ecb4e4b57f0206c&categories=${category}`
+          //`http://api.mediastack.com/v1/news?access_key=f78bc7636cbcfce62ecb4e4b57f0206c&categories=${category}`
+          `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=70e6994d3ba24c2bb4b6631f73daa0a2`
         );
-        setData(response.data.data);
+        setData(response.data.articles);
       } catch (error) {
         console.error("Error fetching news:", error);
       }
@@ -28,7 +29,6 @@ const NewsSection = () => {
   return (
     <>
       <div className="px-24 my-4 flex flex-col">
-        {/* Apply the same horizontal padding as the news grid */}
         <label
           htmlFor="news-category"
           className="text-lg font-semibold mb-2 text-gray-700"
