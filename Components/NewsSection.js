@@ -28,9 +28,7 @@ const NewsSection = () => {
   return (
     <>
       <div className="px-24 my-4 flex flex-col">
-        algabay-sub
-        {/* Apply the same horizontal padding as the news grid */}
-        main
+        
         <label
           htmlFor="news-category"
           className="text-lg font-semibold mb-2 text-gray-700"

@@ -31,15 +31,14 @@ const DummyNews = () => {
           />
           <div className="h-auto w-full py-4 px-8">
             <h6 className="text-md font-semibold mb-2">
-              Vijay Sales Black Friday Sale: Best deals on iPhone 15, ASUS ROG
-              Phone 6, Sony PS5 standard bundle and more | Mint - Mint
+              Gold, silver price today, July 14, 2023: Precious metals record
+              hike on MCX | Check latest rates here
             </h6>
 
             <p className="text-gray-600">
-              Vijay Sales' Black Friday Sale in India features discounts on
-              various products, including Apple iPhone 15 starting at ₹72,990,
-              ASUS ROG Phone 6 at ₹47,999, and Sony PlayStation PS5 bundle at
-              ₹47,990.
+              Gold, silver price today, July 14, 2023: Both gold and silver are
+              trading on the higher side of the Multi Commodity Exchange (MCX)
+              on Friday.
             </p>
           </div>
         </div>
