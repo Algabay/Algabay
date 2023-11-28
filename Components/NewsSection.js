@@ -14,7 +14,7 @@ const NewsSection = () => {
         );
 
         // Log the entire API response to inspect the data structure
-        console.log("API Response:", response);
+        console.log("API Response:", response.data);
 
         // Update data state with articles
         setData(response.data.data);
@@ -27,9 +27,31 @@ const NewsSection = () => {
     getNews();
   }, [category]);
 
+  const isValidURL = (url) => {
+    // Regular expression for a simple URL check
+    const urlPattern = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i;
+    return urlPattern.test(url);
+  };
+
   // Handler for category change
   const handleCategoryChange = (e) => {
     setCategory(e.target.value);
+  };
+
+  const getImageUrl = (article) => {
+    if (isValidURL(article.image)) {
+      return article.image;
+    }
+
+    if (
+      Array.isArray(article.image) &&
+      article.image.length > 0 &&
+      isValidURL(article.image[0])
+    ) {
+      return article.image[0];
+    }
+
+    return "/newsLogo.png";
   };
 
   return (
@@ -47,9 +69,9 @@ const NewsSection = () => {
           onChange={handleCategoryChange}
           className="border border-gray-300 rounded-lg p-2 cursor-pointer hover:border-gray-400 focus:ring-2 focus:ring-indigo-200 transition-all bg-gray-50"
         >
-          <option value="general">General - Uncategorized News</option>
-          <option value="business">Business - Business News</option>
-          <option value="sports">Sports - Sports News</option>
+          <option value="general">General News</option>
+          <option value="business">Business News</option>
+          <option value="sports">Sports News</option>
           {/*<option value="entertainment">
             Entertainment - Entertainment News
           </option>
@@ -65,12 +87,22 @@ const NewsSection = () => {
             key={index}
             className="flex bg-white border border-gray-300 p-6 rounded-lg shadow"
           >
-            {/* Use a default image if value.image is not available */}
-            <img
-              className="h-32 w-32 object-cover rounded-md shadow"
-              src={value.image || "/newsLogo.png"}
-              alt={value.title}
-            />
+            {/* Set the image source based on the category */}
+            {category === "business" ? (
+              <img
+                className="h-32 w-32 object-cover rounded-md shadow"
+                src={
+                  isValidURL(value.image) ? value.image : "/businessLogo.png"
+                }
+                alt={value.title}
+              />
+            ) : (
+              <img
+                className="h-32 w-32 object-cover rounded-md shadow"
+                src={getImageUrl(value)}
+                alt={value.title}
+              />
+            )}
 
             <div className="h-auto w-full py-4 px-8">
               <h6 className="text-md font-semibold mb-2">{value.title}</h6>
