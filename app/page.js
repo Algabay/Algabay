@@ -13,9 +13,8 @@ const page = () => {
     <div>
       <Banner />
 
-      {/*<NewsSection />*/}
+      <NewsSection />
 
-      <DummyNews />
       <Prizes />
 
       <Footer />
