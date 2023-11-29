@@ -69,8 +69,8 @@ const NewsSection = () => {
           onChange={handleCategoryChange}
           className="border border-gray-300 rounded-lg p-2 cursor-pointer hover:border-gray-400 focus:ring-2 focus:ring-indigo-200 transition-all bg-gray-50"
         >
-          <option value="general">General News</option>
           <option value="business">Business News</option>
+          <option value="general">General News</option>
           <option value="sports">Sports News</option>
           {/*<option value="entertainment">
             Entertainment - Entertainment News
