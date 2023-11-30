@@ -5,10 +5,10 @@ const AboutPageBanner = () => {
   return (
     <>
       {" "}
-      <div className="px-32 py-14">
-        <div className="h-auto  mt-24">
-          <p className="">
-            <span className="text-gray-700 font-light text-3xl underline">
+      <div className="px-32 py-14 max-sm:px-8">
+        <div className="h-auto  mt-24 ">
+          <p className=" max-sm:text-sm">
+            <span className="text-gray-700 font-light text-3xl underline max-sm:text-sm">
               Our Mission :
             </span>{" "}
             <br />
@@ -43,8 +43,8 @@ const AboutPageBanner = () => {
           </p>
         </div>
         <div className="h-auto  mt-10">
-          <p className="">
-            <span className="text-gray-700 font-light text-3xl underline">
+          <p className="max-sm:text-sm">
+            <span className="text-gray-700 font-light text-3xl underline max-sm:text-sm">
               Meet the Team :
             </span>
             <br />
@@ -56,7 +56,7 @@ const AboutPageBanner = () => {
         </div>
         <div className="">
           <div className="h-auto border border-gray-500 mt-8 justify-center p-6 rounded-md">
-            <p className="text">
+            <p className="max-sm:text-sm">
               <span className="">Biswarup Sen</span>
               <br />
               <span className="underline">Founder & CEO →</span>
@@ -84,7 +84,7 @@ const AboutPageBanner = () => {
           </div>
 
           <div className="h-auto border border-gray-500 mt-8 justify-center p-6 rounded-md">
-            <p className="">
+            <p className="max-sm:text-sm">
               <span className="">Sai Sharan</span>
               <br />
               <span className="underline">Co-founder & CFO →</span>
@@ -111,7 +111,7 @@ const AboutPageBanner = () => {
             </p>
           </div>
           <div className="h-auto border border-gray-500 mt-8 justify-center p-6 rounded-md">
-            <p className="">
+            <p className="max-sm:text-sm">
               <span className="">Adarsh Arunkumar</span>
               <br />
               <span className="underline">Co-founder & CTO →</span>
@@ -119,9 +119,9 @@ const AboutPageBanner = () => {
               <br />
               As the CTO and Co-Founder of Algabay AI, Adarsh brings his deep
               expertise in machine learning and AI to the company, with over 4
-              years of experience in ML, ethical hacking, applied
-              AI, and research. He is an active open source contributor and has
-              worked in several startups before joining Algabay.
+              years of experience in ML, ethical hacking, applied AI, and
+              research. He is an active open source contributor and has worked
+              in several startups before joining Algabay.
               <br />
               <br />@ Follow&ensp;
               <a href="https://twitter.com/adarshxs" className="underline ">
