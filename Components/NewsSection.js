@@ -56,10 +56,10 @@ const NewsSection = () => {
 
   return (
     <>
-      <div className="px-24 my-4 flex flex-col">
+      <div className="px-24 max-sm:px-16 my-4 flex flex-col">
         <label
           htmlFor="news-category"
-          className="text-lg font-semibold mb-2 text-gray-700"
+          className="text-lg font-semibold mb-2 text-gray-700 max-sm:text-xs"
         >
           Select News Category
         </label>
@@ -67,7 +67,7 @@ const NewsSection = () => {
           id="news-category"
           value={category}
           onChange={handleCategoryChange}
-          className="border border-gray-300 rounded-lg p-2 cursor-pointer hover:border-gray-400 focus:ring-2 focus:ring-indigo-200 transition-all bg-gray-50"
+          className="border border-gray-300 rounded-lg p-2 cursor-pointer hover:border-gray-400 focus:ring-2 focus:ring-indigo-200 transition-all bg-gray-50 max-sm:text-xs"
         >
           <option value="business">Business News</option>
           <option value="general">General News</option>
@@ -81,16 +81,16 @@ const NewsSection = () => {
   <option value="technology">Technology - Technology News</option>*/}
         </select>
       </div>
-      <div className="grid gap-8 grid-cols-1 px-24 my-6 pb-10">
+      <div className="grid gap-8 grid-cols-1 px-24 my-6 pb-10 max-sm:px-6">
         {data.map((value, index) => (
           <div
             key={index}
-            className="flex bg-white border border-gray-300 p-6 rounded-lg shadow"
+            className="flex bg-white border border-gray-300 p-6 rounded-lg shadow max-sm:text-xs max-sm:inline-block max-sm:p-2"
           >
             {/* Set the image source based on the category */}
             {category === "business" ? (
               <img
-                className="h-32 w-32 object-cover rounded-md shadow"
+                className="h-32 w-32 object-cover rounded-md shadow max-sm:h-20 max-sm:w-20 max-sm:ml-8 max-sm:mt-2"
                 src={
                   isValidURL(value.image) ? value.image : "/businessLogo.png"
                 }
@@ -98,7 +98,7 @@ const NewsSection = () => {
               />
             ) : (
               <img
-                className="h-32 w-32 object-cover rounded-md shadow"
+                className="h-32 w-32 object-cover rounded-md shadow max-sm:h-20 max-sm:w-20 max-sm:ml-8 max-sm:mt-2"
                 src={getImageUrl(value)}
                 alt={value.title}
               />

@@ -54,16 +54,22 @@ const Header = () => {
   return (
     <div className={headerClasses}>
       <Link href="/">
-        <img src="/logo.png" className="h-10 mx-6 mt-2 mb-2" />
+        <img
+          src="/logo.png"
+          className="h-10 mx-6 mt-2 mb-2 max-sm:h-8 max-sm:-mx-2"
+        />
       </Link>
 
       <div className="flex gap-8 mr-8 mt-2">
         {user ? (
           <>
-            <p className="mr-2 mt-1">{user.displayName}</p>
+            <p className=" pl-3 py-1  h-9 w-9 rounded-full border border-gray-300  text-md max-sm:text-sm max-sm:h-7 max-sm:w-7 max-sm:px-2 max-sm:py-1 max-sm:mt-1 max-sm:-mr-4">
+              {user.displayName[0]}
+            </p>
+
             <button
               onClick={handleLogout}
-              className="text-black border border-gray-300 px-2 py-1 rounded-md text-md hover:bg-blue-50 mb-2"
+              className="text-black border border-gray-300 px-2 py-1 rounded-md text-md hover:bg-blue-50 mb-2 max-sm:text-sm max-sm:-mr-10 max-sm:mt-1"
             >
               Logout
             </button>
@@ -77,7 +83,7 @@ const Header = () => {
           </button>
         )}
 
-        <Link href="/About" className="mt-2 text-md">
+        <Link href="/About" className="mt-2 text-md max-sm:hidden">
           About Us
         </Link>
       </div>
