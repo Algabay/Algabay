@@ -55,7 +55,7 @@ const NewsSection = () => {
   };
 
   return (
-    <>
+    <><div className="">
       <div className="px-24 max-sm:px-16 my-4 flex flex-col">
         <label
           htmlFor="news-category"
@@ -112,7 +112,7 @@ const NewsSection = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div></div>
     </>
   );
 };

@@ -19,7 +19,7 @@ const WidgetBanner = () => {
         "isTransparent": false,
         "showSymbolLogo": false,
         "showFloatingTooltip": false,
-        "width": "250",
+        "width": "270",
         "height": "450",
         "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
         "plotLineColorFalling": "rgba(41, 98, 255, 1)",
