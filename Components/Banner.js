@@ -5,7 +5,7 @@ import WidgetBanner from "./WidgetBanner";
 const Banner = () => {
   return (
     <div className="h-auto flex flex-row relative pt-24 pb-2 px-20 max-sm:inline-block max-sm:px-1 ">
-      <div className="my-8 flex-grow max-sm:mt-12 max-sm:mx-2 max-sm:border max-sm:border-gray-200 rounded-md max-sm:px-5 ml-6">
+      <div className="my-8 ml-16 mt-16 flex-grow max-sm:mt-12 max-sm:mx-2 max-sm:border max-sm:border-gray-200 rounded-md max-sm:px-5 ml-6">
         <div className="text-5xl text-gray-700 font-light max-sm:text-2xl max-sm:text-center max-sm:mt-3">
           <h3>
             Simplify&nbsp;Investments
@@ -27,8 +27,8 @@ const Banner = () => {
           <h5 className="text-xl pt-4 max-sm:text-sm max-sm:-mt-4 max-sm:mb-3">
             Chat with Algabay GPT →
           </h5>
-          <button className="px-6 py-2 buttonColor rounded-lg hover:bg-blue-500">
-            Coming soon
+          <button className="px-6 py-3 buttonColor rounded-lg hover:bg-blue-500 mt-4">
+            Get Started
           </button>
         </div>
       </div>
