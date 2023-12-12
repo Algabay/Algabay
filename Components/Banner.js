@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import WidgetBanner from "./WidgetBanner";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -25,11 +26,13 @@ const Banner = () => {
             ✔ Optimize your Portfolio with AI Suggestions.
           </h5>
           <h5 className="text-xl pt-4 max-sm:text-sm max-sm:-mt-4 max-sm:mb-3">
-            Chat with Algabay GPT →
+            Chat For Free with Algabay GPT →
           </h5>
-          <button className="px-6 py-3 buttonColor rounded-lg hover:bg-blue-500 mt-4">
-            Get Started
-          </button>
+          <button className="px-6 py-3 buttonColor rounded-lg hover:bg-blue-500 mt-4"><Link href="/Home">
+            Coming Soon
+            </Link></button>
+          
+    
         </div>
       </div>
       <div className="my-8 z-[-2px] h-auto max-sm:content-center max-sm:mx-4 style={{media}} ">
