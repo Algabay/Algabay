@@ -10,7 +10,7 @@ const NewsSection = () => {
     const getNews = async () => {
       try {
         const response = await axios.get(
-          `https://api.mediastack.com/v1/news?access_key=f78bc7636cbcfce62ecb4e4b57f0206c&categories=${category}&countries=in`
+          `https://api.mediastack.com/v1/news?access_key=f78bc7636cbcfce62ecb4e4b57f0206c&countries=in&keywords=${category}&limit=${15}`
         );
 
         // Log the entire API response to inspect the data structure
@@ -69,9 +69,9 @@ const NewsSection = () => {
           onChange={handleCategoryChange}
           className="border border-gray-300 rounded-lg p-2 cursor-pointer hover:border-gray-400 focus:ring-2 focus:ring-indigo-200 transition-all bg-gray-50 max-sm:text-xs"
         >
-          <option value="business">Business News</option>
-          <option value="general">General News</option>
-          <option value="sports">Sports News</option>
+          <option value="stock">Business News</option>
+          <option value="technology">Technology News</option>
+          <option value="science">Science News</option>
       
         </select>
       </div>
