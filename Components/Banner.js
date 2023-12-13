@@ -27,7 +27,7 @@ const Banner = () => {
           <h5 className="text-xl pt-4 max-sm:text-sm max-sm:-mt-4 max-sm:mb-3">
             Chat with Algabay GPT →
           </h5>
-          <button className="px-6 py-2 buttonColor rounded-lg hover:bg-blue-500">
+          <button className="px-6 py-2 buttonColor rounded-lg hover:bg-blue-500 my-2">
             Coming soon
           </button>
         </div>
