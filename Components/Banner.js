@@ -28,12 +28,15 @@ const Banner = () => {
             <h5 className="text-xl pt-3 pb-3 text-gray-600 max-sm:text-sm">
               ✔ TRY ALGABAY GPT FOR FREE →
             </h5>
+
             <Link href="/Home">
               <button className="px-6 py-2 bg-blue-400 text-white rounded-lg hover:bg-blue-500 my-2">
                 Get Started
               </button>
             </Link>
           </div>
+
+
         </div>
       </div>
 
