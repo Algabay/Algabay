@@ -1,41 +1,44 @@
 "use client";
 import React from "react";
 import WidgetBanner from "./WidgetBanner";
-
+import Link from "next/link";
 const Banner = () => {
   return (
-    <div className="h-auto flex flex-row relative pt-24 pb-2 px-20 max-sm:inline-block max-sm:px-1 ">
-      <div className="my-8 flex-grow max-sm:mt-12 max-sm:mx-2 max-sm:border max-sm:border-gray-200 rounded-md max-sm:px-5 ml-6">
-        <div className="text-5xl text-gray-700 font-light max-sm:text-2xl max-sm:text-center max-sm:mt-3">
-          <h3>
-            Simplify&nbsp;Investments
-            <br /> <span className="text-4xl max-sm:text-xl">with AI</span>
+    <div className="flex flex-col items-center max-sm:p-4 pt-32 max-sm:pt-44">
+      <div className="flex flex-col items-center rounded-md p-6 max-sm:w-full">
+        <div className="text-center">
+          <h3 className="text-8xl text-gray-700 max-sm:text-4xl">
+            Simplify Investments
+            <br /> <span className="text-7xl max-sm:text-3xl textColor">with AI</span>
           </h3>
         </div>
 
-        <div className="my-7 text-md text-gray-500 max-sm:text-sm max-sm:mr-0 max-sm:text-center">
+        <div className="mt-7 text-xl text-gray-600 max-sm:text-sm">
           <h5 className="my-2">
-            ✔ Get AI Summaries for Instant Market overview.
+            ✔ Get AI Summaries for Instant Market overview.<br className="sm:hidden"></br> ✔ Chat with our LLM-powered Finance ChatBot.
           </h5>
-          <h5 className="my-2">✔ Chat with our LLM-powered Finance ChatBot.</h5>
+          <h5 className="my-2"></h5>
           <h5 className="my-2">
-            ✔ Stay ahead of the market with market updates.
+            ✔ Stay ahead of the market with market updates.<br className="sm:hidden"></br> ✔ Optimize your Portfolio with AI Suggestions.
           </h5>
-          <h5 className="mb-6">
-            ✔ Optimize your Portfolio with AI Suggestions.
+          <h5 className="mb-2">
+            
           </h5>
-          <h5 className="text-xl pt-4 max-sm:text-sm max-sm:-mt-4 max-sm:mb-3">
-            Chat with Algabay GPT →
-          </h5>
-          <button className="px-6 py-2 buttonColor rounded-lg hover:bg-blue-500 my-2">
-            Coming soon
-          </button>
+          <div className="text-center"> {/* Added flex and justify-center */}
+            <h5 className="text-xl pt-2 pb-3 text-gray-600 max-sm:text-sm">
+              ✔ TRY ALGABAY GPT FOR FREE →
+            </h5>
+            <Link href="/Home"><button className="px-6 py-2 bg-blue-400 text-white rounded-lg hover:bg-blue-500 my-2">
+              Get Started
+            </button></Link>
+            
+          </div>
+          
         </div>
       </div>
-      <div className="my-8 z-[-2px] h-auto max-sm:content-center max-sm:mx-4 style={{media}} ">
-        <div className="mx-2">
-          <WidgetBanner />
-        </div>
+
+      <div className="mt-4">
+        <WidgetBanner />
       </div>
     </div>
   );

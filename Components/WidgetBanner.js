@@ -8,6 +8,21 @@ const WidgetBanner = () => {
     script.async = true;
     script.src =
       "https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js";
+
+    // Calculate dynamic width and height based on screen size
+    const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    const screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+    let width, height;
+
+    if (screenWidth > 550) {
+      width = 1200;
+      height = 500;
+    } else {
+      width = 300;
+      height = 500;
+    }
+
     script.innerHTML = `
       {
         "colorTheme": "light",
@@ -19,8 +34,8 @@ const WidgetBanner = () => {
         "isTransparent": false,
         "showSymbolLogo": false,
         "showFloatingTooltip": false,
-        "width": "300",
-        "height": "450",
+        "width": "${width}",
+        "height": "${height}",
         "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
         "plotLineColorFalling": "rgba(41, 98, 255, 1)",
         "gridLineColor": "rgba(240, 243, 250, 0)",
