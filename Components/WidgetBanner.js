@@ -16,8 +16,8 @@ const WidgetBanner = () => {
     let width, height;
 
     if (screenWidth > 550) {
-      width = 1200;
-      height = 500;
+      width = 500;
+      height = 450;
     } else {
       width = 300;
       height = 500;
