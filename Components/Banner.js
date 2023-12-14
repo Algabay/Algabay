@@ -2,6 +2,7 @@
 import React from "react";
 import WidgetBanner from "./WidgetBanner";
 import Link from "next/link";
+
 const Banner = () => {
   return (
     <div className="flex flex-col items-center max-sm:p-4 pt-32 max-sm:pt-44">
@@ -32,8 +33,7 @@ const Banner = () => {
               Get Started
             </button></Link>
             
-          </div>
-          
+          </div>     
         </div>
       </div>
 

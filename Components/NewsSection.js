@@ -70,7 +70,6 @@ const NewsSection = () => {
           <option value="stock">Business News</option>
           <option value="technology">Technology News</option>
           <option value="scinece">Science News</option>
-    
         </select>
       </div>
       <div className="grid gap-8 grid-cols-1 px-24 my-6 pb-10 max-sm:px-6">
