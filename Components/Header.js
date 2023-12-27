@@ -47,7 +47,7 @@ const Header = () => {
     }
   };
 
-  const headerClasses = `flex h-18 px-6 items-center justify-between fixed w-full bg-white z-10 ${
+  const headerClasses = `flex h-18 px-6 items-center justify-between fixed w-full bg-white z-10 top-0 ${
     scrolling ? "shadow-md" : ""
   }`;
 

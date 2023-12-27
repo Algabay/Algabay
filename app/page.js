@@ -7,12 +7,12 @@ import WidgetTop from "@/Components/WidgetTop";
 import Footer from "@/Components/Footer";
 import Prizes from "@/Components/Prizes";
 import DummyNews from "@/Components/DummyNews";
-
+import Header from "@/Components/Header";
 const page = () => {
   return (
     <div>
       <Banner />
-  
+
       <NewsSection />
 
       <Prizes />

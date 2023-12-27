@@ -1,18 +1,19 @@
-"use client"
-import React from 'react'
+"use client";
+import React from "react";
 
-import NewsHome from '@/Components/NewsHome'
-import Footer from '@/Components/Footer'
+import NewsHome from "@/Components/NewsHome";
+import Footer from "@/Components/Footer";
+import SipCalculator from "@/Components/SipCalculator";
+import HomeCalculators from "@/Components/CalculatorsBanner";
 
 const Home = () => {
   return (
     <div>
-
-        <NewsHome/>
-        <Footer/>
+      <HomeCalculators />
+      <NewsHome />
+      <Footer />
     </div>
-    
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

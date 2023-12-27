@@ -47,7 +47,7 @@ const NewsHome = () => {
   };
 
   return (
-    <div className="container mx-auto pt-32">
+    <div className="container mx-auto">
       <div className="px-24 max-sm:px-16 my-4 flex flex-col">
         <label
           htmlFor="news-category"
@@ -64,7 +64,6 @@ const NewsHome = () => {
           <option value="stock">Business News</option>
           <option value="technology">Technology News</option>
           <option value="scinece">Science News</option>
-    
         </select>
       </div>
 
