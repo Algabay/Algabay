@@ -5,11 +5,12 @@ import NewsHome from "@/Components/NewsHome";
 import Footer from "@/Components/Footer";
 import SipCalculator from "@/Components/SipCalculator";
 import HomeCalculators from "@/Components/CalculatorsBanner";
-
+import Portfolios from "@/Components/Portfolios";
 const Home = () => {
   return (
     <div>
       <HomeCalculators />
+
       <NewsHome />
       <Footer />
     </div>

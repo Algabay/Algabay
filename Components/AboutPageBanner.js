@@ -55,19 +55,17 @@ const AboutPageBanner = () => {
           </p>
         </div>
         <div className="">
-          <div className="h-auto border border-gray-500 mt-8 justify-center p-6 rounded-md">
+          <div className="h-auto border border-gray-300 mt-8 justify-center p-6 rounded-md">
             <p className="max-sm:text-sm">
-              <span className="">Biswarup Sen</span>
+              <span className="text-2xl text-gray-800">Biswarup Sen</span>
               <br />
               <span className="underline">Founder & CEO →</span>
               <br />
               <br />
-              As the founder and CEO, Biswarup Sen brings his lifelong passion
-              for AI and machine learning to the world of finance. With over
-              years of experience in Fullstack development and AI, His journey
-              is a testament to his dedication to learning new technologies. His
-              background is deeply rooted in technology, and he has a vision for
-              creating value in society by combining technology with finance.
+              As the founder, Biswarup Sen brings his passion for AI and machine
+              learning to the world of finance. As a developer, his background
+              is deeply rooted in technology, and he has a vision for creating
+              value in society by combining technology with finance.
               <br />
               <br />@ Follow&ensp;
               <a href="https://twitter.com/biswarupz" className="underline ">
@@ -83,9 +81,9 @@ const AboutPageBanner = () => {
             </p>
           </div>
 
-          <div className="h-auto border border-gray-500 mt-8 justify-center p-6 rounded-md">
+          <div className="h-auto border border-gray-300 mt-8 justify-center p-6 rounded-md">
             <p className="max-sm:text-sm">
-              <span className="">Sai Sharan</span>
+              <span className="text-2xl text-gray-800">Sai Sharan</span>
               <br />
               <span className="underline">Co-founder & CFO →</span>
               <br />
@@ -110,9 +108,9 @@ const AboutPageBanner = () => {
               </a>
             </p>
           </div>
-          <div className="h-auto border border-gray-500 mt-8 justify-center p-6 rounded-md">
+          <div className="h-auto border border-gray-300 mt-8 justify-center p-6 rounded-md">
             <p className="max-sm:text-sm">
-              <span className="">Adarsh Arunkumar</span>
+              <span className="text-2xl text-gray-800">Adarsh Arunkumar</span>
               <br />
               <span className="underline">Co-founder & CTO →</span>
               <br />
@@ -134,6 +132,27 @@ const AboutPageBanner = () => {
               >
                 Linkedin
               </a>
+            </p>
+          </div>
+
+          <div className="h-auto border border-gray-300 mt-8 justify-center p-6 rounded-md">
+            <p className="max-sm:text-sm">
+              <span className="text-2xl text-gray-800 underline">
+                Our other team members →
+              </span>
+              <br />
+              <br />
+              <span className="text-xl text-gray-600">
+                Akhil Joshua (HR)
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Aman
+                Singh Deo (Data Analyst)
+                &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Neha Sharma
+                (Frontend Developer){" "}
+                <span className="text-sm opacity-50">♥</span>
+              </span>
+
+              <br />
+              <br />
             </p>
           </div>
         </div>
