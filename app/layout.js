@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        <div className="absolute w-full mt-14">
+        <div className="top-0 mt-14">
           <WidgetTop />
         </div>
 
