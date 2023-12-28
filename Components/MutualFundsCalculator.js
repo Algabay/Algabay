@@ -1,6 +1,8 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
+
 import Chart from "chart.js/auto";
+import Link from "next/link";
 
 const MutualFundsCalculator = () => {
   const [initialValue, setInitialValue] = useState("");
@@ -54,72 +56,97 @@ const MutualFundsCalculator = () => {
           },
         ],
       },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+      },
     });
   };
 
   return (
-    <div className="container mx-auto p-4">
-      <h2 className="text-3xl font-bold mb-4">
-        Mutual Funds Investment Calculator
-      </h2>
+    <>
+      <div className="h-auto w-auto">
+        <Link href="/Home">
+          <button className="px-4 py-1 shadow-md text-gray-600 rounded-md text-md border border-gray-300 ml-10 mt-10">
+            Back
+          </button>
+        </Link>
+        <div className="flex justify-center py-10 max-sm:px-10">
+          <div className="w-full max-w-screen-lg bg-white rounded-lg shadow-lg border border-gray-200">
+            <div className="p-8 flex flex-col md:flex-row justify-between">
+              <div className="md:w-1/2 md:pr-8">
+                <h1 className="text-3xl text-gray-700 mb-4">MF Calculator</h1>
+                <div className="grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="mb-4">
+                    <label className="block mb-2 text-sm font-medium text-gray-600">
+                      Initial Investment:
+                      <input
+                        type="number"
+                        value={initialValue}
+                        onChange={(e) => setInitialValue(e.target.value)}
+                        className="w-full p-2 border rounded-md"
+                      />
+                    </label>
+                  </div>
 
-      <div className="flex space-x-4">
-        <label>
-          Initial Investment:
-          <input
-            type="number"
-            value={initialValue}
-            onChange={(e) => setInitialValue(e.target.value)}
-            className="border p-2 mt-1 w-full rounded-lg"
-          />
-        </label>
+                  <div className="mb-4">
+                    <label className="block mb-2 text-sm font-medium text-gray-600">
+                      Ending Value:
+                      <input
+                        type="number"
+                        value={endingValue}
+                        onChange={(e) => setEndingValue(e.target.value)}
+                        className="w-full p-2 border rounded-md"
+                      />
+                    </label>
+                  </div>
 
-        <label>
-          Ending Value:
-          <input
-            type="number"
-            value={endingValue}
-            onChange={(e) => setEndingValue(e.target.value)}
-            className="border p-2 mt-1 w-full rounded-lg"
-          />
-        </label>
+                  <div className="mb-4">
+                    <label className="block mb-2 text-sm font-medium text-gray-600">
+                      Distributions:
+                      <input
+                        type="number"
+                        value={distributions}
+                        onChange={(e) => setDistributions(e.target.value)}
+                        className="w-full p-2 border rounded-md"
+                      />
+                    </label>
+                  </div>
 
-        <label>
-          Distributions:
-          <input
-            type="number"
-            value={distributions}
-            onChange={(e) => setDistributions(e.target.value)}
-            className="border p-2 mt-1 w-full rounded-lg"
-          />
-        </label>
-      </div>
+                  <button
+                    className="bg-blue-500 text-white px-4 py-2 rounded-md mt-4 col-span-2"
+                    onClick={calculateTotalReturn}
+                  >
+                    Calculate
+                  </button>
+                </div>
+              </div>
 
-      <button
-        className="bg-blue-500 text-white px-4 py-2 rounded-md mt-4"
-        onClick={calculateTotalReturn}
-      >
-        Calculate
-      </button>
-
-      <div className="flex justify-center mt-6">
-        <div className="w-full max-w-screen-lg border border-gray-300 shadow-lg p-10 rounded-lg flex flex-col md:flex-row justify-between">
-          <div className="w-full md:w-1/2 md:pr-8">
-            <h2 className="text-2xl font-light text-gray-700 mb-2">Result:</h2>
-            <div className="w-full h-20 border border-gray-400 flex justify-around">
-              <p className="text-md font-light text-gray-600">
-                {totalReturn ? totalReturn : ""}
-              </p>
+              <div className="md:w-1/2 mt-6 md:mt-0">
+                <div className="shadow-md rounded-xl overflow-hidden p-4">
+                  <canvas
+                    id="mutualFundsChart"
+                    width="auto"
+                    height="350vh"
+                  ></canvas>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="w-full md:w-1/2 mt-6 md:mt-0">
-            <div className="border border-gray-800 rounded-xl overflow-hidden p-10">
-              <canvas id="mutualFundsChart" width="auto" height="auto"></canvas>
+
+            <div className="px-8">
+              <h2 className="text-2xl font-light text-gray-700 mb-2">
+                Result:
+              </h2>
+              <div className="w-full h-20 flex items-center justify-center">
+                <p className="text-2xl font-light text-gray-600">
+                  {totalReturn ? totalReturn : ""}
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
