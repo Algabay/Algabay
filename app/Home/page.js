@@ -12,7 +12,7 @@ const Home = () => {
     <div>
       <HomeCalculators />
       <Portfolios />
-      <PortfolioGraph />
+
       <NewsHome />
       <Footer />
     </div>
