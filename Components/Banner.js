@@ -1,4 +1,3 @@
-// "use client";
 import React from "react";
 import WidgetBanner from "./WidgetBanner";
 import Link from "next/link";
