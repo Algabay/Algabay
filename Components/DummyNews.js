@@ -1,201 +1,481 @@
 import React from "react";
+const newsDataPath = "./news.json";
 
 const DummyNews = () => {
   const newsData = [
     {
       title:
-        "Scammers Are Tricking Anti-Vaxxers Into Buying Bogus Medical Documents",
+        "Bluesky changed its logo and now lets everyone view posts, even without an account",
       description:
-        "Scammers Are Tricking Anti-Vaxxers Into Buying Bogus Medical Documents",
+        "Bluesky changed its logo and now lets everyone view posts, even without an account",
       urlToImage:
-        "https://media.wired.com/photos/657cdc0f0bfff3d8273cf8dd/191:100/w_1280,c_limit/Anti-Vaxxers-sold-fake-medical-docs-Security-GettyImages-924224840.jpg",
-    },
-    {
-      title: "El Salvador Bitcoin bonds clear regulatory hurdle",
-      description: "El Salvador Bitcoin bonds clear regulatory hurdle",
-      urlToImage:
-        "https://readwrite.com/wp-content/uploads/2023/12/El-Salvador-Bitcoin-bonds.jpg",
+        "https://s.yimg.com/ny/api/res/1.2/w6sUHrT11QSKficQReS8Kg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://s.yimg.com/os/creatr-uploaded-images/2023-12/9a321f80-a1b6-11ee-aefd-07ebdd04771f",
     },
     {
       title:
-        "Bitcoin soars above $45,000 in New Year rally, eyes on SEC for ETF approvals",
+        "Sorry Elon: Chinese Company Overtakes Tesla as Most Popular Electric Carmaker",
       description:
-        "Bitcoin soars above $45,000 in New Year rally, eyes on SEC for ETF approvals",
+        "Sorry Elon: Chinese Company Overtakes Tesla as Most Popular Electric Carmaker",
       urlToImage:
-        "https://readwrite.com/wp-content/uploads/2023/12/Bitcoin-gathers-momentum.jpg",
-    },
-    {
-      title: "Bitcoin price surges by 175% amid US ETF hopes",
-      description: "Bitcoin price surges by 175% amid US ETF hopes",
-      urlToImage:
-        "https://readwrite.com/wp-content/uploads/2023/12/bitcoin-2730220_1280.jpg",
-    },
-    {
-      title: "Bitcoin surges past $42,000 as crypto gathers momentum",
-      description: "Bitcoin surges past $42,000 as crypto gathers momentum",
-      urlToImage:
-        "https://readwrite.com/wp-content/uploads/2023/12/Bitcoin-gathers-momentum.jpg",
+        "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/da32ec09daf525f85ad8adb6ec08ebee.jpg",
     },
     {
       title:
-        "After a brutal stretch, a remarkable thing is happening: Cryptocurrencies are surging",
+        "Nvidia’s stellar 2023 performance: A decade’s best in stock market",
       description:
-        "After a brutal stretch, a remarkable thing is happening: Cryptocurrencies are surging",
+        "Nvidia’s stellar 2023 performance: A decade’s best in stock market",
       urlToImage:
-        "https://media.npr.org/assets/img/2023/12/25/gettyimages-1402675790_wide-eadf8676b64af620ebb4f8ae76eb29bc059f2598-s1400-c100.jpg",
+        "https://readwrite.com/wp-content/uploads/2023/07/EUs-End-Semiconductor-Shortages.jpg",
+    },
+    {
+      title: "Etsy cuts 11% of staff and stock price tumbles",
+      description: "Etsy cuts 11% of staff and stock price tumbles",
+      urlToImage:
+        "https://readwrite.com/wp-content/uploads/2023/12/Etsy-cuts-11-of-staff.jpg",
+    },
+    {
+      title: "China gaming laws: Tencent stock plummets amid crackdown fears",
+      description:
+        "China gaming laws: Tencent stock plummets amid crackdown fears",
+      urlToImage:
+        "https://readwrite.com/wp-content/uploads/2023/12/edward-he-uKyzXEc2k_s-unsplash-scaled.jpg",
     },
     {
       title:
-        "A lawsuit filed against a bitcoin mine in Texas has shed light on a growing trend: US crypto mines backed by millions of dollars from Chinese investors",
+        "ASML stock price dips as Netherlands revokes China export license",
       description:
-        "A lawsuit filed against a bitcoin mine in Texas has shed light on a growing trend: US crypto mines backed by millions of dollars from Chinese investors",
+        "ASML stock price dips as Netherlands revokes China export license",
       urlToImage:
-        "https://i.insider.com/658acb99ec62ab5daf7ea6be?width=1200&format=jpeg",
+        "https://readwrite.com/wp-content/uploads/2024/01/main-board-89049_1280.jpg",
+    },
+    {
+      title: "TikTok owner ByteDance offers to buy back billions in stock",
+      description:
+        "TikTok owner ByteDance offers to buy back billions in stock",
+      urlToImage:
+        "https://readwrite.com/wp-content/uploads/2023/12/tiktok-5064078_1280.jpg",
+    },
+    {
+      title: "Gun stock camera rig lets you literally shoot your photographs",
+      description:
+        "Gun stock camera rig lets you literally shoot your photographs",
+      urlToImage:
+        "https://i0.wp.com/boingboing.net/wp-content/uploads/2023/12/maxresdefault-252.jpg?fit=1200%2C675&ssl=1",
+    },
+    {
+      title: "Stock-market gurus predicted a grim 2023. They were dead wrong.",
+      description:
+        "Stock-market gurus predicted a grim 2023. They were dead wrong.",
+      urlToImage:
+        "https://i.insider.com/6565c573fe5bc6545ebcd3e8?width=1200&format=jpeg",
+    },
+    {
+      title: "Apple appeals ban on Watch Series 9 and Ultra 2",
+      description: "Apple appeals ban on Watch Series 9 and Ultra 2",
+      urlToImage:
+        "https://s.yimg.com/ny/api/res/1.2/oQFsTYF6hWVogoCoK_B_ig--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03OTg-/https://s.yimg.com/os/creatr-uploaded-images/2023-12/9db494b0-a415-11ee-bfba-7079485ad539",
     },
     {
       title:
-        "Sam Altman’s Weird Eyeball Scanning Crypto Tech Comes to Minecraft",
+        "Harvard missed out on $75 million of potential gains after selling donated stock, Bill Ackman claims",
       description:
-        "Sam Altman’s Weird Eyeball Scanning Crypto Tech Comes to Minecraft",
+        "Harvard missed out on $75 million of potential gains after selling donated stock, Bill Ackman claims",
       urlToImage:
-        "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/7bc02f7461ba489abf2051851f709254.png",
-    },
-    {
-      title: "Coin Cloud bankruptcy leaves customers at risk",
-      description: "Coin Cloud bankruptcy leaves customers at risk",
-      urlToImage:
-        "https://readwrite.com/wp-content/uploads/2023/12/Coin-Cloud-bankruptcy.jpg",
+        "https://i.insider.com/65790ad90ec98e92f74ed07c?width=1200&format=jpeg",
     },
     {
       title:
-        "Vuelve el criptooptimismo: Bitcoin supera los 42.000 dólares y vuelve a niveles de hace 18 meses",
+        "Apple market cap: History, how the price is calculated, relationship to available shares and stock price",
       description:
-        "Vuelve el criptooptimismo: Bitcoin supera los 42.000 dólares y vuelve a niveles de hace 18 meses",
-      urlToImage: "https://i.blogs.es/c333fe/btc1/840_560.jpeg",
+        "Apple market cap: History, how the price is calculated, relationship to available shares and stock price",
+      urlToImage:
+        "https://i.insider.com/6582f2df1c5c7b8c9a0a326b?width=1200&format=jpeg",
     },
     {
       title:
-        "Ein Bitcoin erstmals seit April 2022 wieder über 45.000 US-Dollar wert",
+        "Nike stock plunges and takes rivals like Under Armour and Adidas with it",
       description:
-        "Ein Bitcoin erstmals seit April 2022 wieder über 45.000 US-Dollar wert",
+        "Nike stock plunges and takes rivals like Under Armour and Adidas with it",
       urlToImage:
-        "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/4/5/1/9/4/6/3/shutterstock_1888907947-54ebd2bafa9434e9.jpg",
-    },
-    {
-      title: "Bitcoin breaks $40k as momentum builds",
-      description: "Bitcoin breaks $40k as momentum builds",
-      urlToImage:
-        "https://www.reuters.com/resizer/HcptAJJkSp8HpHdex6n8Ks16WzA=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/CJ7MYCX2U5NHTNNZI4MMFWUTE4.jpg",
-    },
-    {
-      title: "Bitcoin Is Crucial Climate Tech (BTP Ep. 1 Recap)",
-      description: "Bitcoin Is Crucial Climate Tech (BTP Ep. 1 Recap)",
-      urlToImage:
-        "https://miro.medium.com/v2/resize:fit:640/0*3WEqMiNG3I0IfnHC.png",
+        "https://i.insider.com/6585bb62a79e5746976cb810?width=1200&format=jpeg",
     },
     {
       title:
-        "US stocks rise as Fed official gives investors more rate-cut optimism",
+        "Apple is on track to be the first $4 trillion company by the end of 2024, Wedbush says",
       description:
-        "US stocks rise as Fed official gives investors more rate-cut optimism",
+        "Apple is on track to be the first $4 trillion company by the end of 2024, Wedbush says",
       urlToImage:
-        "https://i.insider.com/6581abfda79e5746976ade76?width=1200&format=jpeg",
+        "https://i.insider.com/5cc8d3fae9f08a0939071a13?width=1200&format=jpeg",
+    },
+    {
+      title: "Apple Stock Falls on Reports Watch Sales Will Be Halted",
+      description: "Apple Stock Falls on Reports Watch Sales Will Be Halted",
+      urlToImage: "https://images.barrons.com/im-828823/social",
+    },
+    {
+      title: "Women in the US Are Now Stockpiling Abortion Pills",
+      description: "Women in the US Are Now Stockpiling Abortion Pills",
+      urlToImage:
+        "https://media.wired.com/photos/6584801100dfb1ea68b5a845/191:100/w_1280,c_limit/Mifepristone-Stockpiling-Politics-1258730531.jpg",
+    },
+    {
+      title: "Stock Markets and Social Media? Absolutely!",
+      description: "Stock Markets and Social Media? Absolutely!",
+      urlToImage:
+        "https://blog.hubspot.com/hubfs/social%20media%20stocks.png#keepProtocol",
     },
     {
       title:
-        "Is El Salvador's crypto push working? Experts urge caution amid reforms",
+        "'The Santa Claus rally is real': Why the stock market has a good chance of hitting record highs next week",
       description:
-        "Is El Salvador's crypto push working? Experts urge caution amid reforms",
+        "'The Santa Claus rally is real': Why the stock market has a good chance of hitting record highs next week",
       urlToImage:
-        "https://i.abcnewsfe.com/a/e60be918-011e-4258-ab0e-fe5eb957bff6/Salvador-1-gty-er-231207_1701987930117_hpMain_16x9.jpg?w=992",
-    },
-    {
-      title: "Se filtra el tráiler de ‘GTA 6’",
-      description: "Se filtra el tráiler de ‘GTA 6’",
-      urlToImage:
-        "https://imgs.hipertextual.com/wp-content/uploads/2022/09/gta-6-1.jpg",
+        "https://i.insider.com/65846cf6a79e5746976c50ed?width=1200&format=jpeg",
     },
     {
       title:
-        "Of Wonder, the Courage of Uncertainty, and How to Hear Your Soul: The Best of The Marginalian 2023",
+        "The stock market looks like a 'rubber band poised to snap' as investors crowd into US equities, RBA says",
       description:
-        "Of Wonder, the Courage of Uncertainty, and How to Hear Your Soul: The Best of The Marginalian 2023",
+        "The stock market looks like a 'rubber band poised to snap' as investors crowd into US equities, RBA says",
       urlToImage:
-        "https://www.themarginalian.org/wp-content/uploads/2023/05/margaretcook_leavesofgrass_attention.jpg?fit=1200%2C630&ssl=1",
+        "https://i.insider.com/6570d89458e7c0c29a2a6248?width=1200&format=jpeg",
     },
     {
       title:
-        "Reminder: Donate to win swag in our annual Charity Drive sweepstakes",
+        "Move over, Nvidia: the best-performing stock of 2023 is a battery maker that's skyrocketed nearly 600%",
       description:
-        "Reminder: Donate to win swag in our annual Charity Drive sweepstakes",
+        "Move over, Nvidia: the best-performing stock of 2023 is a battery maker that's skyrocketed nearly 600%",
       urlToImage:
-        "https://cdn.arstechnica.net/wp-content/uploads/2023/11/charity2023-1-760x380.jpg",
+        "https://i.insider.com/658447841c5c7b8c9a0ae940?width=1200&format=jpeg",
     },
     {
       title:
-        "Reminder: Donate to win swag in our annual Charity Drive sweepstakes",
+        "AMD stock price jumps as company releases AI chip to compete with Nvidia",
       description:
-        "Reminder: Donate to win swag in our annual Charity Drive sweepstakes",
+        "AMD stock price jumps as company releases AI chip to compete with Nvidia",
       urlToImage:
-        "https://cdn.arstechnica.net/wp-content/uploads/2023/11/charity2023-760x380.jpg",
+        "https://readwrite.com/wp-content/uploads/2023/12/vladimir-malyutin-sw8-yizppMs-unsplash-scaled.jpg",
     },
     {
       title:
-        "Final reminder: Donate to win swag in our annual Charity Drive sweepstakes",
+        "Trump is now complaining that soaring stocks are 'making rich people richer' after bragging about the market's gains while president",
       description:
-        "Final reminder: Donate to win swag in our annual Charity Drive sweepstakes",
+        "Trump is now complaining that soaring stocks are 'making rich people richer' after bragging about the market's gains while president",
       urlToImage:
-        "https://cdn.arstechnica.net/wp-content/uploads/2023/11/charity2023-760x380.jpg",
+        "https://i.insider.com/6477ae31df2567001837e8cc?width=1200&format=jpeg",
     },
     {
       title:
-        "Filtrados los nuevos juegos de Insomniac Games: ‘Spider-Man 3’ y ‘Spider-Verse’",
+        "'The great disinflation' will set the stage for 5 Fed rate cuts in 2024, Goldman Sachs says",
       description:
-        "Filtrados los nuevos juegos de Insomniac Games: ‘Spider-Man 3’ y ‘Spider-Verse’",
+        "'The great disinflation' will set the stage for 5 Fed rate cuts in 2024, Goldman Sachs says",
       urlToImage:
-        "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2023/06/spider-man-cruzando-el-multiverso.jpg?fit=2500%2C1406&quality=50&strip=all&ssl=1",
-    },
-    {
-      title: "7 Expert & Data-Backed Trend Predictions for 2024",
-      description: "7 Expert & Data-Backed Trend Predictions for 2024",
-      urlToImage:
-        "https://blog.hubspot.com/hubfs/Copy%20of%20Featured%20Image%20Template%20Backgrounds-Dec-19-2023-08-34-34-9450-PM.png#keepProtocol",
-    },
-    {
-      title: "Robinhood: Kryptobörse nun auch in der EU verfügbar",
-      description: "Robinhood: Kryptobörse nun auch in der EU verfügbar",
-      urlToImage:
-        "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/4/5/1/0/3/9/6/shutterstock_2060451869-7dbad282f7566a3f.jpg",
+        "https://i.insider.com/65802c9e50edbc52a8652499?width=1200&format=jpeg",
     },
     {
       title:
-        "Cathie Wood dumps Grayscale and buys bitcoin-futures ETF. Here’s why.",
+        "Blood, Guns, and Broken Scooters: Inside the Chaotic Rise and Fall of Bird",
       description:
-        "Cathie Wood dumps Grayscale and buys bitcoin-futures ETF. Here’s why.",
+        "Blood, Guns, and Broken Scooters: Inside the Chaotic Rise and Fall of Bird",
+      urlToImage:
+        "https://media.wired.com/photos/658391447383b5bb09c393a0/191:100/w_1280,c_limit/Scooter_Collage_09.26.23_2400px_300dpi.jpg",
+    },
+    {
+      title:
+        "This AI stock trader engaged in insider trading — despite being instructed not to – and lied about it",
+      description:
+        "This AI stock trader engaged in insider trading — despite being instructed not to – and lied about it",
+      urlToImage:
+        "https://i.insider.com/658dea1eec62ab5daf7f63d5?width=1200&format=jpeg",
+    },
+    {
+      title:
+        "China opening its doors to the West and an AI model taking over the stock market are among the 'gray swan' events that could rattle investors in 2024, research firm says",
+      description:
+        "China opening its doors to the West and an AI model taking over the stock market are among the 'gray swan' events that could rattle investors in 2024, research firm says",
+      urlToImage:
+        "https://i.insider.com/6572f55d58e7c0c29a2ae946?width=1200&format=jpeg",
+    },
+    {
+      title:
+        "An all-time high for stocks could be a sign investors are getting ahead of themselves",
+      description:
+        "An all-time high for stocks could be a sign investors are getting ahead of themselves",
+      urlToImage:
+        "https://i.insider.com/657a34710ec98e92f74f4152?width=1200&format=jpeg",
+    },
+    {
+      title:
+        "Tim Cook net worth: How the Apple leader earns and spends his money",
+      description:
+        "Tim Cook net worth: How the Apple leader earns and spends his money",
+      urlToImage:
+        "https://i.insider.com/6585396fcefc010bea268d11?width=1200&format=jpeg",
+    },
+    {
+      title:
+        "Warren Buffett's gift of 1.5 million Berkshire Hathaway shares was the biggest donation of the year",
+      description:
+        "Warren Buffett's gift of 1.5 million Berkshire Hathaway shares was the biggest donation of the year",
+      urlToImage:
+        "https://i.insider.com/659436661c5c7b8c9a0d3d8a?width=1200&format=jpeg",
+    },
+    {
+      title:
+        "China's economy was supposed to be the comeback story of 2023. The lowest-ever foreign stock purchases didn't help make that happen.",
+      description:
+        "China's economy was supposed to be the comeback story of 2023. The lowest-ever foreign stock purchases didn't help make that happen.",
+      urlToImage:
+        "https://i.insider.com/658e4a71ab6f2ebb11f79d45?width=1200&format=jpeg",
+    },
+    {
+      title:
+        "Samsung’s new AI-enabled smart fridge can design recipes based on your dietary needs",
+      description:
+        "Samsung’s new AI-enabled smart fridge can design recipes based on your dietary needs",
+      urlToImage:
+        "https://cdn.vox-cdn.com/thumbor/iwq0Hu_MKBMuPxdA_scQ2-TmOwo=/0x0:2560x1276/1200x628/filters:focal(1280x638:1281x639)/cdn.vox-cdn.com/uploads/chorus_asset/file/25189166/Screen_Shot_2023_12_27_at_12.43.24_PM.png",
+    },
+    {
+      title:
+        "Jack Ma praised a key rival. A day later, it overtook Alibaba as China's most valuable e-commerce company.",
+      description:
+        "Jack Ma praised a key rival. A day later, it overtook Alibaba as China's most valuable e-commerce company.",
+      urlToImage:
+        "https://i.insider.com/65766cd858e7c0c29a2b7a58?width=1200&format=jpeg",
+    },
+    {
+      title:
+        "Warren Buffett snaps up nearly $600 million of Occidental stock in 3 days, signaling he likes the energy group's latest deal",
+      description:
+        "Warren Buffett snaps up nearly $600 million of Occidental stock in 3 days, signaling he likes the energy group's latest deal",
+      urlToImage:
+        "https://i.insider.com/5dea2b2c695b58662c4e36e0?width=1200&format=jpeg",
+    },
+    {
+      title: "Amazon claims record-breaking holiday sales in 2023",
+      description: "Amazon claims record-breaking holiday sales in 2023",
+      urlToImage:
+        "https://readwrite.com/wp-content/uploads/2023/07/andrew-stickelman-4zSqHtIx8H8-unsplash.jpg",
+    },
+    {
+      title:
+        "From New York to Tokyo, Stock Markets Across the Globe Have Rallied in 2023",
+      description:
+        "From New York to Tokyo, Stock Markets Across the Globe Have Rallied in 2023",
+      urlToImage:
+        "https://api.time.com/wp-content/uploads/2023/12/AP23345653432418.jpg?quality=85",
+    },
+    {
+      title: "People With Acne Pay a Steep Social Price, Study Finds",
+      description: "People With Acne Pay a Steep Social Price, Study Finds",
+      urlToImage:
+        "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/c6dc4f141653718b5bf61a7112ed5a1e.jpg",
+    },
+    {
+      title:
+        "Democrats' choice to replace George Santos is lukewarm on abortion, violated federal law over 300 times with his stock trades, and once said Florida's 'Don't Say Gay' bill is 'common sense'",
+      description:
+        "Democrats' choice to replace George Santos is lukewarm on abortion, violated federal law over 300 times with his stock trades, and once said Florida's 'Don't Say Gay' bill is 'common sense'",
+      urlToImage:
+        "https://i.insider.com/657200c70ec98e92f74d2c9a?width=1200&format=jpeg",
+    },
+    {
+      title: "3 Google features to help you get last-minute holiday gifts",
+      description:
+        "3 Google features to help you get last-minute holiday gifts",
+      urlToImage:
+        "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/12-13-23_Shopping_2.width-1300.jpg",
+    },
+    {
+      title:
+        "Who owns Apple? Vanguard, BlackRock, Berkshire Hathaway last-known biggest shareholders; 2024 proxy statement expected",
+      description:
+        "Who owns Apple? Vanguard, BlackRock, Berkshire Hathaway last-known biggest shareholders; 2024 proxy statement expected",
+      urlToImage:
+        "https://i.insider.com/6582cb561c5c7b8c9a0a25d4?width=1200&format=jpeg",
+    },
+    {
+      title: "Figgie: Simulate stock trading with a deck of cards",
+      description: "Figgie: Simulate stock trading with a deck of cards",
+      urlToImage: "https://figgie.com/static/images/social-image.png",
+    },
+    {
+      title: "SunPower’s stock tanks after going-concern warning",
+      description: "SunPower’s stock tanks after going-concern warning",
+      urlToImage: "https://images.mktw.net/im-875215/social",
+    },
+    {
+      title: "Data analytics firm Alteryx agrees to $4.4B buyout deal",
+      description: "Data analytics firm Alteryx agrees to $4.4B buyout deal",
+      urlToImage:
+        "https://readwrite.com/wp-content/uploads/2019/08/accomplished-adults-business-deal-1124065-751x719.jpg",
+    },
+    {
+      title: "Walthamstow: Kacey Boothe's killers found guilty of murder",
+      description: "Walthamstow: Kacey Boothe's killers found guilty of murder",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/165A1/production/_126335519_kaceyboothe.jpg",
+    },
+    {
+      title:
+        "Tesla's Nordic labor crisis drags on as a Danish pension fund dumps its shares in Elon Musk's EV maker",
+      description:
+        "Tesla's Nordic labor crisis drags on as a Danish pension fund dumps its shares in Elon Musk's EV maker",
+      urlToImage:
+        "https://i.insider.com/6571b49a7a3c8094d5da88bc?width=1200&format=jpeg",
+    },
+    {
+      title:
+        "How May Mobility went fully driverless while avoiding the pitfalls of robotaxis",
+      description:
+        "How May Mobility went fully driverless while avoiding the pitfalls of robotaxis",
+      urlToImage:
+        "https://cdn.vox-cdn.com/thumbor/pkFBr_iyPY-68s97CIC46j7Ia2w=/0x0:4000x2250/1200x628/filters:focal(2000x1125:2001x1126)/cdn.vox-cdn.com/uploads/chorus_asset/file/25165561/May_Mobility_Sun_City_.JPG",
+    },
+    {
+      title: "FedEx’s stock drops as company trims sales forecast",
+      description: "FedEx’s stock drops as company trims sales forecast",
+      urlToImage: "https://images.mktw.net/im-507706/social",
+    },
+    {
+      title: "Worm’s rear end develops its own head, wanders off to mate",
+      description: "Worm’s rear end develops its own head, wanders off to mate",
+      urlToImage:
+        "https://cdn.arstechnica.net/wp-content/uploads/2023/12/Screen-Shot-2023-12-08-at-2.30.22-PM-760x380.jpeg",
+    },
+    {
+      title: "Intel’s stock sheds a bear as a key catalyst awaits",
+      description: "Intel’s stock sheds a bear as a key catalyst awaits",
+      urlToImage: "https://images.mktw.net/im-63559076/social",
+    },
+    {
+      title: "Cathie Wood’s ETFs are now buying Tesla’s stock",
+      description: "Cathie Wood’s ETFs are now buying Tesla’s stock",
       urlToImage: "https://images.mktw.net/im-17572622/social",
     },
     {
       title:
-        "Why bitcoin may not see a ‘Santa Claus rally’, despite potential approval of crypto-based ETFs",
+        "Since Elon Musk’s Twitter purchase, firm reportedly lost 72% of its value",
       description:
-        "Why bitcoin may not see a ‘Santa Claus rally’, despite potential approval of crypto-based ETFs",
-      urlToImage: "https://images.mktw.net/im-783732/social",
+        "Since Elon Musk’s Twitter purchase, firm reportedly lost 72% of its value",
+      urlToImage:
+        "https://cdn.arstechnica.net/wp-content/uploads/2024/01/value-drop-760x380.jpg",
     },
     {
       title:
-        "Trailer for Bitconned, a documentary about one of the many scamcoins minted in the mid-late 2010s",
+        "Bill Ackman wrote 1,600 words on X about how he's definitely not resentful towards Harvard",
       description:
-        "Trailer for Bitconned, a documentary about one of the many scamcoins minted in the mid-late 2010s",
+        "Bill Ackman wrote 1,600 words on X about how he's definitely not resentful towards Harvard",
       urlToImage:
-        "https://i0.wp.com/boingboing.net/wp-content/uploads/2023/12/image-31.png?fit=1200%2C600&ssl=1",
+        "https://i.insider.com/65791d6a50edbc52a863988c?width=1200&format=jpeg",
+    },
+    {
+      title: "Elon Musk really, really hates running a public company",
+      description: "Elon Musk really, really hates running a public company",
+      urlToImage:
+        "https://i.insider.com/658559e71c5c7b8c9a0b5fcf?width=1200&format=jpeg",
     },
     {
       title:
-        "El Salvador, el primer país en adoptar el Bitcoin, ahora ofrece visados a criptoinversores por un millón de dólares",
+        "Netflix's data dump signals a new era of transparency for the company — but don't expect other streaming sites to follow suit",
       description:
-        "El Salvador, el primer país en adoptar el Bitcoin, ahora ofrece visados a criptoinversores por un millón de dólares",
+        "Netflix's data dump signals a new era of transparency for the company — but don't expect other streaming sites to follow suit",
       urlToImage:
-        "https://i.blogs.es/7cf7a2/esau-fuentes-gonzalez-bqefbdsc4ko-unsplash/840_560.jpeg",
+        "https://i.insider.com/6555824f4ca513d8242a5680?width=1200&format=jpeg",
+    },
+    {
+      title:
+        "Apple Watch Series 9 and Ultra 2 Available in Apple Stores Starting Today, Online Sales to Resume Tomorrow",
+      description:
+        "Apple Watch Series 9 and Ultra 2 Available in Apple Stores Starting Today, Online Sales to Resume Tomorrow",
+      urlToImage:
+        "https://images.macrumors.com/t/GBQdcdJQVWopDyQh1iW7Psj9kcU=/2880x/article-new/2023/09/Apple-Watch-Series-9.jpg",
+    },
+    {
+      title: "Deepfake AI-generated images that went viral in 2023",
+      description: "Deepfake AI-generated images that went viral in 2023",
+      urlToImage:
+        "https://readwrite.com/wp-content/uploads/2023/12/Deepfake-AI-generated-2023.jpg",
+    },
+    {
+      title: "Apple’s stock falls after ‘sell’ call from Barclays",
+      description: "Apple’s stock falls after ‘sell’ call from Barclays",
+      urlToImage: "https://images.mktw.net/im-08183262/social",
+    },
+    {
+      title: "GameStop’s stock climbs more than 5%, resuming its rally",
+      description: "GameStop’s stock climbs more than 5%, resuming its rally",
+      urlToImage: "https://images.mktw.net/im-291978/social",
+    },
+    {
+      title: "Buy FedEx’s stock on the big dip, analyst says",
+      description: "Buy FedEx’s stock on the big dip, analyst says",
+      urlToImage: "https://images.mktw.net/im-19943839/social",
+    },
+    {
+      title:
+        "From Unicorns To Zombies: Tech Startups Run Out of Time and Money",
+      description:
+        "From Unicorns To Zombies: Tech Startups Run Out of Time and Money",
+      urlToImage: "https://a.fsdn.com/sd/topics/business_64.png",
+    },
+    {
+      title:
+        "Thanks to AI, snowstorms won't stop Walmart delivering your presents this Christmas",
+      description:
+        "Thanks to AI, snowstorms won't stop Walmart delivering your presents this Christmas",
+      urlToImage:
+        "https://i.insider.com/6582ae9a1c5c7b8c9a0a220a?width=1200&format=jpeg",
+    },
+    {
+      title:
+        "Genre Bests, Personal Top 10 Lists And More: One Last Look Back At 2023",
+      description:
+        "Genre Bests, Personal Top 10 Lists And More: One Last Look Back At 2023",
+      urlToImage:
+        "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/97297007d11430488c00f71cc22526e9.jpg",
+    },
+    {
+      title: "The rise and fall of Olaplex",
+      description: "The rise and fall of Olaplex",
+      urlToImage:
+        "https://i.insider.com/6581e9f7a79e5746976b1596?width=1200&format=jpeg",
+    },
+    {
+      title: "We're a scapegoat for PPE failures, says Michelle Mone's husband",
+      description:
+        "We're a scapegoat for PPE failures, says Michelle Mone's husband",
+      urlToImage:
+        "https://ichef.bbci.co.uk/news/1024/branded_news/702D/production/_132071782_monestill1.jpg",
+    },
+    {
+      title: "Spotify’s not going for Pulitzers anymore",
+      description: "Spotify’s not going for Pulitzers anymore",
+      urlToImage:
+        "https://cdn.vox-cdn.com/thumbor/oaNdxtfeU3sXEbIdR2rGWZb-sd4=/0x0:2040x1360/1200x628/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/23985252/VRG_Illo_STK130_K_Radtke_Spotify_Podcast_1.jpg",
+    },
+    {
+      title:
+        "AAPL stock closes at new record high after adding $1 trillion to market cap this year",
+      description:
+        "AAPL stock closes at new record high after adding $1 trillion to market cap this year",
+      urlToImage:
+        "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2023/12/AAPL-high.webp?resize=1200%2C628&quality=82&strip=all&ssl=1",
+    },
+    {
+      title:
+        "2023 Apple stock growth lags behind competitors, longest revenue decline in two decades",
+      description:
+        "2023 Apple stock growth lags behind competitors, longest revenue decline in two decades",
+      urlToImage:
+        "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2022/06/apple-stock-down.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+    },
+    {
+      title: "Japanese chip gear-maker Kokusai targets Chinese growth",
+      description: "Japanese chip gear-maker Kokusai targets Chinese growth",
+      urlToImage:
+        "https://readwrite.com/wp-content/uploads/2023/12/pexels-rfstudio-3825581-scaled.jpg",
     },
     {
       title:
@@ -207,149 +487,166 @@ const DummyNews = () => {
     },
     {
       title:
-        "How a big, messy ‘cleanup’ in crypto could pave way for a more regulated, mature market in 2024",
+        "From bars of 24-karat gold to huge portions of freeze-dried emergency-survival food and even caskets, here are the strangest things you can buy from Costco",
       description:
-        "How a big, messy ‘cleanup’ in crypto could pave way for a more regulated, mature market in 2024",
-      urlToImage: "https://images.mktw.net/im-92646701/social",
+        "From bars of 24-karat gold to huge portions of freeze-dried emergency-survival food and even caskets, here are the strangest things you can buy from Costco",
+      urlToImage:
+        "https://i.insider.com/657327a47a3c8094d5daf2cd?width=1200&format=jpeg",
     },
     {
       title:
-        "PlayStation game dev hit by major ransomware attack – stolen data being auctioned off",
+        "GameStop Debuts ‘Alarming’ Plan To Let Its CEO Gamble Millions On The Stock Market",
       description:
-        "PlayStation game dev hit by major ransomware attack – stolen data being auctioned off",
+        "GameStop Debuts ‘Alarming’ Plan To Let Its CEO Gamble Millions On The Stock Market",
       urlToImage:
-        "https://readwrite.com/wp-content/uploads/2023/06/towfiqu-barbhuiya-em5w9_xj3uU-unsplash.jpg",
-    },
-    {
-      title: "Nyan Keys: Because Your Keyboard is Painfully Slow",
-      description: "Nyan Keys: Because Your Keyboard is Painfully Slow",
-      urlToImage:
-        "https://hackaday.com/wp-content/uploads/2023/12/nyan-keys-800.jpg",
+        "https://video-images.vice.com/articles/65720325e76ff73ea394428a/lede/1701970834331-gettyimages-1475285729.jpeg?image-resize-opts=Y3JvcD0xeHc6MC44NDI3eGg7MHh3LDAuMDY4NXhoJnJlc2l6ZT0xMjAwOiomcmVzaXplPTEyMDA6Kg",
     },
     {
       title:
-        "Ausblick: Was bringt das Tech-Jahr 2024 für Apple, KI, Bitcoin & Co.?​",
+        "It sure looks like corporate America isn't afraid of Joe Biden anymore",
       description:
-        "Ausblick: Was bringt das Tech-Jahr 2024 für Apple, KI, Bitcoin & Co.?​",
+        "It sure looks like corporate America isn't afraid of Joe Biden anymore",
       urlToImage:
-        "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/4/5/1/8/7/1/4/shutterstock_1818921524-a01f07a7c31a688a.jpg",
+        "https://i.insider.com/64ac294e6d7e02001af8a668?width=1200&format=jpeg",
     },
     {
       title:
-        "Insomniac leak: Rhysida hack sparks rally of support for game developer",
+        "Mullen’s stock rockets after large reverse-split keeps listing hopes alive",
       description:
-        "Insomniac leak: Rhysida hack sparks rally of support for game developer",
-      urlToImage:
-        "https://readwrite.com/wp-content/uploads/2023/12/pexels-soumil-kumar-735911-scaled.jpg",
-    },
-    {
-      title: "Who Accepts Bitcoin as Payment?",
-      description: "Who Accepts Bitcoin as Payment?",
-      urlToImage:
-        "https://media.smallbiztrends.com/2021/12/who-accepts-bitcoin.png",
-    },
-    {
-      title: 'Darknet: Polizei hebt "Kingdom Market" aus',
-      description: 'Darknet: Polizei hebt "Kingdom Market" aus',
-      urlToImage:
-        "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/4/5/1/6/7/9/8/bka-6ed59eff942f6cc1.jpg",
+        "Mullen’s stock rockets after large reverse-split keeps listing hopes alive",
+      urlToImage: "https://images.mktw.net/im-24145996/social",
     },
     {
       title:
-        "El impago a contratistas en Texas tira por tierra el anonimato de Bitcoin y destapa una trama millonaria de inversores chinos",
+        "Nike's warnings on China should scare other companies that do business there",
       description:
-        "El impago a contratistas en Texas tira por tierra el anonimato de Bitcoin y destapa una trama millonaria de inversores chinos",
+        "Nike's warnings on China should scare other companies that do business there",
       urlToImage:
-        "https://i.blogs.es/2192ec/ewan-kennedy-mkdbteclpzc-unsplash/840_560.jpeg",
-    },
-    {
-      title: "Coinbase targets financially vulnerable young adults",
-      description: "Coinbase targets financially vulnerable young adults",
-      urlToImage:
-        "https://substackcdn.com/image/youtube/w_728,c_limit/a4F9u8Z84YI",
-    },
-    {
-      title: "Le Bitcoin est au plus haut : la BCE prédit sa mort prochaine",
-      description:
-        "Le Bitcoin est au plus haut : la BCE prédit sa mort prochaine",
-      urlToImage:
-        "https://www.presse-citron.net/app/uploads/2022/06/bitcoin-decentralise-anonyme.jpg",
+        "https://i.insider.com/6585af81cefc010bea26a87e?width=1200&format=jpeg",
     },
     {
       title:
-        "'Rich Dad Poor Dad' author warns exploding US debt will fuel inflation and crush the dollar",
+        "This basic bean soup has been served every day in the Senate for over 100 years and symbolizes why we need more flavor in Congress",
       description:
-        "'Rich Dad Poor Dad' author warns exploding US debt will fuel inflation and crush the dollar",
+        "This basic bean soup has been served every day in the Senate for over 100 years and symbolizes why we need more flavor in Congress",
       urlToImage:
-        "https://i.insider.com/64b50a55dcdf1100194c22eb?width=1200&format=jpeg",
+        "https://i.insider.com/6591031eab6f2ebb11f7f7f9?width=1200&format=jpeg",
     },
     {
       title:
-        "Bitcoin trades above $40K for the first time since May 2022 as it extends its 2023 rebound (Sunil Jagtiani/Bloomberg)",
+        "Broadcom now ranks among 10 largest U.S. companies after big 2023 stock gains",
       description:
-        "Bitcoin trades above $40K for the first time since May 2022 as it extends its 2023 rebound (Sunil Jagtiani/Bloomberg)",
-      urlToImage:
-        "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iTNK7L5JA_BA/v0/1200x785.jpg",
+        "Broadcom now ranks among 10 largest U.S. companies after big 2023 stock gains",
+      urlToImage: "https://images.mktw.net/im-863384/social",
     },
     {
       title:
-        "Former Amazon engineer pleads guilty to stealing $12.3 million of crypto in first ever hacking case involving smart contracts",
+        "This record-setting stock market rally is living on borrowed time",
       description:
-        "Former Amazon engineer pleads guilty to stealing $12.3 million of crypto in first ever hacking case involving smart contracts",
-      urlToImage:
-        "https://i.insider.com/657e49ed50edbc52a865111a?width=1200&format=jpeg",
+        "This record-setting stock market rally is living on borrowed time",
+      urlToImage: "https://images.mktw.net/im-590105/social",
     },
     {
       title:
-        "Digitalwährung : Bitcoin erstmals seit April 2022 über 45.000 US-Dollar",
+        "Moderna’s stock soars 10% to lead S&P 500 gainers as Oppenheimer upgrades to buy",
       description:
-        "Digitalwährung : Bitcoin erstmals seit April 2022 über 45.000 US-Dollar",
-      urlToImage:
-        "https://img.zeit.de/news/2024-01/02/bitcoin-erstmals-seit-april-2022-ueber-45-000-us-dollar-image-group/wide__1300x731",
+        "Moderna’s stock soars 10% to lead S&P 500 gainers as Oppenheimer upgrades to buy",
+      urlToImage: "https://images.mktw.net/im-281276/social",
     },
     {
       title:
-        "Freitag: Hyperloop-Hype wohl zu Ende, Lapsus$-Täter in Psychiatrie statt in Haft",
+        "Why Amazon’s stock could be 2024’s biggest winner among major internet names",
       description:
-        "Freitag: Hyperloop-Hype wohl zu Ende, Lapsus$-Täter in Psychiatrie statt in Haft",
-      urlToImage:
-        "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/4/5/1/7/4/6/5/friday-8811913955340084.webp",
-    },
-    {
-      title: "Bitcoin rally: Is El Salvador's Bitcoin bet paying off?",
-      description: "Bitcoin rally: Is El Salvador's Bitcoin bet paying off?",
-      urlToImage:
-        "https://ichef.bbci.co.uk/news/1024/branded_news/3B14/production/_121742151_hi072113665.jpg",
+        "Why Amazon’s stock could be 2024’s biggest winner among major internet names",
+      urlToImage: "https://images.mktw.net/im-798704/social",
     },
     {
       title:
-        "heise+ | Geldanlage: Mit Aktien, ETFs und ETPs in Kryptowährungen investieren",
+        "Kimberly-Clark’s stock hit by BofA downgrade, while Clorox gets an upgrade",
       description:
-        "heise+ | Geldanlage: Mit Aktien, ETFs und ETPs in Kryptowährungen investieren",
-      urlToImage:
-        "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/4/5/0/9/9/6/7/202312_Kryptofond-9a5df8e7b08e12d1.png",
+        "Kimberly-Clark’s stock hit by BofA downgrade, while Clorox gets an upgrade",
+      urlToImage: "https://images.mktw.net/im-291697/social",
     },
     {
-      title: "Insomniac Games por fin rompe el silencio tras su brutal hackeo",
+      title:
+        "Affirm’s stock rockets after Walmart expands buy-now-pay-later option to include self-checkout purchases",
       description:
-        "Insomniac Games por fin rompe el silencio tras su brutal hackeo",
-      urlToImage:
-        "https://imgs.hipertextual.com/wp-content/uploads/2021/09/wolverine-scaled.jpeg",
+        "Affirm’s stock rockets after Walmart expands buy-now-pay-later option to include self-checkout purchases",
+      urlToImage: "https://images.mktw.net/im-29616255/social",
+    },
+    {
+      title:
+        "Amazon’s stock looks to enter 2024 with a record-tying weekly winning streak",
+      description:
+        "Amazon’s stock looks to enter 2024 with a record-tying weekly winning streak",
+      urlToImage: "https://images.mktw.net/im-39573581/social",
+    },
+    {
+      title:
+        "Fund managers most upbeat on stock market since January 2022 as S&P 500 nears record",
+      description:
+        "Fund managers most upbeat on stock market since January 2022 as S&P 500 nears record",
+      urlToImage: "https://images.mktw.net/im-401335/social",
+    },
+    {
+      title:
+        "Tesla’s stock can rise to $1 trillion market value in 2024, analyst says",
+      description:
+        "Tesla’s stock can rise to $1 trillion market value in 2024, analyst says",
+      urlToImage: "https://images.mktw.net/im-21147292/social",
+    },
+    {
+      title: "These unsung stock market heroes offer 9 favorite picks for 2024",
+      description:
+        "These unsung stock market heroes offer 9 favorite picks for 2024",
+      urlToImage: "https://images.mktw.net/im-833483/social",
+    },
+    {
+      title:
+        "Santa Claus is coming to town and bringing presents for your stock portfolio",
+      description:
+        "Santa Claus is coming to town and bringing presents for your stock portfolio",
+      urlToImage: "https://images.mktw.net/im-41075011/social",
+    },
+    {
+      title:
+        "Stock futures show S&P 500 opening just several points shy of record high",
+      description:
+        "Stock futures show S&P 500 opening just several points shy of record high",
+      urlToImage: "https://images.mktw.net/im-00021142/social",
+    },
+    {
+      title: "The 10 days that moved the stock market the most in 2023",
+      description: "The 10 days that moved the stock market the most in 2023",
+      urlToImage: "https://images.mktw.net/im-08869333/social",
+    },
+    {
+      title:
+        "Intel’s stock on pace for biggest daily percentage gain in two months, buoyed by Israel deal",
+      description:
+        "Intel’s stock on pace for biggest daily percentage gain in two months, buoyed by Israel deal",
+      urlToImage: "https://images.mktw.net/im-876690/social",
+    },
+    {
+      title:
+        "A broadening stock-market rally just led to this ‘fairly uncommon’ occurrence",
+      description:
+        "A broadening stock-market rally just led to this ‘fairly uncommon’ occurrence",
+      urlToImage: "https://images.mktw.net/im-35115915/social",
     },
   ];
-
   return (
     <>
-      <div className="grid gap-8 grid-cols-1 px-24 my-6 pb-10 mt-16">
+      <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 mt-8 max-sm:px-6 px-20 py-8">
         {newsData.map((news, index) => (
           <div
             key={index}
-            className="flex bg-white border border-gray-300 p-6 rounded-lg shadow"
+            className="bg-white border border-gray-300 p-4 rounded-md shadow-md"
           >
             <img
-              className="h-32 w-32 object-cover rounded-md shadow"
+              className="h-44 w-full px-8 max-sm:h-32 max-sm:w-full object-cover rounded-md mb-4 border border-gray-100"
               src={news.urlToImage}
-              alt="News"
+              alt=" :') "
             />
             <div className="h-auto w-full py-4 px-8">
               <h6 className="text-md font-semibold mb-2">{news.title}</h6>
