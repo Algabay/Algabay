@@ -12,8 +12,7 @@ const page = () => {
   return (
     <div>
       <Banner />
-
-      <NewsSection />
+      <DummyNews />
 
       <Prizes />
 
