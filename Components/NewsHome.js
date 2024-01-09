@@ -4,15 +4,14 @@ import axios from "axios";
 const NewsHome = () => {
   const [data, setData] = useState([]);
   const [category, setCategory] = useState("business");
-
+  const newsUrl = "http://localhost:3001/news";
   useEffect(() => {
     const getNews = async () => {
       try {
-        const response = await axios.get(
-          `https://api.mediastack.com/v1/news?access_key=f78bc7636cbcfce62ecb4e4b57f0206c&countries=in&keywords=${category}&limit=${100}`
-        );
+        const response = await axios.get(newsUrl);
 
-        setData(response.data.data);
+        setData(response.json());
+        console.log(response);
       } catch (error) {
         console.error("Error fetching news:", error);
       }
