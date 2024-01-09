@@ -9,7 +9,7 @@ const Banner = () => {
         <div className="text-center lg:text-left">
           <h3 className="text-5xl text-gray-700 max-sm:text-3xl">
             Simplify Investments
-            <br />{" "}
+            <br />
             <span className="text-4xl textColor max-sm:text-3xl">with AI</span>
           </h3>
         </div>
@@ -23,7 +23,6 @@ const Banner = () => {
             ✔ Stay ahead of the market with market updates.
           </h5>
           <h5 className="mb-2">
-            {" "}
             ✔ Optimize your Portfolio with AI Suggestions.
           </h5>
           <div className="text-center lg:text-left">
