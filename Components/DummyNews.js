@@ -4,6 +4,88 @@ const newsDataPath = "./news.json";
 const DummyNews = () => {
   const newsData = [
     {
+      title:
+        "Paytm to invest Rs 100 crore in GIFT City to build global financial ecosystem",
+      description:
+        "Paytm's announcement to invest Rs 100 crore in GIFT City came ahead of the Vibrant Gujarat Global Summit 2024, scheduled to be inaugurated by Prime Minister Narendra Modi on January 10. ",
+    },
+    {
+      title:
+        "Suchana Seth case: Bengaluru CEO smothered 4-yr-old son to death, says doctor",
+      description:
+        "Suchana Seth, Bengaluru CEO of AI startup who has been arrested for allegedly killing her 4-year-old son, was unhappy with a court order that allowed her estranged husband to visit their son every Sunday.",
+    },
+    {
+      title:
+        "Indian economy may grow at 6.2% next fiscal due to neutral policy settings, positive credit momentum: UBS",
+      description:
+        "This growth is anticipated due to the favourable combination of neutral policy settings, positive credit momentum, and manageable macroeconomic macros amid a 15-year high household debt levels",
+    },
+    {
+      title: "BlackRock announces cuts of roughly 600 jobs",
+      description:
+        "The job cuts would amount to roughly 600 positions based on BlackRock's workforce of 19,800 at the end of December 2022, the last time its employee numbers were updated.",
+    },
+    {
+      title:
+        "Investor Bill Ackman backs bid by dissidents for Harvard board seats",
+      description:
+        "The development represents a new challenge to the board, whose 30 members are typically nominated by the university's alumni association.",
+    },
+    {
+      title: "Starbucks India to more than double store count to 1,000 by 2028",
+      description:
+        "Since opening its first cafe in October 2012, Tata Starbucks' store count has grown to 390. It has opened 57 stores so far this fiscal year and had added 71 in the previous fiscal.",
+    },
+    {
+      title:
+        "Biden administration issues rule that could curb &#039;gig&#039; work, contracting",
+      description:
+        "The U.S. Department of Labor on Tuesday issued a final rule that will force companies to treat some workers as employees rather than less expensive independent contractors, in a move that has riled business groups and will likely prompt legal challenges",
+    },
+    {
+      title:
+        "Hoteliers flock to Ayodhya in anticipation of massive tourist influx",
+      description:
+        "From ITC to Taj, leading hotel chains are coming up with properties across the holy town",
+    },
+    {
+      title:
+        "Zee misses $200 million Disney payment deadline amid Sony merger uncertainty",
+      description:
+        'Zee panned reports that claimed that Sony was planning to call off its merger. "Company is committed to the merger with Sony and is continuing to work towards a successful closure of the proposed merger,” Zee said.',
+    },
+    {
+      title:
+        "India story intact in worst half decade of growth in 30 years, says World Bank",
+      description:
+        "India forecast an annual growth of 7.3% in the fiscal year ending in March, the highest rate of any of the major global economies.",
+    },
+    {
+      title:
+        "Moody&#039;s cuts rating on Vedanta Resources for second time. Here&#039;s why it&#039;s worried",
+      description:
+        'Moody\'s said that Vedanta Resources, the parent of Indian miner Vedanta, will face material liquidity issues over the upcoming 24 months and warned that the "default risk" remains high.',
+    },
+    {
+      title:
+        "Rapido hosts ‘Cab Mahotsav’ in Delhi, plans to create 40,000 jobs",
+      description:
+        "Over 600 captains attended the event, with guaranteed prizes including refrigerators, washing machines, and televisions.",
+    },
+    {
+      title:
+        "Madhya Pradesh: Viral video shows rats feeding on food at IRCTC stall, Indian Railways reacts",
+      description:
+        "A video on X (formerly Twitter), showcasing rats feasting on food at an IRCTC stall in Madhya Pradesh, has gone viral on social media. The footage was captured by a passenger at the Itarsi Junction railway station.",
+    },
+    {
+      title:
+        "NEET PG 2024 exams rescheduled. Check latest dates and registration process",
+      description:
+        "Medical aspirants are advised to check detailed schedule at the official website — nbe.edu.in, natboard.edu.in.",
+    },
+    {
       title: "What explains slowing of manufacturing PMI?",
       description:
         "Economists note that it remains robust for now, but hints at moderation in activities",
@@ -61,86 +143,6 @@ const DummyNews = () => {
         "Gautam Adani-led Adani Group to invest Rs 42,700 crore in Tamil Nadu",
       description:
         "Adani Green Energy stated that it would invest Rs 24,500 crore – the biggest investment among the group companies – in three pump storage projects in the next 5-7 years.",
-    },
-    {
-      title: "NASA to push back moon mission timelines amid spacecraft delays",
-      description:
-        "NASA's second Artemis mission is expected to be pushed beyond its planned late-2024 target after issues were uncovered with the Lockheed Martin-built Orion crew capsule's batteries during vibration tests, two of the people said.",
-    },
-    {
-      title:
-        "PM Modi reaches Ahmedabad for Vibrant Gujarat Global Summit, to inaugurate global trade show today; check details",
-      description:
-        "On January 9, the Prime Minister will arrive at Mahatma Mandir in Gandhinagar at around 9:30 am, where he will hold bilateral meetings with world leaders, followed by a meeting with CEOs of top global corporations",
-    },
-    {
-      title: "Dollar pulls back, bitcoin jumps ahead of ETF approval deadline",
-      description:
-        "In cryptocurrencies, bitcoin hovered near its strongest level since April 2022 on growing anticipation of imminent approvals of spot bitcoin exchange-traded funds (ETF).",
-    },
-    {
-      title:
-        "Biden administration to unveil contractor rule that could upend gig economy",
-      description:
-        "The administration of U.S. President Joe Biden will release a final rule as soon as this week that will make it more difficult for companies to treat workers as independent contractors rather than employees that typically cost a company more, an administration official said",
-    },
-    {
-      title:
-        "&#039;Witness pristine and majestic underwater beauty of Lakshadweep,&#039; says Israel amid India-Maldives row",
-      description:
-        "Israel has expressed its readiness to begin a water desalination project in Lakshadweep",
-    },
-    {
-      title:
-        "India-Maldives row: Traders body calls for boycott of business transactions with the island nation",
-      description:
-        "CAIT stressed on 'the need for mutual respect in diplomatic discourse and condemn any form of disrespect towards the leaders of friendly nations'",
-    },
-    {
-      title: "360 ONE Prime to raise upto Rs 1,000 cr via public issue NCDs",
-      description:
-        "360 ONE Prime will issue Tranche I of secured, rated, listed, redeemable, NCDs, with base issue size of Rs 200 crore, with an option to retain over-subscription of up to Rs 800 crore aggregating to Rs 1,000 crore",
-    },
-    {
-      title:
-        "‘We are working with airlines to improve direct connectivity to Lakshadweep,&#039; says EaseMyTrip CEO amid India-Maldives row",
-      description:
-        "CEO Prashant Pitti said that he in touch with Tourism Minister and Aviation Minister to improve the tourism in Lakshadweep. He also pointed out that there are 4 to 5 good properties on the pristine island",
-    },
-    {
-      title:
-        "Tamil Nadu bags investments worth Rs 6.6 lakh crore at GIM 2024: CM Stalin",
-      description:
-        "Investment proposals to create 26.9 lakh direct and indirect jobs in the southern state, as per announcements made at the two-day Global Investors Meet 2024 in Chennai",
-    },
-    {
-      title:
-        "Sony-Zee merger deal evenly poised, it is still in the works: Sources",
-      description:
-        "Earlier on Monday, a report said Sony is working on sending termination notice to Zee before January 20",
-    },
-    {
-      title:
-        "3,400% increase in on-platform searches for Lakshadweep since PM Modi&#039;s recent visit: MakeMyTrip",
-      description:
-        "Lakshadweep became a major talking point on social media after Prime Minister Modi's visit to the island.",
-    },
-    {
-      title: "Sony plans to call off $10-bn merger With Zee: Report",
-      description:
-        "Standoff over Punit Goenka's leadership in the entity could be the reason for Sony's decision, said a report on Monay",
-    },
-    {
-      title:
-        "What Zomato and iPhones can tell you about how Indian economy is growing",
-      description:
-        "Calling the issue of K-shaped recovery baseless, the report questioned the efficacy of using ages-old proxies such as low 2-wheeler sales or fragmented land holdings to support some pre-destined narratives of India not doing well.",
-    },
-    {
-      title:
-        "Ram temple inauguration: Ayodhya surpasses Goa, Himachal for investment, real estate queries; property rates soar",
-      description:
-        "Ayodhya Ram temple inauguration: The property rates have soared by more than 100 per cent in the past year in the city.",
     },
   ];
   return (
