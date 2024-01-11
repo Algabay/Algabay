@@ -42,14 +42,14 @@ const Header = () => {
   const handleLogout = async () => {
     try {
       await signOut(auth);
+      alert("Do you want to Logout ?");
     } catch (error) {
       console.error("Logout Error:", error.message);
     }
   };
-
-  const headerClasses = `flex h-18 px-6 items-center justify-between fixed w-full bg-white z-10 top-0 ${
+  const headerClasses = `flex h-18 px-6 items-center justify-between fixed w-full z-10 top-0 ${
     scrolling ? "shadow-md" : ""
-  }`;
+  } bg-gradient-to-r from-pink-100 to-indigo-200`;
 
   return (
     <div className={headerClasses}>
@@ -60,32 +60,48 @@ const Header = () => {
         />
       </Link>
 
-      <div className="flex gap-8 mr-8 mt-2">
+      <input
+        type="text"
+        placeholder="Explore Stocks"
+        className="w-[40%]  font-sans h-9 px-5 rounded-full bg-white"
+      />
+
+      <div className="flex gap-8 mr-8 items-center">
+        <div className="flex justify-between gap-10 text-md">
+          <Link href="/About" className="text-md max-sm:hidden">
+            AI Chat
+          </Link>
+          <Link href="/About" className="text-md max-sm:hidden">
+            Portfolios
+          </Link>
+
+          <Link href="/FinanceTools" className="text-md max-sm:hidden">
+            Financial tools
+          </Link>
+          <Link href="/About" className="text-md max-sm:hidden">
+            News
+          </Link>
+        </div>
+
         {user ? (
           <>
-            <p className=" pl-3 py-1  h-9 w-9 rounded-full border border-gray-300  text-md max-sm:text-sm max-sm:h-7 max-sm:w-7 max-sm:px-2 max-sm:py-1 max-sm:mt-1 max-sm:-mr-4">
-              {user.displayName[0]}
-            </p>
-
-            <button
-              onClick={handleLogout}
-              className="text-black border border-gray-300 px-2 py-1 rounded-md text-md hover:bg-blue-50 mb-2 max-sm:text-sm max-sm:-mr-10 max-sm:mt-1"
-            >
-              Logout
+            <button onClick={handleLogout}>
+              <img src="/logout-img.png" className="h-7" />
             </button>
+            <div className="rounded-full text-white h-9 w-9 flex justify-center items-center border border-white text-md max-sm:text-sm max-sm:h-7 max-sm:w-7 max-sm:px-2 max-sm:py-1 max-sm:mt-1 max-sm:-mr-4">
+              {user.displayName &&
+                user.displayName.length > 0 &&
+                user.displayName[0]}
+            </div>
           </>
         ) : (
           <button
             onClick={handleGoogle}
-            className="text-black border border-gray-300 px-2 py-1 rounded-md text-md hover:bg-blue-50 mb-2"
+            className="text-black border border-gray-300 px-2 mt-2 rounded-md text-md hover:bg-blue-50 mb-2"
           >
             Sign In
           </button>
         )}
-
-        <Link href="/About" className="mt-2 text-md max-sm:hidden">
-          About Us
-        </Link>
       </div>
     </div>
   );

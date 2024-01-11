@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
 
-
 const WidgetTop = () => {
   useEffect(() => {
     if (
@@ -18,7 +17,7 @@ const WidgetTop = () => {
         symbols: [
           { proName: "BSE:SENSEX", title: "BSE Sensex" },
           { proName: "BSE:SBIN", title: "SBI India" },
-          { proName: "FX_IDC:INRUSD", title: "INR to USD" },
+          { proName: "FX_IDC:USDINR", title: "USD TO INR" },
           { proName: "BSE:RELIANCE", title: "Reliance Industries Ltd" },
           { proName: "BSE:TATAMTRDVR", title: "Tata Motors Ltd" },
           { proName: "BSE:ASIANPAINT", title: " Asian Paints Ltd" },
