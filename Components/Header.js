@@ -74,7 +74,6 @@ const Header = () => {
             <img
               src={user.photoURL || "/def.png"}
               className="rounded-full h-9 w-9 max-sm:h-7 max-sm:w-7 max-sm:px-2 max-sm:py-1 max-sm:mt-1 max-sm:-mr-4"
-              alt="User Profile"
             />
           </>
         ) : (
