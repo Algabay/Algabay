@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.textColor{
-    color:#3a96ff;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+.textColor {
+  color: #3a96ff;
 }
-.buttonColor{
-    color: white;
-    background-color: #3a96ff;
+.buttonColor {
+  color: white;
+  background-color: #3a96ff;
+}
+.font {
+  font-family: "Inter", sans-serif;
 }

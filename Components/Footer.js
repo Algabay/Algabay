@@ -5,7 +5,18 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div className=" w-full h-36 text-center   px-16 pt-4 max-sm:pt-14 max-sm:px-2">
+      <div className="h-auto  pt-10  shadow-inner max-sm:content-center">
+        <h3 className="text-center text-4xl pb-6 -mt-2 text-gray-700 max-sm:text-2xl underline">
+          Supported By
+        </h3>
+        <div className="w-full  justify-center flex max-sm:hidden">
+          <img src="./supporters.jpeg" className="w-[600px]" />
+        </div>
+        <div className="w-full justify-center flex sm:hidden">
+          <img src="./logoVert.png" className="w-[300px]" />
+        </div>
+      </div>
+      <div className=" w-full h-36 text-center  px-16 pt-4 max-sm:pt-14 max-sm:px-2">
         <div className="flex justify-between max-sm:block ">
           <div className="text-blue-500 text-left max-sm:text-center">
             <h2 className="text-2xl max-sm:text-sm">algabay AI</h2>
