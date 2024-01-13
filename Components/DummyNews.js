@@ -5,144 +5,145 @@ const DummyNews = () => {
   const newsData = [
     {
       title:
-        "Paytm to invest Rs 100 crore in GIFT City to build global financial ecosystem",
+        "&#039;The staff has no clue&#039;: Actor Radhika Apte faces distress with no water or toilet access at airport",
       description:
-        "Paytm's announcement to invest Rs 100 crore in GIFT City came ahead of the Vibrant Gujarat Global Summit 2024, scheduled to be inaugurated by Prime Minister Narendra Modi on January 10. ",
+        "Radhika Apte took to Instagram to share her distressing experience, posting videos and images that captured the predicament of the passengers who were locked in without any access to basic amenities.",
     },
     {
       title:
-        "Suchana Seth case: Bengaluru CEO smothered 4-yr-old son to death, says doctor",
+        "Ex-model Divya Pahuja&#039;s body recovered from Haryana canal after accused&#039;s confession: Police",
       description:
-        "Suchana Seth, Bengaluru CEO of AI startup who has been arrested for allegedly killing her 4-year-old son, was unhappy with a court order that allowed her estranged husband to visit their son every Sunday.",
+        "The body of ex-model Divya Pahuja was retrieved from a canal in Tohna, Haryana, by Gurugram Police. On January 2, she was murdered in a hotel under dubious circumstances.",
     },
     {
       title:
-        "Indian economy may grow at 6.2% next fiscal due to neutral policy settings, positive credit momentum: UBS",
+        "&#039;Precision &amp; Excellence&#039;: Anand Mahindra awe-inspired by IAF jets performing aerial ballet in Mumbai",
       description:
-        "This growth is anticipated due to the favourable combination of neutral policy settings, positive credit momentum, and manageable macroeconomic macros amid a 15-year high household debt levels",
-    },
-    {
-      title: "BlackRock announces cuts of roughly 600 jobs",
-      description:
-        "The job cuts would amount to roughly 600 positions based on BlackRock's workforce of 19,800 at the end of December 2022, the last time its employee numbers were updated.",
+        "The air show, which took place from January 12 to January 14 between 12 pm to 1 pm over Marine Drive, was part of a collaboration between the IAF and the Government of Maharashtra. ",
     },
     {
       title:
-        "Investor Bill Ackman backs bid by dissidents for Harvard board seats",
+        "Start-ups and corporate governance: Here’s why buck stops with the investors",
       description:
-        "The development represents a new challenge to the board, whose 30 members are typically nominated by the university's alumni association.",
-    },
-    {
-      title: "Starbucks India to more than double store count to 1,000 by 2028",
-      description:
-        "Since opening its first cafe in October 2012, Tata Starbucks' store count has grown to 390. It has opened 57 stores so far this fiscal year and had added 71 in the previous fiscal.",
+        "Investors, especially those on an institutional level, are obligated to take on the role of active owners. This includes engaging with the companies they invest in, utilising their voting rights, and participating in shareholder meetings.",
     },
     {
       title:
-        "Biden administration issues rule that could curb &#039;gig&#039; work, contracting",
+        "Grand celebrations across US, billboards displaying Ram Mandir put up in 10 US states ahead of inauguration",
       description:
-        "The U.S. Department of Labor on Tuesday issued a final rule that will force companies to treat some workers as employees rather than less expensive independent contractors, in a move that has riled business groups and will likely prompt legal challenges",
+        "To mark the inauguration of the Ram Temple in Ayodhya, the Hindu American community throughout the US has organised several car rallies and has planned additional events leading up to the 'Pran Pratishtha' in Ayodhya.",
     },
     {
       title:
-        "Hoteliers flock to Ayodhya in anticipation of massive tourist influx",
+        "&#039;Lot of Indian edtech firms tried to do it all themselves,&#039; says Coursera CEO amid Byju&#039;s shrinking valuations: Report",
       description:
-        "From ITC to Taj, leading hotel chains are coming up with properties across the holy town",
+        "'Every time I came to India, everyone was saying 'You are going to get swallowed by Byju's',' reminisced Coursera CEO Jeff Maggioncalda",
+    },
+    {
+      title: "HDFC Life Q3 net profit soars 16% to Rs 365 cr amid market surge",
+      description:
+        "Despite a modest 6 per cent increase in net premium income to Rs 15,273 crore, the company faced challenges selling high-value policies following new taxation introduced in the last Budget.",
     },
     {
       title:
-        "Zee misses $200 million Disney payment deadline amid Sony merger uncertainty",
+        "&#039;Even I work more than 70 hours at this age...&#039;: Sudha Murty backs husband Narayana Murthy",
       description:
-        'Zee panned reports that claimed that Sony was planning to call off its merger. "Company is committed to the merger with Sony and is continuing to work towards a successful closure of the proposed merger,” Zee said.',
+        "The Infosys founder's wife, while supporting his 70-hour work week remark, said that even she works more than 70 hours and one should find joy and passion in doing their work",
     },
     {
       title:
-        "India story intact in worst half decade of growth in 30 years, says World Bank",
+        "Wipro headcount declines for 5th straight quarter, attrition falls to 10-quarter low",
       description:
-        "India forecast an annual growth of 7.3% in the fiscal year ending in March, the highest rate of any of the major global economies.",
+        "On suing former executives who left to join rivals, MD & CEO Thierry Delaporte says there are legal obligations to be kept by employees, which is the case across industries.  ",
     },
     {
       title:
-        "Moody&#039;s cuts rating on Vedanta Resources for second time. Here&#039;s why it&#039;s worried",
+        "Budget 2024: Goldman Sachs says Centre may peg fiscal deficit for FY25 at 5.3%",
       description:
-        'Moody\'s said that Vedanta Resources, the parent of Indian miner Vedanta, will face material liquidity issues over the upcoming 24 months and warned that the "default risk" remains high.',
+        "Interim Budget: Goldman Sachs said the Centre has been able to achieve robust tax collection, primarily through direct taxes in FY24. This has provided the government with some fiscal room to increase spending while still meeting the fiscal deficit target of 5.9 per cent of GDP.",
     },
     {
       title:
-        "Rapido hosts ‘Cab Mahotsav’ in Delhi, plans to create 40,000 jobs",
+        "PM Modi opens Atal Setu, India’s longest sea bridge, to reduce Mumbai-Navi Mumbai commute to 20 mins from 2 hours",
       description:
-        "Over 600 captains attended the event, with guaranteed prizes including refrigerators, washing machines, and televisions.",
+        "Prime Minister Narendra Modi opened the Mumbai Trans Harbour Link (MTHL), the country's longest sea bridge, which would shorten travel time between South Mumbai and Navi Mumbai.",
     },
     {
       title:
-        "Madhya Pradesh: Viral video shows rats feeding on food at IRCTC stall, Indian Railways reacts",
+        "OpenAI CEO Sam Altman ties knot with longtime partner Oliver Mulherin",
       description:
-        "A video on X (formerly Twitter), showcasing rats feasting on food at an IRCTC stall in Madhya Pradesh, has gone viral on social media. The footage was captured by a passenger at the Itarsi Junction railway station.",
+        "As news of their marriage started circulating on social media, with speculation and intrigue, some even humorously questioned whether the wedding images are AI-generated",
     },
     {
       title:
-        "NEET PG 2024 exams rescheduled. Check latest dates and registration process",
+        "Veranda Learning to acquire 50% stake in Tapasya Education Institutions, stock up by 2%",
       description:
-        "Medical aspirants are advised to check detailed schedule at the official website — nbe.edu.in, natboard.edu.in.",
-    },
-    {
-      title: "What explains slowing of manufacturing PMI?",
-      description:
-        "Economists note that it remains robust for now, but hints at moderation in activities",
+        "Last year, Veranda Learning Solutions acquired seven businesses through its wholly-owned subsidiary Veranda Administrative Learning Solutions Pvt Ltd at a total valuation of over Rs 400 crore.",
     },
     {
       title:
-        "Who is Suchana Seth, the Bengaluru CEO arrested for allegedly killing her 4-year-old son?",
+        "Deal activity in India, China, other APAC economies dip 20.4% in 2023: GlobalData",
       description:
-        "Goa DGP Jaspal Singh told India Today that she was accused of murdering her four-year-old son in Goa.",
+        "All major markets in the APAC region saw a decrease in deal activity. China, India, Japan, Australia, South Korea, Singapore, Hong Kong, Indonesia, and New Zealand, stated GlobalData.",
+    },
+    {
+      title: "Govt working with states on upward growth of MSMEs",
+      description:
+        "MSME secretary says focus to grow nano enterprises with new schemes.",
     },
     {
       title:
-        "Cup noodles for Rs 500! Majority of fliers say they were overcharged for water, food on flights",
+        "Kia launches Sonet 2024 facelift in India with prices starting from Rs 7.99 lakh: Check variants, features, other details",
       description:
-        "According to the survey, consumers indicated that products with similar net contents but different names or slightly different brands are sold for a significantly higher MRP onboard flights. ",
+        "Kia has launched the Sonet facelift, with prices ranging from Rs 7.99 lakh to Rs 15.69 lakh. The compact SUV features mild cosmetic changes, feature additions, and continues with the same set of engines and powertrains.",
     },
     {
       title:
-        "Bengaluru CEO murders her 4-year-old son in Goa, arrested while fleeing to Karnataka with body in bag",
+        "Lohri on January 13 or 14? Date, significance, history. Everything you need to know",
       description:
-        "In a shocking incident, a 39-year-old start-up founder from Bengaluru allegedly killed her four-year-old son in Goa. After this, she travelled to Karnataka with her son's body before she was caught.",
+        "According to the Drik Panchang, Makar Sankranti will fall on January 15, making Lohri fall on January 14. In some parts of Punjab, celebrations may occur on January 13.",
     },
     {
       title:
-        "Maldives leader calls for President Mohamed Muizzu&#039;s ouster amid row with India",
+        "Suchana Seth case: Note written with eyeliner found in bag with 4-yr old son’s body",
       description:
-        "Ali Azim, the Parliamentary Minority leader in the Maldives, has called for steps towards the removal of the country's President, Mohamed Muizzu. This call comes in the aftermath of the derogatory remarks made against Prime Minister Narendra Modi",
+        "Bengaluru CEO Suchana Seth had written a note with eyeliner stating that custody of her 4-year old son should remain with her, irrespective of court's order.",
     },
     {
       title:
-        "India should give up any residual dream of British empire: Top Chinese scholar on Maldives",
+        "LIC slapped with two I-T demand notices amounting to Rs 3,529 crore",
       description:
-        "Tensions between India and the Maldives have escalated since President Muizzu, perceived as pro-China, took charge defeating India-friendly Ibrahim Mohamed Solih.",
+        "In an exchange filing, LIC clarified that there is no material impact on financials, operations or other activities of the corporation due to these orders.",
     },
     {
       title:
-        "Airline operators shall submit quarterly fatigue reports after analysis: DGCA",
+        "Divya Pahuja murder: One accused held at Kolkata airport days after police issued look-out circulars",
       description:
-        "The FDTL regulations include increased rest periods, redefining night duty, restricting flight timings and number of landings during night. ",
+        "Divya Pahuja, an accused in the alleged fake encounter of dreaded gangster Sandeep Gadoli, was out on bail after spending seven years in prison. She was killed on January 2.",
     },
     {
       title:
-        "Mahua Moitra expulsion: Directorate of Estates issues eviction notice to TMC leader",
+        "Delhi fog: Delhi airport reports zero visibility at 7:30 am; no significant change expected for next 2 hours",
       description:
-        "Mahua Moitra cash-for-query case: The Lok Sabha Secretariat had cancelled the allotment when she was disqualified on December 8, instructing her to vacate the property at 9B, Telegraph Lane within a month by January 7.",
+        "Delhi weather: On Thursday, Delhi registered a minimum temperature of 5.8 degrees Celsius, two degrees below normal. The maximum temperature was 18.1 degrees Celsius, also two degrees below normal. ",
     },
     {
       title:
-        "Cold conditions, dense fog grip North India; light rain likely in Delhi today",
+        "Ayodhya Ram temple inauguration: ‘BJP can’t give certificate of good or bad Hindu,’ says Congress’ Sachin Pilot",
       description:
-        "Cold conditions and dense fog enveloped many parts of North India on Tuesday morning, including Delhi and Lucknow. The minimum temperature in the national capital dropped to 6 degrees Celsius",
+        "Ayodhya Ram temple inauguration: Congress' Sachin Pilot emphasised that religion is a personal choice and that the BJP has no authority to categorise any Hindu as good or bad.",
     },
     {
       title:
-        "Gautam Adani-led Adani Group to invest Rs 42,700 crore in Tamil Nadu",
+        "Pakistan gets a $700 million bailout cheque from IMF after &#039;reform review&#039;",
       description:
-        "Adani Green Energy stated that it would invest Rs 24,500 crore – the biggest investment among the group companies – in three pump storage projects in the next 5-7 years.",
+        "A mission from the Washington-based global lender reviewed the country’s economic performance during the first three months of the fiscal year – from July to September, 2023.",
+    },
+    {
+      title:
+        "Vivek Ramaswamy: &#039;BRICS&#039; common currency could be a major problem for US, govt must...&#039;",
+      description:
+        'Ramaswamy, a billionaire entrepreneur-turned-politician, said the BRICS is establishing a currency backed by gold to replace the dollar as the reserve currency of the world. "This is a major problem for the United States."',
     },
   ];
   return (
