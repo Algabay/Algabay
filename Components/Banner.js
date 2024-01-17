@@ -60,10 +60,10 @@ const Banner = () => {
             </div>
           )}
         </div>
-        <div className="md:w-auto w-full flex justify-center items-center p-8 md:p-14">
+        <div className="md:w-auto w-full flex justify-center items-center md:p-14">
           <img
             src="/featuress.jpg"
-            className="rounded-lg shadow-md max-w-full h-[400px]"
+            className="rounded-lg shadow-md max-sm:shadow-none max-w-full h-[400px]"
             alt="Features"
           />
         </div>

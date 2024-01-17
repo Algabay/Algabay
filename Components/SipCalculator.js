@@ -30,13 +30,7 @@ const SipCalculator = () => {
 
   return (
     <>
-      <Link href="/Home">
-        <button className="px-4 py-1 shadow-md text-gray-600 rounded-md text-md border border-gray-300 ml-10 mt-10">
-          Back
-        </button>
-      </Link>
-
-      <div className="flex justify-center p-10">
+      <div className="flex justify-center p-5">
         <div className="w-full max-w-screen-lg border border-gray-300 shadow-lg p-10 rounded-lg flex flex-col md:flex-row justify-between">
           <div className="w-full md:w-1/2 md:pr-8">
             <h1 className="text-3xl text-gray-700 mb-4">SIP Calculator</h1>

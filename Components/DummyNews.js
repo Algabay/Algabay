@@ -5,150 +5,153 @@ const DummyNews = () => {
   const newsData = [
     {
       title:
-        "&#039;The staff has no clue&#039;: Actor Radhika Apte faces distress with no water or toilet access at airport",
+        "Apple opens state-of-the-art, sustainable corporate office in Bengaluru",
       description:
-        "Radhika Apte took to Instagram to share her distressing experience, posting videos and images that captured the predicament of the passengers who were locked in without any access to basic amenities.",
+        "Spanning 15 floors, it can accommodate a workforce of up to 1,200. It also boasts dedicated lab spaces, collaborative areas, and wellness facilities",
     },
     {
       title:
-        "Ex-model Divya Pahuja&#039;s body recovered from Haryana canal after accused&#039;s confession: Police",
+        "Adani Group to invest Rs 12,400 cr in Telangana, Rs 1,000 cr earmarked for drone systems, missile development",
       description:
-        "The body of ex-model Divya Pahuja was retrieved from a canal in Tohna, Haryana, by Gurugram Police. On January 2, she was murdered in a hotel under dubious circumstances.",
+        "WEF2024: Gautam Adani, Chairman, Adani Group, said: “The new government in the Telangana has been extremely investor friendly and with the new planned policies, should attract more investments. Adani group will continue growing in Telangana at high pace with the provided.”",
     },
     {
       title:
-        "&#039;Precision &amp; Excellence&#039;: Anand Mahindra awe-inspired by IAF jets performing aerial ballet in Mumbai",
+        "Former business partners file defamation suit against MS Dhoni, Delhi HC to hear matter on Jan 18: Report",
       description:
-        "The air show, which took place from January 12 to January 14 between 12 pm to 1 pm over Marine Drive, was part of a collaboration between the IAF and the Government of Maharashtra. ",
+        "The hearing in the matter is scheduled for January 18 under Justice Prathiba M Singh.",
     },
     {
       title:
-        "Start-ups and corporate governance: Here’s why buck stops with the investors",
+        "Zee-Sony merger: Zee may claim damages from Sony if the deal fails at this stage, says report ",
       description:
-        "Investors, especially those on an institutional level, are obligated to take on the role of active owners. This includes engaging with the companies they invest in, utilising their voting rights, and participating in shareholder meetings.",
+        "Top company sources said that Zee was compelled to close down certain ventures to adhere to the merger conditions set by the Competition Commission of India (CCI). If the merger fails at this stage, it will be a huge loss for Zee.",
     },
     {
       title:
-        "Grand celebrations across US, billboards displaying Ram Mandir put up in 10 US states ahead of inauguration",
+        "Drastic drop in study permits to Indian students after diplomatic row: Canadian minister",
       description:
-        "To mark the inauguration of the Ram Temple in Ayodhya, the Hindu American community throughout the US has organised several car rallies and has planned additional events leading up to the 'Pran Pratishtha' in Ayodhya.",
+        "The dispute was triggered by Canadian Prime Minister Justin Trudeau's claim in June of evidence linking Indian government agents to the killing of Khalistani terrorist Hardeep Singh Nijjar in British Columbia.",
     },
     {
       title:
-        "&#039;Lot of Indian edtech firms tried to do it all themselves,&#039; says Coursera CEO amid Byju&#039;s shrinking valuations: Report",
+        "Next Republican debate canceled after Nikki Haley says she’ll only participate if Donald Trump does",
       description:
-        "'Every time I came to India, everyone was saying 'You are going to get swallowed by Byju's',' reminisced Coursera CEO Jeff Maggioncalda",
-    },
-    {
-      title: "HDFC Life Q3 net profit soars 16% to Rs 365 cr amid market surge",
-      description:
-        "Despite a modest 6 per cent increase in net premium income to Rs 15,273 crore, the company faced challenges selling high-value policies following new taxation introduced in the last Budget.",
+        "Her statement was released a day after the all-important Iowa caucuses, in which Trump marked a wide margin of victory over both Haley and DeSantis.",
     },
     {
       title:
-        "&#039;Even I work more than 70 hours at this age...&#039;: Sudha Murty backs husband Narayana Murthy",
+        "Unprovoked violation: Pak warns of serious consequences after Iran attacks Baloch bases",
       description:
-        "The Infosys founder's wife, while supporting his 70-hour work week remark, said that even she works more than 70 hours and one should find joy and passion in doing their work",
+        "State-run Mehr news agency reported that the Jaish ul-Adl's bases targeted in the Kuhe Sabz area were one of the largest bases of the terror group.",
     },
     {
       title:
-        "Wipro headcount declines for 5th straight quarter, attrition falls to 10-quarter low",
+        "Delhi freezes as mercury drops to 4 degrees Celsius; IMD issues orange, red alert for dense fog, cold wave conditions",
       description:
-        "On suing former executives who left to join rivals, MD & CEO Thierry Delaporte says there are legal obligations to be kept by employees, which is the case across industries.  ",
+        "This could lead to several flights and trains getting cancelled or delayed or diverted.  ",
     },
     {
       title:
-        "Budget 2024: Goldman Sachs says Centre may peg fiscal deficit for FY25 at 5.3%",
+        "Fitch says India to remain one of fastest-growing countries but...",
       description:
-        "Interim Budget: Goldman Sachs said the Centre has been able to achieve robust tax collection, primarily through direct taxes in FY24. This has provided the government with some fiscal room to increase spending while still meeting the fiscal deficit target of 5.9 per cent of GDP.",
+        "The global ratings agency estimated India’s economy will grow 6.9% this fiscal year ending March 2024 and by 6.5% the year after and forecast headline inflation will ease towards 4.7% by the end of 2024.",
     },
     {
       title:
-        "PM Modi opens Atal Setu, India’s longest sea bridge, to reduce Mumbai-Navi Mumbai commute to 20 mins from 2 hours",
+        "The driver must have good contacts: Autorickshaw seen on Mumbais Atal Setu, leaves netizens puzzled",
       description:
-        "Prime Minister Narendra Modi opened the Mumbai Trans Harbour Link (MTHL), the country's longest sea bridge, which would shorten travel time between South Mumbai and Navi Mumbai.",
+        "The image circulated on social media, raising questions about how the autorickshaw managed to bypass toll booths, which are designed to prevent such vehicles from accessing the bridge.",
     },
     {
       title:
-        "OpenAI CEO Sam Altman ties knot with longtime partner Oliver Mulherin",
+        "‘This is when I lost my cool…’: Ranvir Shorey narrates distressing 10-hour IndiGo flight delay experience",
       description:
-        "As news of their marriage started circulating on social media, with speculation and intrigue, some even humorously questioned whether the wedding images are AI-generated",
+        "Ranvir Shorey, who had checked in two hours prior to the original departure time along with a group of seven passengers, was informed of the initial three-hour delay only upon arrival at the airport.",
     },
     {
       title:
-        "Veranda Learning to acquire 50% stake in Tapasya Education Institutions, stock up by 2%",
+        "Freshers or existing employees should upskill to earn more: TCS HR head on stagnant salaries at entry level",
       description:
-        "Last year, Veranda Learning Solutions acquired seven businesses through its wholly-owned subsidiary Veranda Administrative Learning Solutions Pvt Ltd at a total valuation of over Rs 400 crore.",
+        "TCS in its Q3 FY24 results stated that its headcount has reduced for the second consecutive quarter by 5,680 employees in the October to December 2023 period.",
     },
     {
       title:
-        "Deal activity in India, China, other APAC economies dip 20.4% in 2023: GlobalData",
+        "War rooms at six metro airports, and more: Scindia unveils 6-point plan to reduce flight delay",
       description:
-        "All major markets in the APAC region saw a decrease in deal activity. China, India, Japan, Australia, South Korea, Singapore, Hong Kong, Indonesia, and New Zealand, stated GlobalData.",
-    },
-    {
-      title: "Govt working with states on upward growth of MSMEs",
-      description:
-        "MSME secretary says focus to grow nano enterprises with new schemes.",
+        "'Have sought incidence reporting thrice daily for all the 6 metro airports,' says Scindia",
     },
     {
       title:
-        "Kia launches Sonet 2024 facelift in India with prices starting from Rs 7.99 lakh: Check variants, features, other details",
+        "Hyundai Creta 2024 launched in India at Rs 11 lakh: Check variants, price list, features, more",
       description:
-        "Kia has launched the Sonet facelift, with prices ranging from Rs 7.99 lakh to Rs 15.69 lakh. The compact SUV features mild cosmetic changes, feature additions, and continues with the same set of engines and powertrains.",
+        "The Hyundai Creta 2024 has a new dashboard featuring a 10.25-inch touchscreen that merges with the new 10.25-inch digital driver display from the Alcazar",
     },
     {
       title:
-        "Lohri on January 13 or 14? Date, significance, history. Everything you need to know",
+        "More trouble for Zee: SC upholds HC ruling to send Siti Networks loan default case to arbitration",
       description:
-        "According to the Drik Panchang, Makar Sankranti will fall on January 15, making Lohri fall on January 14. In some parts of Punjab, celebrations may occur on January 13.",
+        "In 2020, Siti Broadband had availed of a loan of Rs 5 crore from Aditya Birla Finance, to be repaid in 19 quarterly instalments. According to Aditya Birla Finance, Siti Broadband has been defaulting on payments since November 2021.",
     },
     {
       title:
-        "Suchana Seth case: Note written with eyeliner found in bag with 4-yr old son’s body",
+        "86% of CEOs think India’s economic growth will improve over the next 12 months: PwC’s Survey",
       description:
-        "Bengaluru CEO Suchana Seth had written a note with eyeliner stating that custody of her 4-year old son should remain with her, irrespective of court's order.",
+        "Study finds that 62 per cent of Indian CEOs are confident about their company’s growth over the next 12 months",
+    },
+    {
+      title: "Start-up IPOs: Sebi’s continued efforts to empower investors",
+      description:
+        "On National Startup Day, here’s a look at the various steps taken by capital markets regulator Sebi to enhance disclosure and listing norms for start-ups",
     },
     {
       title:
-        "LIC slapped with two I-T demand notices amounting to Rs 3,529 crore",
+        "Hyundai Creta SUV 2024 launch today: What to expect, how to watch LIVE",
       description:
-        "In an exchange filing, LIC clarified that there is no material impact on financials, operations or other activities of the corporation due to these orders.",
+        "The launch event will be broadcasted live online, allowing car enthusiasts from around the world to witness the unveiling in real-time",
     },
     {
       title:
-        "Divya Pahuja murder: One accused held at Kolkata airport days after police issued look-out circulars",
+        "Litigation finance start-up launches credit line for firms to settle lawsuits",
       description:
-        "Divya Pahuja, an accused in the alleged fake encounter of dreaded gangster Sandeep Gadoli, was out on bail after spending seven years in prison. She was killed on January 2.",
+        "On the eve of National Startup Day, Gurugram-based LegalPay launches zero-interest credit line for businesses to settle legal disputes; aims to disburse ₹200 crore in 2024",
     },
     {
       title:
-        "Delhi fog: Delhi airport reports zero visibility at 7:30 am; no significant change expected for next 2 hours",
+        "Confidence unleashed! Promoters raised their stake in over 100 small-cap companies in Q3",
       description:
-        "Delhi weather: On Thursday, Delhi registered a minimum temperature of 5.8 degrees Celsius, two degrees below normal. The maximum temperature was 18.1 degrees Celsius, also two degrees below normal. ",
+        "Initial shareholding data shows that the promoters of Wardwizard Healthcare increased their stake the most to 74.08 per cent in Q3FY24 from 14.08 per cent in the preceding quarter",
     },
     {
       title:
-        "Ayodhya Ram temple inauguration: ‘BJP can’t give certificate of good or bad Hindu,’ says Congress’ Sachin Pilot",
+        "Vivek Ramaswamy ends his US Presidential race, announces his support for Donald Trump: Report",
       description:
-        "Ayodhya Ram temple inauguration: Congress' Sachin Pilot emphasised that religion is a personal choice and that the BJP has no authority to categorise any Hindu as good or bad.",
+        "Ramaswamy, 38, had earlier told the Wall Street Journal that Trump may become ineligible to run due to his many legal challenges.",
     },
     {
       title:
-        "Pakistan gets a $700 million bailout cheque from IMF after &#039;reform review&#039;",
+        "Naukri.com founder Sanjeev Bikhchandani backs Narayana Murthy but says 70-hour work week is not religion",
       description:
-        "A mission from the Washington-based global lender reviewed the country’s economic performance during the first three months of the fiscal year – from July to September, 2023.",
+        "In a conversation with Jivraj Singh Sachar on the Indian Silicon Valley Bank podcast, Bikhchandani emphasised that there was no entrepreneur in India who was successful without a 'work-life integration'.",
+    },
+    {
+      title: "Oil ticks up as Middle East crisis escalates, tankers divert",
+      description:
+        "Brent crude futures LCOc1 rose 12 cents, or about 0.2%, to $78.27 a barrel at 0002 GMT. The contract had settled 14 cents lower on Monday.",
     },
     {
       title:
-        "Vivek Ramaswamy: &#039;BRICS&#039; common currency could be a major problem for US, govt must...&#039;",
+        "5% folks seem aggravated: EaseMyTrip CEO defends suspension of flight booking to Maldives",
       description:
-        'Ramaswamy, a billionaire entrepreneur-turned-politician, said the BRICS is establishing a currency backed by gold to replace the dollar as the reserve currency of the world. "This is a major problem for the United States."',
+        "According to Nishant Pitti, despite the potential loss of revenue and alienation of some users, the company experienced a surge in support from the Indian public, with app downloads increasing by 280% in the last week.",
     },
   ];
   return (
     <>
-      <div className="grid gap-8 grid-cols-1 mt-8 max-sm:px-6 px-20 py-8">
+      <div className="grid gap-8 grid-cols-1 mt-8 max-sm:px-6 px-24 py-8">
+        <h4 className=" text-2xl font-thin text-lime-400">
+          TOP NEWS INSIGHTS ↘
+        </h4>
         {newsData.map((news, index) => (
           <div
             key={index}

@@ -4,7 +4,7 @@ import Link from "next/link";
 const CalculatorCard = ({ href, title, description, imageSrc }) => {
   return (
     <Link href={href}>
-      <div className="h-44 w-44 max-sm:h-36 max-sm:w-36 border border-gray-300 bg-white rounded-xl flex flex-col items-center justify-center p-3 cursor-pointer hover:shadow-xl transition duration-300 ease-in-out shadow-md">
+      <div className="h-44 w-44 max-sm:h-36 max-sm:w-36  bg-white rounded-xl flex flex-col items-center justify-center p-3 cursor-pointer hover:shadow-xl transition duration-300 ease-in-out shadow-md">
         <h4 className="text-xl pt-1 text-gray-600">{title}</h4>
         <p className="text-xs text-center mt-1 text-gray-600">{description}</p>
         <img
@@ -19,11 +19,11 @@ const CalculatorCard = ({ href, title, description, imageSrc }) => {
 
 const CalculatorsBanner = () => {
   return (
-    <div className="bg-white w-full px-4 sm:px-8 lg:px-24">
-      <div className="mx-4 sm:mx-8 mt-6 text-3xl text-gray-600 font-sans font-light">
-        Financial Calculators →
-      </div>
-      <div className="flex flex-col sm:flex-row justify-between px-4 sm:px-8 py-4 sm:py-10 max-sm:grid max-sm:grid-cols-2 max-sm:gap-4">
+    <div className="bg-white w-full h-[40vh] px-4 sm:px-8 lg:px-24">
+      <h4 className="my-4 text-2xl font-thin text-lime-400">
+        FINANCIAL CALCULATORS ↘
+      </h4>
+      <div className="flex flex-col sm:flex-row justify-between px-4 py-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-4 bg-gradient-to-r from-sky-100 to-lime-100 rounded-lg">
         <CalculatorCard
           href="Interest"
           title="Interest"
