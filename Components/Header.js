@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import { GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
 import { auth } from "@/app/firebase/config";
@@ -9,7 +9,10 @@ const Header = () => {
   const [user, setUser] = useState(null);
   const [scrolling, setScrolling] = useState(false);
   const router = useRouter();
+  const [dropClick, setdropClick] = useState(false);
+  const dropdownRef = useRef(null);
 
+  // toggles the shadow for header on scroll
   useEffect(() => {
     const handleScroll = () => {
       setScrolling(window.scrollY > 0);
@@ -22,29 +25,46 @@ const Header = () => {
     };
   }, []);
 
+  // toggles the drop box
+  const handleToggle = () => {
+    setdropClick(!dropClick);
+  };
+
+  // close the dropdown when clicking outside
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setdropClick(false);
+    }
+  };
+
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       setUser(user);
     });
 
+    document.addEventListener("mousedown", handleClickOutside);
+
     return () => {
       unsubscribe();
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
+  // google sign in
   const handleGoogle = async () => {
     try {
       const provider = new GoogleAuthProvider();
       await signInWithPopup(auth, provider);
       router.push("/Home");
+      console.log(user);
     } catch (error) {
       console.error("Google Sign-In Error:", error.message);
     }
   };
 
+  // google logout
   const handleLogout = async () => {
     try {
-      alert("Do you want to Logout ?");
       await signOut(auth);
       router.push("/");
     } catch (error) {
@@ -52,40 +72,85 @@ const Header = () => {
     }
   };
 
-  const headerClasses = `flex h-18 px-6 items-center justify-between fixed w-full z-10 top-0 ${
+  const headerClasses = `flex h-18 px-6 max-sm:px-4 items-center justify-between fixed w-full z-10 top-0 ${
     scrolling ? "shadow-md" : ""
-  } bg-gradient-to-r from-pink-100 to-indigo-200`;
+  } bg-gradient-to-r from-white to-white`;
 
   return (
-    <div className={headerClasses}>
-      <Link href="/Home">
-        <img
-          src="/logo.png"
-          className="h-10 mx-6 mt-2 mb-2 max-sm:h-8 max-sm:-mx-2"
-        />
-      </Link>
+    <>
+      <div className={headerClasses}>
+        <Link href="/Home">
+          <img src="/logo.png" className="h-10 my-2 mx-6 max-sm:mx-2" />
+        </Link>
 
-      <div className="flex gap-8 mr-8 items-center">
-        {user ? (
-          <>
-            <button onClick={handleLogout}>
-              <img src="/logout-img.png" className="h-7 opacity-80" />
+        <input
+          type="text"
+          placeholder="explore stocks"
+          className="h-10 rounded-full w-[40%] px-4 border border-gray-200 max-sm:hidden"
+        />
+
+        <div className="flex gap-8 mr-8 items-center">
+          {user ? (
+            <>
+              <button onClick={handleToggle}>
+                <img
+                  src={user.photoURL || "/def.png"}
+                  className="rounded-full h-9 w-9 "
+                />
+              </button>
+            </>
+          ) : (
+            <button
+              className="font px-3 py-1 mt-2 rounded-md text-md text-white hover:bg-blue-500 mb-2 bg-blue-400"
+              onClick={handleGoogle}
+            >
+              Sign In
             </button>
-            <img
-              src={user.photoURL || "/def.png"}
-              className="rounded-full h-9 w-9 max-sm:h-7 max-sm:w-7 max-sm:px-2 max-sm:py-1 max-sm:mt-1 max-sm:-mr-4"
-            />
-          </>
-        ) : (
-          <button
-            className="text-gray-600  font px-3 py-1 mt-2 rounded-md text-md hover:bg-blue-500 hover:text-white mb-2 bg-white"
-            onClick={handleGoogle}
-          >
-            Sign In
-          </button>
-        )}
+          )}
+        </div>
       </div>
-    </div>
+      {dropClick && (
+        <div
+          ref={dropdownRef}
+          className="h-auto w-auto right-0 fixed  p-5 z-40 "
+        >
+          {user ? (
+            <>
+              <div className="h-auto w-48 bg-white border rounded-2xl shadow-xl p-5">
+                <div className="flex flex-col items-center my-4">
+                  <img
+                    src={user.photoURL || "/def.png"}
+                    className="rounded-full h-9 w-9 mb-2"
+                    alt="User Profile"
+                  />
+                  {user.displayName && user.displayName.length > 0 && (
+                    <p className="text-gray-800 text-md font-semibold">
+                      {user.displayName}
+                    </p>
+                  )}
+                </div>
+
+                <div className="flex justify-center py-3 my-4">
+                  <button
+                    onClick={handleLogout}
+                    className="text-xl text-gray-700 flex items-center gap-2 px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200 focus:outline-none focus:ring focus:border-blue-300"
+                  >
+                    <img
+                      src="/logout-img.png"
+                      className="h-6 opacity-80"
+                      alt="Logout"
+                    />
+                    Logout
+                  </button>
+                </div>
+              </div>
+            </>
+          ) : (
+            <></>
+          )}
+        </div>
+      )}
+    </>
   );
 };
 
