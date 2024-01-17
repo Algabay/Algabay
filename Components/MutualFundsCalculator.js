@@ -66,12 +66,7 @@ const MutualFundsCalculator = () => {
   return (
     <>
       <div className="h-auto w-auto">
-        <Link href="/Home">
-          <button className="px-4 py-1 shadow-md text-gray-600 rounded-md text-md border border-gray-300 ml-10 mt-10">
-            Back
-          </button>
-        </Link>
-        <div className="flex justify-center py-10 max-sm:px-10">
+        <div className="flex justify-center py-5 max-sm:px-10">
           <div className="w-full max-w-screen-lg bg-white rounded-lg shadow-lg border border-gray-200">
             <div className="p-8 flex flex-col md:flex-row justify-between">
               <div className="md:w-1/2 md:pr-8">

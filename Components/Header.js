@@ -83,13 +83,13 @@ const Header = () => {
           <img src="/logo.png" className="h-10 my-2 mx-6 max-sm:mx-2" />
         </Link>
 
-        <input
-          type="text"
-          placeholder="explore stocks"
-          className="h-10 rounded-full w-[40%] px-4 border border-gray-200 max-sm:hidden"
-        />
-
         <div className="flex gap-8 mr-8 items-center">
+          <Link
+            href="/Portfolios"
+            className="bg-lime-50 py-1 px-2 rounded-md text-gray-600"
+          >
+            PORTFOLIOS
+          </Link>
           {user ? (
             <>
               <button onClick={handleToggle}>

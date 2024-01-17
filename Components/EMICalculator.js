@@ -68,11 +68,6 @@ const EmiCalculator = () => {
   return (
     <>
       <div className="h-auto">
-        <Link href="/Home">
-          <button className="px-4 py-1 shadow-md text-gray-600 rounded-md text-md border border-gray-300 ml-10 mt-10">
-            Back
-          </button>
-        </Link>
         <div className="max-sm:px-10">
           <div className="w-full max-w-screen-lg mb-10 py-5 mx-auto mt-8 border border-gray-200 rounded-xl shadow-lg">
             <div className="p-8 flex flex-col md:flex-row justify-between">

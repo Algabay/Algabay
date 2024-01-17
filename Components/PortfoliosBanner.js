@@ -1,10 +1,10 @@
 import React from "react";
 
-const Portfolios = () => {
+const PortfoliosBanner = () => {
   return (
     <div className="container mx-auto my-10 px-10">
-      <h4 className="text-3xl text-gray-800 font-sans font-light mb-8">
-        Top AI Portfolios →
+      <h4 className="my-4 text-2xl font-thin text-lime-400">
+        TOP PORTFOLIOS BY AI ↘
       </h4>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 cursor-pointer">
         {portfolios.map((portfolio, index) => (
@@ -88,4 +88,4 @@ const portfolios = [
   },
 ];
 
-export default Portfolios;
+export default PortfoliosBanner;
