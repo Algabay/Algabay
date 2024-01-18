@@ -76,7 +76,7 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="h-screen w-full bg-white flex items-center px-10 gap-10">
+      <div className="h-[80vh] w-full bg-white flex items-center px-20 gap-10">
         <motion.div
           initial={{ opacity: 0, x: -80 }}
           animate={{ opacity: 1, x: 0 }}
@@ -86,7 +86,7 @@ const Banner = () => {
         >
           <h4 className="text-3xl font-serif">Introducing our Finance GPT</h4>{" "}
           <br />
-          <h4 className="text-2xl font-thin">
+          <h4 className="text-xl font-thin">
             “A powerhouse for financial insights. Precision analysis, strategic
             forecasting, and efficient automation redefine your financial
             operations. Elevate decision making with new AI technology.”
@@ -94,33 +94,11 @@ const Banner = () => {
         </motion.div>
         <img
           src="/chatimg.png"
-          className="w-[60vw] h-[60vh] rounded-xl shadow-lg"
+          className="h-[55vh] w-[55vw] rounded-xl shadow-lg"
         />
       </div>
-      <div className="h-screen w-full bg-white flex items-center px-10 gap-10">
-        v <img src="/chatimg.png" className="h-[55vh] rounded-xl shadow-lg" />
-        <motion.div
-          initial={{ opacity: 0, x: -80 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -50 }}
-          transition={{ duration: 1 }}
-          className="text-center"
-        >
-          <h4 className="text-3xl font-serif">
-            Experience AI precision <br />
-            optimised Portfolios
-          </h4>{" "}
-          <br />
-          <h4 className="text-2xl font-thin">
-            “Benefit from tailored, dynamic strategies for diverse financial
-            goals. Navigate risks with continuous AI adjustments, seizing
-            opportunities. Effortlessly manage your portfolio through our
-            user-friendly, intuitive interface.”
-          </h4>
-        </motion.div>
-      </div>
-
-      <div className="h-screen w-full bg-white px-10 flex items-center gap-10">
+      <div className="h-[80vh] w-full bg-white flex items-center px-14 gap-16">
+        <img src="/portfolio.png" className="h-[45vh]  rounded-xl shadow-lg" />
         <motion.div
           initial={{ opacity: 0, x: -80 }}
           animate={{ opacity: 1, x: 0 }}
@@ -129,20 +107,41 @@ const Banner = () => {
           className="text-left"
         >
           <h4 className="text-3xl font-serif">
-            Empower your financial journey with our AI-crafted tools
+            Experience AI optimised Portfolios
           </h4>{" "}
           <br />
-          <h4 className="text-2xl font-thin">
-            “From Interest calculations to SIP planning,
-            <br />
-            mutual fund analysis and EMI computations,
-            <br />
-            our tools bring precision and efficiency to your fingertips.
-            Navigate the financial landscape with confidence using intelligent
-            automation.”
+          <h4 className="text-xl font-thin">
+            “Benefit from tailored, dynamic strategies for diverse financial
+            goals. Navigate risks with continuous AI adjustments, seizing
+            opportunities. Effortlessly manage your portfolio through our
+            user-friendly, intuitive interface.”
           </h4>
         </motion.div>
-        <img src="/sipimg.png" className="h-[55vh] rounded-xl shadow-lg" />
+      </div>
+
+      <div className="h-[80vh] w-full bg-white flex items-center px-20 gap-10">
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -50 }}
+          transition={{ duration: 1 }}
+          className="text-left"
+        >
+          <h4 className="text-3xl font-serif">
+            Empower your finance with AI tools
+          </h4>{" "}
+          <br />
+          <h4 className="text-xl font-thin">
+            “From Interest calculations to SIP planning, mutual fund analysis
+            and EMI computations, our tools bring precision and efficiency to
+            your fingertips. Navigate the financial landscape with confidence
+            using intelligent automation.”
+          </h4>
+        </motion.div>
+        <img
+          src="/sipimg.png"
+          className="h-[50vh] w-[50vw] rounded-xl shadow-md"
+        />
       </div>
     </>
   );

@@ -72,6 +72,24 @@ const Header = () => {
     }
   };
 
+  const [popupVisible, setPopupVisible] = useState(false);
+
+  const showPopup = () => {
+    setPopupVisible(true);
+
+    setTimeout(() => {
+      setPopupVisible(false);
+    }, 5000);
+  };
+
+  const handleAiChatClick = () => {
+    if (!user) {
+      showPopup();
+    } else {
+      router.push("/Chat");
+    }
+  };
+
   const headerClasses = `flex h-18 px-6 max-sm:px-4 items-center justify-between fixed w-full z-10 top-0 ${
     scrolling ? "shadow-md" : ""
   } bg-gradient-to-r from-white to-white`;
@@ -84,24 +102,12 @@ const Header = () => {
         </Link>
 
         <div className="flex gap-8 mr-8 items-center">
-          <Link
-            href="/Chat"
+          <button
+            onClick={handleAiChatClick}
             className="bg-sky-50 py-1 px-2 rounded-md text-gray-600"
           >
             AI Chat
-          </Link>
-          <Link
-            href="/Portfolios"
-            className="bg-sky-50 py-1 px-2 rounded-md text-gray-600"
-          >
-            Portfolios
-          </Link>
-          <Link
-            href="/Tools"
-            className="bg-sky-50 py-1 px-2 rounded-md text-gray-600"
-          >
-            Tools
-          </Link>
+          </button>
 
           {user ? (
             <>
@@ -122,6 +128,12 @@ const Header = () => {
           )}
         </div>
       </div>
+
+      {popupVisible && (
+        <div className="fixed bottom-4 right-4 bg-white p-4 rounded-md shadow-md">
+          Please login first!
+        </div>
+      )}
       {dropClick && (
         <div
           ref={dropdownRef}

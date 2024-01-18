@@ -4,12 +4,12 @@ import Link from "next/link";
 const CalculatorCard = ({ href, title, description, imageSrc }) => {
   return (
     <Link href={href}>
-      <div className="h-44 w-44 max-sm:h-36 max-sm:w-36  bg-white rounded-xl flex flex-col items-center justify-center p-3 cursor-pointer hover:shadow-xl transition duration-300 ease-in-out shadow-md">
-        <h4 className="text-xl pt-1 text-gray-600">{title}</h4>
-        <p className="text-xs text-center mt-1 text-gray-600">{description}</p>
+      <div className="w-48 h-48 max-sm:w-32 max-sm:h-32 bg-white rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer hover:shadow-xl transition duration-300 ease-in-out shadow-md m-10 border border-gray-100">
+        <h4 className="text-lg text-gray-700">{title}</h4>
+        <p className="text-sm text-center mt-1 text-gray-600">{description}</p>
         <img
           src={imageSrc}
-          className="h-14 max-sm:h-8 mt-2"
+          className="h-16 max-sm:h-10 mt-2"
           alt={`${title} Calculator Image`}
         />
       </div>
@@ -19,11 +19,8 @@ const CalculatorCard = ({ href, title, description, imageSrc }) => {
 
 const CalculatorsBanner = () => {
   return (
-    <div className="bg-white w-full h-[40vh] px-4 sm:px-8 lg:px-24">
-      <h4 className="my-4 text-2xl font-thin text-lime-400">
-        Financial Calculators ↘
-      </h4>
-      <div className="flex flex-col sm:flex-row justify-between px-4 py-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-4 bg-gradient-to-r from-sky-100 to-lime-100 rounded-lg">
+    <div className="grid grid-cols-1 sm:grid-cols-2 h-[90vh] justify-center items-center px-4 py-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-4 rounded-xl">
+      <div className="flex flex-col items-center justify-center">
         <CalculatorCard
           href="Interest"
           title="Interest"
@@ -36,6 +33,8 @@ const CalculatorsBanner = () => {
           description="Calculate your SIP investments easily"
           imageSrc="/calculatorImgs/4.png"
         />
+      </div>
+      <div className="flex flex-col items-center justify-center">
         <CalculatorCard
           href="MfCalculator"
           title="Mutual Fund"

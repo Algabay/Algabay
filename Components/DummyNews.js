@@ -149,7 +149,7 @@ const DummyNews = () => {
   return (
     <>
       <div className="grid gap-8 grid-cols-1 mt-8 max-sm:px-6 px-24 py-8">
-        <h4 className=" text-2xl font-thin text-lime-400">
+        <h4 className=" text-2xl font-thin text-sky-400">
           TOP NEWS INSIGHTS ↘
         </h4>
         {newsData.map((news, index) => (

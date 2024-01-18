@@ -77,83 +77,77 @@ const Chat = () => {
 
     setIsTyping(false);
   };
-
   return (
-    <div className="px-24 max-sm:px-2 w-full h-[100vh] bg-white">
-      <h4 className="my-4 text-2xl font-thin text-lime-400">
-        CHAT WITH ALGABAY AI ↘
-      </h4>
-      <div className="w-full h-[85vh] bg-gradient-to-r from-pink-100 to-violet-300 rounded-lg shadow-md relative py-5">
-        <div
-          ref={chatContainerRef}
-          className="flex flex-col space-y-4 overflow-y-auto h-[71vh]"
-        >
-          {messages.map((message, i) => (
+    <div className="bg-gradient-to-r from-pink-100 to-violet-300 pt-5 h-full">
+      <div
+        ref={chatContainerRef}
+        className="flex flex-col space-y-4 overflow-y-auto h-[75vh] px-4 pb-16" // Adjusted padding to accommodate the bottom input bar
+      >
+        {messages.map((message, i) => (
+          <div
+            key={i}
+            className={`flex items-start ${
+              message.sender === "user" ? "justify-end" : "justify-start"
+            }`}
+          >
             <div
-              key={i}
-              className={`flex items-start ${
-                message.sender === "user" ? "justify-end" : "justify-start"
+              className={`p-3 mx-10 rounded-lg max-w-[70%] flex ${
+                message.sender === "user"
+                  ? "bg-white text-gray-700"
+                  : "bg-white text-gray-700"
               }`}
             >
-              <div
-                className={`p-4 rounded-lg mx-4 max-w-[70%] flex ${
-                  message.sender === "user"
-                    ? "bg-white text-gray-700"
-                    : "bg-white text-gray-700"
-                }`}
-              >
-                {message.sender === "user" ? (
-                  <img
-                    src="/def.png"
-                    className="h-8 rounded-full mr-2"
-                    alt="User Logo"
-                  />
-                ) : (
-                  <img
-                    src="/newsLogo.png"
-                    className="h-8 rounded-full mr-2"
-                    alt="Algabay AI Logo"
-                  />
-                )}
-                <p className="mt-1">{message.message}</p>
+              {message.sender === "user" ? (
+                <img
+                  src="/def.png"
+                  className="h-8 rounded-full mr-2"
+                  alt="User Logo"
+                />
+              ) : (
+                <img
+                  src="/newsLogo.png"
+                  className="h-8 rounded-full mr-2"
+                  alt="Algabay AI Logo"
+                />
+              )}
+              <p className="mt-1">{message.message}</p>
+            </div>
+          </div>
+        ))}
+        {isTyping && (
+          <div className="flex items-start justify-start">
+            <div className="mx-10 rounded-lg">
+              <div className="animate-bounce">
+                <img
+                  src="/newsLogo.png"
+                  className="h-8 rounded-full"
+                  alt="Typing Animation"
+                />
               </div>
             </div>
-          ))}
-          {isTyping && (
-            <div className="flex items-start justify-start">
-              <div className="mx-4 rounded-lg">
-                <div className="animate-bounce">
-                  <img
-                    src="/newsLogo.png"
-                    className="h-10 rounded-lg"
-                    alt="Typing Animation"
-                  />
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-        <div className="flex py-2 px-4 gap-4 absolute bottom-0 w-full h-16 bg-gray-700 max-sm:flex-col max-sm:items-center">
-          <input
-            type="text"
-            placeholder="Type message here"
-            className="flex-1 px-4 rounded-full focus:outline-none bg-gray-700 text-white border border-gray-500 max-sm:mb-4 max-sm:w-full"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                e.preventDefault(); // Prevent the default behavior of the enter key (form submission)
-                handleSend();
-              }
-            }}
-          />
-          <button
-            className="h-12 w-12 text-3xl bg-gray-900 hover:bg-gray-950 text-white rounded-full focus:outline-none max-sm:mt-4"
-            onClick={handleSend}
-          >
-            ↗
-          </button>
-        </div>
+          </div>
+        )}
+      </div>
+      <div className="flex py-6 px-10 gap-4 absolute bottom-0 w-full h-24 bg-gray-700 max-sm:flex-col max-sm:items-center">
+        <input
+          type="text"
+          placeholder="Type message here"
+          className="flex-1 px-4 rounded-full focus:outline-none bg-gray-700 text-white border border-gray-500 max-sm:mb-4 max-sm:w-full"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              e.preventDefault();
+              handleSend();
+            }
+          }}
+        />
+        <button
+          className="h-12 w-12 text-3xl bg-gray-900 hover:bg-gray-950 text-white rounded-full focus:outline-none max-sm:mt-4"
+          onClick={handleSend}
+        >
+          ↗
+        </button>
       </div>
     </div>
   );
