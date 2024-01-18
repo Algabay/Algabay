@@ -1,19 +1,11 @@
 "use client";
-
 import React, { useEffect } from "react";
-import Footer from "@/Components/Footer";
-import DummyNews from "@/Components/DummyNews";
-import Portfolios from "../Portfolios/page";
-
-import CalculatorsBanner from "@/Components/CalculatorsBanner";
+import Chat from "@/Components/Chat";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "@/app/firebase/config";
 import { useRouter } from "next/navigation";
 
-import Chat from "@/Components/Chat";
-//import ChatComponent from "@/Components/ChatBot";
-
-const Home = () => {
+const page = () => {
   const [user] = useAuthState(auth);
   const router = useRouter();
 
@@ -26,11 +18,9 @@ const Home = () => {
 
   return (
     <div>
-      <Portfolios />
-      <DummyNews />
-      <Footer />
+      <Chat />
     </div>
   );
 };
 
-export default Home;
+export default page;

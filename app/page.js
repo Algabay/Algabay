@@ -14,8 +14,6 @@ const page = () => {
     <div>
       <Banner />
 
-      <DummyNews />
-
       <Footer />
     </div>
   );
