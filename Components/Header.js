@@ -85,11 +85,24 @@ const Header = () => {
 
         <div className="flex gap-8 mr-8 items-center">
           <Link
-            href="/Portfolios"
-            className="bg-lime-50 py-1 px-2 rounded-md text-gray-600"
+            href="/Chat"
+            className="bg-sky-50 py-1 px-2 rounded-md text-gray-600"
           >
-            PORTFOLIOS
+            AI Chat
           </Link>
+          <Link
+            href="/Portfolios"
+            className="bg-sky-50 py-1 px-2 rounded-md text-gray-600"
+          >
+            Portfolios
+          </Link>
+          <Link
+            href="/Tools"
+            className="bg-sky-50 py-1 px-2 rounded-md text-gray-600"
+          >
+            Tools
+          </Link>
+
           {user ? (
             <>
               <button onClick={handleToggle}>

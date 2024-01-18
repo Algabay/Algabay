@@ -21,7 +21,7 @@ const CalculatorsBanner = () => {
   return (
     <div className="bg-white w-full h-[40vh] px-4 sm:px-8 lg:px-24">
       <h4 className="my-4 text-2xl font-thin text-lime-400">
-        FINANCIAL CALCULATORS ↘
+        Financial Calculators ↘
       </h4>
       <div className="flex flex-col sm:flex-row justify-between px-4 py-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-4 bg-gradient-to-r from-sky-100 to-lime-100 rounded-lg">
         <CalculatorCard

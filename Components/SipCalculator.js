@@ -94,7 +94,7 @@ const SipCalculator = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 mt-6 md:mt-0">
-            <div className="rounded-xl shadow-md overflow-hidden p-10">
+            <div className="rounded-xl overflow-hidden p-10">
               <SipChart
                 labels={["Principal", "Interest"]}
                 data={[amount, interestTotal]}

@@ -140,6 +140,12 @@ const Chat = () => {
             className="flex-1 px-4 rounded-full focus:outline-none bg-gray-700 text-white border border-gray-500 max-sm:mb-4 max-sm:w-full"
             value={input}
             onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                e.preventDefault(); // Prevent the default behavior of the enter key (form submission)
+                handleSend();
+              }
+            }}
           />
           <button
             className="h-12 w-12 text-3xl bg-gray-900 hover:bg-gray-950 text-white rounded-full focus:outline-none max-sm:mt-4"

@@ -29,44 +29,120 @@ const Banner = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row h-auto w-full justify-evenly">
-        <div className="md:w-auto w-full p-8 md:p-20">
+      <div className="flex flex-col md:flex-row h-[80vh] w-full justify-evenly items-center">
+        {" "}
+        <div className="md:w-auto w-full">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1 }}
           >
-            <h4 className="font max-md:text-[2.2rem] md:text-[4rem] text-left max-md:text-center font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-indigo-400">
-              Simplify Investments
+            <h4 className="font max-md:text-[2.2rem] md:text-[5.5rem] text-center  font-semibold text-gray-700">
+              Simplify&nbsp;Investments
               <br />
-              with AI
+              <span className="font max-md:text-[2.2rem] md:text-[5rem] text-left max-md:text-center font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-indigo-400">
+                {" "}
+                with AI
+              </span>
             </h4>
           </motion.div>
-          <h4 className="font text-gray-600 font-light text-lg md:text-xl mb-8 max-md:text-center">
-            AI tools for instant market insights, FinGPT, and portfolio
-            optimization.
-          </h4>
+          <motion.div
+            initial={{ opacity: 0, x: -80 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 1 }}
+          >
+            <h4 className="font text-gray-600 font-light text-lg md:text-2xl mb-8 text-center">
+              AI tools for instant market insights, FinGPT, and portfolio
+              optimization.
+            </h4>
+          </motion.div>
+
           {user ? null : (
-            <div className="max-md:flex justify-center">
+            <div className="flex justify-center">
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 md:px-16 py-3 bg-blue-400 text-white rounded-lg shadow-md hover:bg-blue-500 focus:outline-none focus:ring focus:border-blue-300"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -50 }}
+                transition={{ duration: 1 }}
+                className="px-8 md:px-16 py-3 bg-blue-400 text-white rounded-lg shadow-md hover:bg-blue-500 focus:outline-none focus:ring focus:border-blue-300 text-lg"
                 onClick={handleGoogle}
               >
-                Get Started
+                GET STARTED
               </motion.button>
             </div>
           )}
         </div>
-        <div className="md:w-auto w-full flex justify-center items-center md:p-14">
-          <img
-            src="/featuress.jpg"
-            className="rounded-lg shadow-md max-sm:shadow-none max-w-full h-[400px]"
-            alt="Features"
-          />
-        </div>
+      </div>
+
+      <div className="h-screen w-full bg-white flex items-center px-10 gap-10">
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -50 }}
+          transition={{ duration: 1 }}
+          className="text-left"
+        >
+          <h4 className="text-3xl font-serif">Introducing our Finance GPT</h4>{" "}
+          <br />
+          <h4 className="text-2xl font-thin">
+            “A powerhouse for financial insights. Precision analysis, strategic
+            forecasting, and efficient automation redefine your financial
+            operations. Elevate decision making with new AI technology.”
+          </h4>
+        </motion.div>
+        <img
+          src="/chatimg.png"
+          className="w-[60vw] h-[60vh] rounded-xl shadow-lg"
+        />
+      </div>
+      <div className="h-screen w-full bg-white flex items-center px-10 gap-10">
+        v <img src="/chatimg.png" className="h-[55vh] rounded-xl shadow-lg" />
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -50 }}
+          transition={{ duration: 1 }}
+          className="text-center"
+        >
+          <h4 className="text-3xl font-serif">
+            Experience AI precision <br />
+            optimised Portfolios
+          </h4>{" "}
+          <br />
+          <h4 className="text-2xl font-thin">
+            “Benefit from tailored, dynamic strategies for diverse financial
+            goals. Navigate risks with continuous AI adjustments, seizing
+            opportunities. Effortlessly manage your portfolio through our
+            user-friendly, intuitive interface.”
+          </h4>
+        </motion.div>
+      </div>
+
+      <div className="h-screen w-full bg-white px-10 flex items-center gap-10">
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -50 }}
+          transition={{ duration: 1 }}
+          className="text-left"
+        >
+          <h4 className="text-3xl font-serif">
+            Empower your financial journey with our AI-crafted tools
+          </h4>{" "}
+          <br />
+          <h4 className="text-2xl font-thin">
+            “From Interest calculations to SIP planning,
+            <br />
+            mutual fund analysis and EMI computations,
+            <br />
+            our tools bring precision and efficiency to your fingertips.
+            Navigate the financial landscape with confidence using intelligent
+            automation.”
+          </h4>
+        </motion.div>
+        <img src="/sipimg.png" className="h-[55vh] rounded-xl shadow-lg" />
       </div>
     </>
   );
