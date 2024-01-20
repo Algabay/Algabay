@@ -90,7 +90,7 @@ const Header = () => {
     }
   };
 
-  const headerClasses = `flex h-18 px-6 max-sm:px-4 items-center justify-between fixed w-full z-10 top-0 ${
+  const headerClasses = `flex max-sm:h-14 h-18 px-6 max-sm:px-2 items-center justify-between fixed w-full z-10 top-0 ${
     scrolling ? "shadow-md" : ""
   } bg-gradient-to-r from-white to-white`;
 
@@ -98,15 +98,19 @@ const Header = () => {
     <>
       <div className={headerClasses}>
         <Link href="/Home">
-          <img src="/logo.png" className="h-10 my-2 mx-6 max-sm:mx-2" />
+          <img
+            src="/logo.png"
+            className="h-10 my-2 mx-4 max-sm:mx-0 max-sm:h-8"
+            alt="Logo"
+          />
         </Link>
 
-        <div className="flex gap-8 mr-8 items-center">
+        <div className="flex gap-8 max-sm:gap-2 items-center mx-5 max-sm:mx-0">
           <button
             onClick={handleAiChatClick}
-            className="bg-sky-50 py-1 px-2 rounded-md text-gray-600"
+            className="py-1 px-5 max-sm:px-2 text-xl max-sm:text-sm rounded-md text-white bg-gradient-to-tr from-pink-300 to-violet-300 hover:brightness-105"
           >
-            AI Chat
+            AI Chat ↗
           </button>
 
           {user ? (
@@ -114,13 +118,14 @@ const Header = () => {
               <button onClick={handleToggle}>
                 <img
                   src={user.photoURL || "/def.png"}
-                  className="rounded-full h-9 w-9 "
+                  className="rounded-full h-8 w-8 sm:h-9 sm:w-9"
+                  alt="User Profile"
                 />
               </button>
             </>
           ) : (
             <button
-              className="font px-3 py-1 mt-2 rounded-md text-md text-white hover:bg-blue-500 mb-2 bg-blue-400"
+              className="py-1 px-5 mt-2 max-sm:px-2 rounded-md text-xl max-sm:text-sm text-white hover:bg-blue-500 mb-2 bg-blue-400"
               onClick={handleGoogle}
             >
               Sign In
@@ -130,39 +135,39 @@ const Header = () => {
       </div>
 
       {popupVisible && (
-        <div className="fixed bottom-4 right-4 bg-white p-4 rounded-md shadow-md">
-          Please login first!
+        <div className="fixed bottom-4 text-xs sm:text-base text-white right-4 bg-gradient-to-r from-pink-300 to-purple-300 p-2 sm:p-4 rounded-md shadow-md">
+          Please Sign In first!
         </div>
       )}
       {dropClick && (
         <div
           ref={dropdownRef}
-          className="h-auto w-auto right-0 fixed  p-5 z-40 "
+          className="h-auto w-auto right-0 fixed p-4 sm:p-5 z-40"
         >
           {user ? (
             <>
-              <div className="h-auto w-48 bg-white border rounded-2xl shadow-xl p-5">
-                <div className="flex flex-col items-center my-4">
+              <div className="h-auto w-48 bg-white border rounded-2xl shadow-xl p-4 sm:p-5">
+                <div className="flex flex-col items-center my-2 sm:my-4">
                   <img
                     src={user.photoURL || "/def.png"}
-                    className="rounded-full h-9 w-9 mb-2"
+                    className="rounded-full h-9 w-9 mb-2 sm:mb-2"
                     alt="User Profile"
                   />
                   {user.displayName && user.displayName.length > 0 && (
-                    <p className="text-gray-800 text-md font-semibold">
+                    <p className="text-gray-800 text-xs sm:text-md font-semibold">
                       {user.displayName}
                     </p>
                   )}
                 </div>
 
-                <div className="flex justify-center py-3 my-4">
+                <div className="flex justify-center py-2 sm:py-3 my-2 sm:my-4">
                   <button
                     onClick={handleLogout}
-                    className="text-xl text-gray-700 flex items-center gap-2 px-4 py-2 rounded-full bg-pink-100 hover:bg-pink-200 focus:outline-none focus:ring focus:border-blue-300"
+                    className="text-xs sm:text-base text-gray-700 flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1 sm:py-2 rounded-full bg-pink-100 hover:bg-pink-200 focus:outline-none focus:ring focus:border-blue-300"
                   >
                     <img
                       src="/logout-img.png"
-                      className="h-6 opacity-80"
+                      className="h-4 sm:h-6 opacity-80"
                       alt="Logout"
                     />
                     Logout
