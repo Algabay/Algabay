@@ -5,145 +5,145 @@ const DummyNews = () => {
   const newsData = [
     {
       title:
-        "Apple opens state-of-the-art, sustainable corporate office in Bengaluru",
+        "Paytm clarifies on FEMA case: &#039;Paytm Payments Bank doesn&#039;t undertake outward foreign remittance&#039;",
       description:
-        "Spanning 15 floors, it can accommodate a workforce of up to 1,200. It also boasts dedicated lab spaces, collaborative areas, and wellness facilities",
+        "Earlier, it was reported that the central probe agency was investigating if platforms run by One 97 Communications were involved in violations of foreign exchange rules.",
     },
     {
       title:
-        "Adani Group to invest Rs 12,400 cr in Telangana, Rs 1,000 cr earmarked for drone systems, missile development",
+        "RBI Governor meets bank CEOs, ask them to maintain vigil around build-up of risks",
       description:
-        "WEF2024: Gautam Adani, Chairman, Adani Group, said: “The new government in the Telangana has been extremely investor friendly and with the new planned policies, should attract more investments. Adani group will continue growing in Telangana at high pace with the provided.”",
+        "The Governor in his remarks complimented the banks on their improved financial performance and that of the whole banking sector. While noting the resilience of the domestic financial system with healthy balance sheets of banks, he said banks should be cautious around this time.",
     },
     {
       title:
-        "Former business partners file defamation suit against MS Dhoni, Delhi HC to hear matter on Jan 18: Report",
+        "Jaya Bachchan all set for 5th Rajya Sabha, declares joint net worth of Rs 1,578 cr with Amitabh Bachchan",
       description:
-        "The hearing in the matter is scheduled for January 18 under Justice Prathiba M Singh.",
+        "As per the election affidavit filed by her, Jaya Bachchan’s personal net worth for the financial year 2022-23 is Rs 1,63,56,190. Amitabh Bachchan's net worth was reported to be Rs 273,74,96,590 for the same year.",
     },
     {
       title:
-        "Zee-Sony merger: Zee may claim damages from Sony if the deal fails at this stage, says report ",
+        "Economics of an MSP guarantee: Experts say may be difficult given financial implications",
       description:
-        "Top company sources said that Zee was compelled to close down certain ventures to adhere to the merger conditions set by the Competition Commission of India (CCI). If the merger fails at this stage, it will be a huge loss for Zee.",
+        "Annual procurement, hike every year could have huge ramifications for the exchequer, economists say",
     },
     {
       title:
-        "Drastic drop in study permits to Indian students after diplomatic row: Canadian minister",
+        "RBI asks Visa, Mastercard to stop business payments via commercial cards: Report",
       description:
-        "The dispute was triggered by Canadian Prime Minister Justin Trudeau's claim in June of evidence linking Indian government agents to the killing of Khalistani terrorist Hardeep Singh Nijjar in British Columbia.",
+        "Industry sources said that the central bank is concerned about the flow of money through the card route toward non-KYC-ed merchants.",
     },
     {
       title:
-        "Next Republican debate canceled after Nikki Haley says she’ll only participate if Donald Trump does",
+        "Rajya Sabha polls: Sonia Gandhi, Akhilesh Prasad among Congress candidates for upper house ",
       description:
-        "Her statement was released a day after the all-important Iowa caucuses, in which Trump marked a wide margin of victory over both Haley and DeSantis.",
+        "A total of 56 members of Rajya Sabha from 15 states are retiring in April and the election to the seats will be held on February 27. The last date for filing nominations is February 15.",
     },
     {
       title:
-        "Unprovoked violation: Pak warns of serious consequences after Iran attacks Baloch bases",
+        "Adani Green Energy begins generation from world’s largest energy park in Gujarat ",
       description:
-        "State-run Mehr news agency reported that the Jaish ul-Adl's bases targeted in the Kuhe Sabz area were one of the largest bases of the terror group.",
+        "Adani Green Energy plans to develop 30 GW of renewable energy capacity at the Khavda park, operational in the next five years",
     },
     {
       title:
-        "Delhi freezes as mercury drops to 4 degrees Celsius; IMD issues orange, red alert for dense fog, cold wave conditions",
+        "Oyo might withdraw IPO application; raise money from private investors: Report",
       description:
-        "This could lead to several flights and trains getting cancelled or delayed or diverted.  ",
+        "Oyo is reportedly planning to raise new cash from private market investors in the next six to eight months. ",
+    },
+    {
+      title: "PM Modi to inaugurate BAPS Hindu Temple in Abu Dhabi today",
+      description:
+        'BAPS Hindu Temple to be inaugurated today: "The construction of the BAPS temple would not have been possible without your support," PM Modi told UAE President.',
     },
     {
       title:
-        "Fitch says India to remain one of fastest-growing countries but...",
+        "&#039;Purse strings will be tightened&#039;: Zee&#039;s Punit Goenka hints at layoffs after Sony snub",
       description:
-        "The global ratings agency estimated India’s economy will grow 6.9% this fiscal year ending March 2024 and by 6.5% the year after and forecast headline inflation will ease towards 4.7% by the end of 2024.",
+        "While Goenka’s plan included recalibration of cost structure for businesses such as OTT or the implementation of content and tech strategies to drive revenues, certain outputs of the firm will also need to be curtailed to improve revenues and margins.",
     },
     {
       title:
-        "The driver must have good contacts: Autorickshaw seen on Mumbais Atal Setu, leaves netizens puzzled",
+        "&#039;Hope the baby takes…&#039;: Harsh Goenka’s cryptic tweet hints at Virat Kohli, Anushka Sharma’s second child",
       description:
-        "The image circulated on social media, raising questions about how the autorickshaw managed to bypass toll booths, which are designed to prevent such vehicles from accessing the bridge.",
+        "Playfully speculating on the child's future endeavors, Goenka posed the question of whether the baby would follow in its father's cricketing footsteps or take after its mother, Anushka Sharma, in pursuing a career in the film industry.",
     },
     {
       title:
-        "‘This is when I lost my cool…’: Ranvir Shorey narrates distressing 10-hour IndiGo flight delay experience",
+        "Sony&#039;s claims regarding merger, termination fee not tenable: Zee Entertainment in Q3 report",
       description:
-        "Ranvir Shorey, who had checked in two hours prior to the original departure time along with a group of seven passengers, was informed of the initial three-hour delay only upon arrival at the airport.",
+        "In January, Culver Max Entertainment (previously Sony Pictures Network India) called off the $10-billion merger with ZEEL after it claimed that Zee failed to meet some financial terms of the deal and come up with a plan to address them.",
     },
     {
       title:
-        "Freshers or existing employees should upskill to earn more: TCS HR head on stagnant salaries at entry level",
+        "Valentine&#039;s Day: Zomato plays cupid to help people &#039;find a match&#039;",
       description:
-        "TCS in its Q3 FY24 results stated that its headcount has reduced for the second consecutive quarter by 5,680 employees in the October to December 2023 period.",
+        "Zomato is offering its users a chance to find their perfect foodie companion through a unique matchmaking service. ",
     },
     {
       title:
-        "War rooms at six metro airports, and more: Scindia unveils 6-point plan to reduce flight delay",
+        "Moody&#039;s has a change of heart after a year, revises outlook on 4 Adani companies",
       description:
-        "'Have sought incidence reporting thrice daily for all the 6 metro airports,' says Scindia",
+        "The global ratings agency has revised the outlook on Adani Green Energy, Adani Green Energy Restricted Group (AGEL - RG-1), Adani Transmission Step One, and Adani Electricity Mumbai to “stable” from “negative”.",
     },
     {
       title:
-        "Hyundai Creta 2024 launched in India at Rs 11 lakh: Check variants, price list, features, more",
+        "&#039;Execution solely rests with govt&#039;: Shah Rukh Khan&#039;s team denies involvement in the release of ex-Navy veterans from Qatar",
       description:
-        "The Hyundai Creta 2024 has a new dashboard featuring a 10.25-inch touchscreen that merges with the new 10.25-inch digital driver display from the Alcazar",
+        "SRK’s statement came after former Rajya Sabha MP Subramanian Swamy stirred the pot by claiming Bollywood superstar Shah Rukh Khan played a pivotal role in the extradition process.",
     },
     {
       title:
-        "More trouble for Zee: SC upholds HC ruling to send Siti Networks loan default case to arbitration",
+        "Adani-Hindenburg issue: Review petition filed against SC&#039;s Jan 3 judgment",
       description:
-        "In 2020, Siti Broadband had availed of a loan of Rs 5 crore from Aditya Birla Finance, to be repaid in 19 quarterly instalments. According to Aditya Birla Finance, Siti Broadband has been defaulting on payments since November 2021.",
+        "The Supreme Court bench on January 3 said that there is no ground to either transfer the probe from SEBI to an SIT or to order SEBI to revoke its regulations.",
     },
     {
       title:
-        "86% of CEOs think India’s economic growth will improve over the next 12 months: PwC’s Survey",
+        "Gunshots fired at the residence of Khalistani leader Gurpatwant Singh Pannun’s associate",
       description:
-        "Study finds that 62 per cent of Indian CEOs are confident about their company’s growth over the next 12 months",
-    },
-    {
-      title: "Start-up IPOs: Sebi’s continued efforts to empower investors",
-      description:
-        "On National Startup Day, here’s a look at the various steps taken by capital markets regulator Sebi to enhance disclosure and listing norms for start-ups",
+        "The bullet hole was discovered by a construction crew in the window of Gosal's unfinished Brampton, Ontario home.",
     },
     {
       title:
-        "Hyundai Creta SUV 2024 launch today: What to expect, how to watch LIVE",
+        "IndiGo flight parked at Mumbai airport receives bomb threat, investigation underway",
       description:
-        "The launch event will be broadcasted live online, allowing car enthusiasts from around the world to witness the unveiling in real-time",
+        "Upon landing safely at 8:47 am, the aircraft was immediately attended to by the Bomb Detection and Disposal Squad, who conducted a thorough search. Fortunately, no bomb was found on board.",
     },
     {
       title:
-        "Litigation finance start-up launches credit line for firms to settle lawsuits",
+        "JSW Steel joins hand with Japan&#039;s JFE Steel for steel plant in Karnataka, stock falls marginally",
       description:
-        "On the eve of National Startup Day, Gurugram-based LegalPay launches zero-interest credit line for businesses to settle legal disputes; aims to disburse ₹200 crore in 2024",
+        "At 12.40 pm, JSW Steel shares were trading at Rs 806.65,  down by 0.46 per cent.",
     },
     {
       title:
-        "Confidence unleashed! Promoters raised their stake in over 100 small-cap companies in Q3",
+        "Aston Martin’s Fernando Alonso says Lewis Hamilton can bring something extra to Ferrari",
       description:
-        "Initial shareholding data shows that the promoters of Wardwizard Healthcare increased their stake the most to 74.08 per cent in Q3FY24 from 14.08 per cent in the preceding quarter",
+        "The veteran Spaniard, currently at Aston Martin, reminisced about his own stint at Ferrari from 2010-2014, a period marked by tantalisingly close championship pursuits yet ultimately devoid of ultimate success for the Maranello outfit.",
     },
     {
       title:
-        "Vivek Ramaswamy ends his US Presidential race, announces his support for Donald Trump: Report",
+        "SAIL records sharp 22% decrease in net profit for October-December quarter",
       description:
-        "Ramaswamy, 38, had earlier told the Wall Street Journal that Trump may become ineligible to run due to his many legal challenges.",
+        "The state-owned company reported a 22% fall in its consolidated net profit, which stood at Rs 422.92 crore, compared to the net profit of Rs 542.18 crore recorded in the same quarter of the previous year. ",
     },
     {
       title:
-        "Naukri.com founder Sanjeev Bikhchandani backs Narayana Murthy but says 70-hour work week is not religion",
+        "Coal India Q3 results: Profit rises to Rs 9,069 cr, board announces interim dividend of Rs 5.25",
       description:
-        "In a conversation with Jivraj Singh Sachar on the Indian Silicon Valley Bank podcast, Bikhchandani emphasised that there was no entrepreneur in India who was successful without a 'work-life integration'.",
+        "Coal India's board has announced an interim dividend of Rs 5.25 per share.",
     },
     {
-      title: "Oil ticks up as Middle East crisis escalates, tankers divert",
+      title: "GST anti-profiteering: Supreme Court issues notice to Centre",
       description:
-        "Brent crude futures LCOc1 rose 12 cents, or about 0.2%, to $78.27 a barrel at 0002 GMT. The contract had settled 14 cents lower on Monday.",
+        "SLP filed by Excel Rasayan against Delhi HC ruling upholding the constitutionality of anti-profiteering provisions",
     },
     {
       title:
-        "5% folks seem aggravated: EaseMyTrip CEO defends suspension of flight booking to Maldives",
+        "&#039;60-year-olds don&#039;t understand...&#039;: Ashneer Grover criticises RBI action on Paytm",
       description:
-        "According to Nishant Pitti, despite the potential loss of revenue and alienation of some users, the company experienced a surge in support from the Indian public, with app downloads increasing by 280% in the last week.",
+        'Grover expressed his concerns, stating that the regulatory stance sends a message that traditional banks are deemed "systemically important," while fintechs are not accorded the same recognition.',
     },
   ];
   return (

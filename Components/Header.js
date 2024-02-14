@@ -151,7 +151,6 @@ const Header = () => {
                   <img
                     src={user.photoURL || "/def.png"}
                     className="rounded-full h-9 w-9 mb-2 sm:mb-2"
-                    alt="User Profile"
                   />
                   {user.displayName && user.displayName.length > 0 && (
                     <p className="text-gray-800 text-xs sm:text-md font-semibold">
