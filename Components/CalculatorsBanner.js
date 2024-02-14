@@ -5,12 +5,12 @@ import Link from "next/link";
 const CalculatorCard = ({ href, title, description, imageSrc }) => {
   return (
     <Link href={href}>
-      <div className="w-48 h-48  bg-white rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer hover:shadow-xl transition duration-300 ease-in-out shadow-md m-10 border border-gray-100">
+      <div className="w-40 h-40  bg-white rounded-xl flex flex-col items-center justify-center p-4 cursor-pointer hover:shadow-xl transition duration-300 ease-in-out shadow-md m-10 border border-gray-100">
         <h4 className="text-lg text-gray-700">{title}</h4>
         <p className="text-sm text-center mt-1 text-gray-600">{description}</p>
         <img
           src={imageSrc}
-          className="h-16 max-sm:h-10 mt-2"
+          className="h-12 max-sm:h-8 mt-2"
           alt={`${title} Calculator`}
         />
       </div>
@@ -20,7 +20,7 @@ const CalculatorCard = ({ href, title, description, imageSrc }) => {
 
 const CalculatorsBanner = () => {
   return (
-    <div className="grid grid-cols-2 gap-8 justify-center items-center max-sm:grid max-sm:grid-cols-1 max-sm:gap-2 rounded-xl">
+    <div className="grid grid-cols-2 gap-12 justify-center items-center max-sm:grid max-sm:grid-cols-1 max-sm:gap-2 rounded-xl">
       <div className="flex flex-col items-center justify-center">
         <CalculatorCard
           href="Interest"
