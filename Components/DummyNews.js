@@ -1,149 +1,150 @@
-import React from "react";
+"use client";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 const newsDataPath = "./news.json";
 
 const DummyNews = () => {
-  const newsData = [
+  const data = [
     {
       title:
-        "Paytm clarifies on FEMA case: &#039;Paytm Payments Bank doesn&#039;t undertake outward foreign remittance&#039;",
+        "Govt committee likely to finalise startup regulatory framework within 2 months amid Paytm, Byju’s&#039; concerns",
       description:
-        "Earlier, it was reported that the central probe agency was investigating if platforms run by One 97 Communications were involved in violations of foreign exchange rules.",
+        "The Company Law Committee, a government-appointed panel, convened last month and is expected to meet again soon to finalize a regulatory framework for large unlisted startups.",
     },
     {
-      title:
-        "RBI Governor meets bank CEOs, ask them to maintain vigil around build-up of risks",
+      title: "Here’s what the Household Consumption Expenditure Survey means",
       description:
-        "The Governor in his remarks complimented the banks on their improved financial performance and that of the whole banking sector. While noting the resilience of the domestic financial system with healthy balance sheets of banks, he said banks should be cautious around this time.",
-    },
-    {
-      title:
-        "Jaya Bachchan all set for 5th Rajya Sabha, declares joint net worth of Rs 1,578 cr with Amitabh Bachchan",
-      description:
-        "As per the election affidavit filed by her, Jaya Bachchan’s personal net worth for the financial year 2022-23 is Rs 1,63,56,190. Amitabh Bachchan's net worth was reported to be Rs 273,74,96,590 for the same year.",
+        "This will help in long pending rejig the consumer price index; but experts say that exercise may take some more time",
     },
     {
       title:
-        "Economics of an MSP guarantee: Experts say may be difficult given financial implications",
+        "Anant Ambani-Radhika Merchant wedding: Check out invitation, pre-wedding events, themes and more",
       description:
-        "Annual procurement, hike every year could have huge ramifications for the exchequer, economists say",
+        "The details of the three-day event were shared by the hospitality team behind the mega event. Check this space for more",
     },
     {
       title:
-        "RBI asks Visa, Mastercard to stop business payments via commercial cards: Report",
+        "Goldman Sachs, Mubadala sign $1 bln private credit Asia-Pacific partnership deal",
       description:
-        "Industry sources said that the central bank is concerned about the flow of money through the card route toward non-KYC-ed merchants.",
+        "Goldman Sachs and Abu Dhabi's sovereign wealth fund Mubadala have struck a $1 billion deal.",
     },
     {
       title:
-        "Rajya Sabha polls: Sonia Gandhi, Akhilesh Prasad among Congress candidates for upper house ",
+        "Reliance, Walt Disney sign deal to merge their media operations: Report",
       description:
-        "A total of 56 members of Rajya Sabha from 15 states are retiring in April and the election to the seats will be held on February 27. The last date for filing nominations is February 15.",
+        "Reliance-Disney deal: The stake split between the partners may change, depending on how Disney’s other local assets are factored at the time of closing of the deal.",
     },
     {
       title:
-        "Adani Green Energy begins generation from world’s largest energy park in Gujarat ",
+        "‘Too early’: Paytm’s advisory panel chief M Damodaran on identifying issues with fintech firm ",
       description:
-        "Adani Green Energy plans to develop 30 GW of renewable energy capacity at the Khavda park, operational in the next five years",
+        "While responding to a question w.r.t. RBI’s January 31 order on Paytm Payments Bank Limited and its impact on Paytm, Damodaran said at this point, the firm is dealing with the RBI.",
     },
     {
       title:
-        "Oyo might withdraw IPO application; raise money from private investors: Report",
+        "Paytm issue may be reviewed, scrutiny on Byju&#039;s progressing well: ICAI",
       description:
-        "Oyo is reportedly planning to raise new cash from private market investors in the next six to eight months. ",
-    },
-    {
-      title: "PM Modi to inaugurate BAPS Hindu Temple in Abu Dhabi today",
-      description:
-        'BAPS Hindu Temple to be inaugurated today: "The construction of the BAPS temple would not have been possible without your support," PM Modi told UAE President.',
+        "On January 31, the RBI prohibited Paytm Payments Bank Limited from accepting deposits or top-ups in any customer account, including wallets and FASTags, effective from February 29.",
     },
     {
       title:
-        "&#039;Purse strings will be tightened&#039;: Zee&#039;s Punit Goenka hints at layoffs after Sony snub",
+        "Indian journalist succumbs to fire incident in Manhattan residential building",
       description:
-        "While Goenka’s plan included recalibration of cost structure for businesses such as OTT or the implementation of content and tech strategies to drive revenues, certain outputs of the firm will also need to be curtailed to improve revenues and margins.",
+        "The fire, which injured approximately 17 people, occurred in a six-story residential building at 2 St. Nicholas Place in Harlem.",
     },
     {
       title:
-        "&#039;Hope the baby takes…&#039;: Harsh Goenka’s cryptic tweet hints at Virat Kohli, Anushka Sharma’s second child",
+        "Reliance, Disney sign binding merger pact, RIL to own 61% in merged entity: Report",
       description:
-        "Playfully speculating on the child's future endeavors, Goenka posed the question of whether the baby would follow in its father's cricketing footsteps or take after its mother, Anushka Sharma, in pursuing a career in the film industry.",
+        "As per the pact, the media unit of Reliance and its affiliates are expected to own at least 61 per cent in the merged entity, with Disney holding the rest.",
+    },
+    {
+      title: "Magnitude 5.8 earthquake hits China&#039;s Xinjiang region",
+      description:
+        "The earthquake occurred at a depth of 11 km (6.84 miles), CENC reported. As of 1:00 p.m., Xinhua, citing local authorities, reported no casualties or collapsed houses, noting that the areas surrounding the epicentre are sparsely populated.",
     },
     {
       title:
-        "Sony&#039;s claims regarding merger, termination fee not tenable: Zee Entertainment in Q3 report",
+        "Employee quits instantly after boss says f*** off, post goes viral",
       description:
-        "In January, Culver Max Entertainment (previously Sony Pictures Network India) called off the $10-billion merger with ZEEL after it claimed that Zee failed to meet some financial terms of the deal and come up with a plan to address them.",
+        "In the post, the user explained that they were working from home and had contacted their boss for support with a new computer.",
     },
     {
       title:
-        "Valentine&#039;s Day: Zomato plays cupid to help people &#039;find a match&#039;",
+        "&#039;Unemployment is not the problem...&#039;: Arvind Panagariya on what it&#039;ll take to beat China",
       description:
-        "Zomato is offering its users a chance to find their perfect foodie companion through a unique matchmaking service. ",
+        "Panagariya sounded optimistic that the jobs problem in the country will be solved over the next 10 years.",
     },
     {
       title:
-        "Moody&#039;s has a change of heart after a year, revises outlook on 4 Adani companies",
+        "&#039;16 years ago today!...&#039;: 2008 IPL Auctioneer recalls MS Dhoni&#039;s and Warne&#039;s bids, post goes viral",
       description:
-        "The global ratings agency has revised the outlook on Adani Green Energy, Adani Green Energy Restricted Group (AGEL - RG-1), Adani Transmission Step One, and Adani Electricity Mumbai to “stable” from “negative”.",
+        "The photo showed an auction sheet that included names of key players like MS Dhoni and Shane Warne.",
     },
     {
       title:
-        "&#039;Execution solely rests with govt&#039;: Shah Rukh Khan&#039;s team denies involvement in the release of ex-Navy veterans from Qatar",
+        "&#039;To Amir, the real hero. Keep inspiring!&#039;: Sachin Tendulkar gifts signed bat to Para Cricketer Amir Lone",
       description:
-        "SRK’s statement came after former Rajya Sabha MP Subramanian Swamy stirred the pot by claiming Bollywood superstar Shah Rukh Khan played a pivotal role in the extradition process.",
+        "Tendulkar invited Lone to his hotel room, gifted him a signed bat, and posted a video of their interaction on his social media handle with a heartfelt caption.",
     },
     {
       title:
-        "Adani-Hindenburg issue: Review petition filed against SC&#039;s Jan 3 judgment",
+        "IndiGo passenger discovers cockroaches in food section, airline responds after video goes viral",
       description:
-        "The Supreme Court bench on January 3 said that there is no ground to either transfer the probe from SEBI to an SIT or to order SEBI to revoke its regulations.",
+        "The incident was brought to light by journalist Tarun Shukla, who shared a video of the unsanitary conditions on social media. ",
     },
     {
       title:
-        "Gunshots fired at the residence of Khalistani leader Gurpatwant Singh Pannun’s associate",
+        "Rajya Sabha elections: 36% Upper House candidates have criminal cases registered against them: ADR report",
       description:
-        "The bullet hole was discovered by a construction crew in the window of Gosal's unfinished Brampton, Ontario home.",
+        "As per the ADR report, 8 out of 30 BJP candidates, 6 out of 9 Congress candidates have declared criminal cases against themselves in their affidavits.",
     },
     {
       title:
-        "IndiGo flight parked at Mumbai airport receives bomb threat, investigation underway",
+        "Anant Ambani-Radhika Merchant pre-wedding festivities: Check details about dress codes, themed nights and travel plans for guests",
       description:
-        "Upon landing safely at 8:47 am, the aircraft was immediately attended to by the Bomb Detection and Disposal Squad, who conducted a thorough search. Fortunately, no bomb was found on board.",
+        "Each day is themed, with 'An Evening in Everland', 'A Walk on the Wildside', and 'Mela Rouge' being the themes for the first three days.",
     },
     {
       title:
-        "JSW Steel joins hand with Japan&#039;s JFE Steel for steel plant in Karnataka, stock falls marginally",
+        "UAE dropped from financial crime watch list of high-risk money flow countries; here&#039;s what it means",
       description:
-        "At 12.40 pm, JSW Steel shares were trading at Rs 806.65,  down by 0.46 per cent.",
+        "The Financial Action Task Force (FATF), a body that groups countries from the United States to China to tackle financial crime, on Friday dropped the UAE from its 'grey list' of around two dozen nations considered risky.",
     },
     {
       title:
-        "Aston Martin’s Fernando Alonso says Lewis Hamilton can bring something extra to Ferrari",
+        "Will India become the world’s largest economy by 2075? Here’s what financial experts say",
       description:
-        "The veteran Spaniard, currently at Aston Martin, reminisced about his own stint at Ferrari from 2010-2014, a period marked by tantalisingly close championship pursuits yet ultimately devoid of ultimate success for the Maranello outfit.",
+        "While sharing his views at Anmi’s 13th International Convention 2024, Kansal said that India’s growth is phenomenal.",
     },
     {
       title:
-        "SAIL records sharp 22% decrease in net profit for October-December quarter",
+        "Adhir Chowdhury of Congress ‘biggest obstacle&#039; in seat sharing deal, say Trinamool sources",
       description:
-        "The state-owned company reported a 22% fall in its consolidated net profit, which stood at Rs 422.92 crore, compared to the net profit of Rs 542.18 crore recorded in the same quarter of the previous year. ",
+        "On Friday, the Congress said that the seat-sharing talks between the party and Trinamool were back on the table for the Lok Sabha elections in April-May.",
     },
     {
       title:
-        "Coal India Q3 results: Profit rises to Rs 9,069 cr, board announces interim dividend of Rs 5.25",
+        "Exploring the spiritual and architectural marvels of Khajuraho Temples: Beyond erotic sculptures",
       description:
-        "Coal India's board has announced an interim dividend of Rs 5.25 per share.",
-    },
-    {
-      title: "GST anti-profiteering: Supreme Court issues notice to Centre",
-      description:
-        "SLP filed by Excel Rasayan against Delhi HC ruling upholding the constitutionality of anti-profiteering provisions",
+        "In recent years, concerted efforts have been made to preserve and protect the Khajuraho Temples for future generations.",
     },
     {
       title:
-        "&#039;60-year-olds don&#039;t understand...&#039;: Ashneer Grover criticises RBI action on Paytm",
+        "Indian remain poor because they are generating lower returns than inflation: Nilesh Shah, Kotak Mahindra AMC",
       description:
-        'Grover expressed his concerns, stating that the regulatory stance sends a message that traditional banks are deemed "systemically important," while fintechs are not accorded the same recognition.',
+        "Sharing his views on investment trends, Shah shared that around 10 crore individuals are losing money while playing fantasy games, nearly 2 crore Indians have lost more than Rs 2 lakh crore in Ponzi schemes.",
+    },
+    {
+      title:
+        "Vested interests at play: Zee says taking all steps to protect interest of its shareholders",
+      description:
+        "Zee Entertainment Enterprises on Friday constituted an independent advisory committee headed by Satish Chandra, retired judge of Allahabad High Court, to curb erosion of its investor wealth in the wake of speculations, leading to negative public opinion of the company.",
+    },
+    {
+      title: "Vellayan Subbiah awarded EY Entrepreneur of the Year 2023",
+      description:
+        "Vellayan Subbiah will represent India at the EY World Entrepreneur of the Year Award in Monte Carlo from June 4-7",
     },
   ];
   return (
@@ -152,7 +153,7 @@ const DummyNews = () => {
         <h4 className=" text-2xl font-thin text-sky-400">
           TOP NEWS INSIGHTS ↘
         </h4>
-        {newsData.map((news, index) => (
+        {data.map((news, index) => (
           <div
             key={index}
             className="sm:flex gap-10 max-sm:px-10 justify-between align-middle bg-white border border-gray-300 p-4 rounded-md shadow-md"
