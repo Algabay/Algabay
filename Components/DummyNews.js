@@ -7,144 +7,140 @@ const DummyNews = () => {
   const data = [
     {
       title:
-        "Govt committee likely to finalise startup regulatory framework within 2 months amid Paytm, Byju’s&#039; concerns",
+        "Mukesh Ambani readying for a &#039;High Street&#039; fight with Tata, Max and Shoppers Stop?",
       description:
-        "The Company Law Committee, a government-appointed panel, convened last month and is expected to meet again soon to finalize a regulatory framework for large unlisted startups.",
+        "Primark is owned by London-listed Associated British Foods and runs over 400 stores globally.",
     },
     {
-      title: "Here’s what the Household Consumption Expenditure Survey means",
+      title: "India Q3 GDP at 8.4%, beats estimates. Full details",
       description:
-        "This will help in long pending rejig the consumer price index; but experts say that exercise may take some more time",
-    },
-    {
-      title:
-        "Anant Ambani-Radhika Merchant wedding: Check out invitation, pre-wedding events, themes and more",
-      description:
-        "The details of the three-day event were shared by the hospitality team behind the mega event. Check this space for more",
+        "India's GDP growth for the third quarter (YoY) surpassed expectations, recording an actual rate of 8.4%, outperforming the anticipated 6.6%, and exceeding the previous quarter's 7.6%.",
     },
     {
       title:
-        "Goldman Sachs, Mubadala sign $1 bln private credit Asia-Pacific partnership deal",
+        "At 3.6%, India&#039;s core sector growth hits 15-month low in January",
       description:
-        "Goldman Sachs and Abu Dhabi's sovereign wealth fund Mubadala have struck a $1 billion deal.",
+        "The index had grown by 4.9 per cent in December 2023 and 9.7 per cent in January 2023.",
     },
     {
       title:
-        "Reliance, Walt Disney sign deal to merge their media operations: Report",
+        "Setback for Vedanta Group as SC turns down plea to reopen Sterlite Copper plant in TN",
       description:
-        "Reliance-Disney deal: The stake split between the partners may change, depending on how Disney’s other local assets are factored at the time of closing of the deal.",
+        "The apex court said the plant was a chronic violator of air and water pollution laws.",
+    },
+    {
+      title: "EPFO earns over Rs 13,500 crore from sale of ETFs in FY24",
+      description:
+        "According to sources, the EPFO received Rs 13,562.29 crore as income from the sale of ETFs between April 2023 and February 9 this year.",
     },
     {
       title:
-        "‘Too early’: Paytm’s advisory panel chief M Damodaran on identifying issues with fintech firm ",
+        "Rs 1.26 lakh cr investment: Cabinet approves three more semiconductor units, including two by Tata",
       description:
-        "While responding to a question w.r.t. RBI’s January 31 order on Paytm Payments Bank Limited and its impact on Paytm, Damodaran said at this point, the firm is dealing with the RBI.",
+        "All three units will start construction within the next 100 days. The chip programme was notified in December 2021 with a total outlay of Rs 76,000 crore.",
     },
     {
       title:
-        "Paytm issue may be reviewed, scrutiny on Byju&#039;s progressing well: ICAI",
+        "Shubman Gill meets Gujarat Titan teammate Robin Minz&#039;s father, on-duty at Ranchi airport",
       description:
-        "On January 31, the RBI prohibited Paytm Payments Bank Limited from accepting deposits or top-ups in any customer account, including wallets and FASTags, effective from February 29.",
+        "Shubman Gill spent considerable time with Francis Xavier, who was on duty at the Ranchi airport.",
+    },
+    {
+      title: "Top brewer AB InBev hikes dividend, but no new share buyback",
+      description:
+        "Anheuser-Busch InBev raised its annual dividend by 9% on Thursday, though analysts warned investors may be disappointed by the absence of a new share buyback and worse-than-expected U.S. sales.",
+    },
+    {
+      title: "Samsung launches semiconductor R&amp;D facility in India",
+      description:
+        "The new campus of Samsung Semiconductor India Research (SSIR) features a modern, open-plan layout across four floors, encouraging collaboration and agility.",
     },
     {
       title:
-        "Indian journalist succumbs to fire incident in Manhattan residential building",
+        "Disney’s India valuation takes a big hit, down by over half post Reliance deal",
       description:
-        "The fire, which injured approximately 17 people, occurred in a six-story residential building at 2 St. Nicholas Place in Harlem.",
+        "Post the Rs 70,352-crore JV with Reliance, what it does with its 36.84% holding will be interesting",
+    },
+    {
+      title: "FDI inflows decline 13 pc to $ 32 billion in Apr-Dec 2023",
+      description:
+        "Foreign direct investment (FDI) inflows in India declined 13 per cent to $ 32.03 billion in April-December 2023, dragged down by lower infusion in computer hardware and software, telecom, auto, and pharma sectors, according to the latest government data.",
     },
     {
       title:
-        "Reliance, Disney sign binding merger pact, RIL to own 61% in merged entity: Report",
+        "China rolls over $2 billion loan to Pakistan, finance minister says",
       description:
-        "As per the pact, the media unit of Reliance and its affiliates are expected to own at least 61 per cent in the merged entity, with Disney holding the rest.",
-    },
-    {
-      title: "Magnitude 5.8 earthquake hits China&#039;s Xinjiang region",
-      description:
-        "The earthquake occurred at a depth of 11 km (6.84 miles), CENC reported. As of 1:00 p.m., Xinhua, citing local authorities, reported no casualties or collapsed houses, noting that the areas surrounding the epicentre are sparsely populated.",
+        "China has rolled over a $2 billion loan to Pakistan, caretaker finance minister Shamshad Akhtar confirmed in a response to Reuters on Thursday.",
     },
     {
       title:
-        "Employee quits instantly after boss says f*** off, post goes viral",
+        "World Bank to streamline loan, investment guarantees with $20 bln annual goal",
       description:
-        "In the post, the user explained that they were working from home and had contacted their boss for support with a new computer.",
+        "The World Bank Group said on Wednesday it would consolidate its loan and investment guarantee structure as part of its goal to triple its annual guarantees to $20 billion by 2030 to boost private renewable energy investments in developing countries.",
     },
     {
       title:
-        "&#039;Unemployment is not the problem...&#039;: Arvind Panagariya on what it&#039;ll take to beat China",
+        "BHP to restructure some global corporate roles as it looks to trim costs",
       description:
-        "Panagariya sounded optimistic that the jobs problem in the country will be solved over the next 10 years.",
+        "The world's biggest listed miner BHP Group said on Thursday it was disbanding some global teams and transferring those roles covering functions including planning, environment and heritage protection to its mining asset-level management.",
+    },
+    {
+      title: "Former Intel India head killed by speeding cab in an accident",
+      description:
+        "The police said on Thursday that Saini was cycling when the speeding cab hit him at around 5:50 am on Wednesday in Navi Mumbai township",
     },
     {
       title:
-        "&#039;16 years ago today!...&#039;: 2008 IPL Auctioneer recalls MS Dhoni&#039;s and Warne&#039;s bids, post goes viral",
+        "Paytm crisis: User complaints spiked at Paytm Payments Bank even before RBI action",
       description:
-        "The photo showed an auction sheet that included names of key players like MS Dhoni and Shane Warne.",
+        "Paytm Payments Bank reported 66,751 complaints across various categories in the fiscal year ended March 31, 2023.",
     },
     {
       title:
-        "&#039;To Amir, the real hero. Keep inspiring!&#039;: Sachin Tendulkar gifts signed bat to Para Cricketer Amir Lone",
+        "GDP numbers out today: India&#039;s Q3 score may slide on poor farm sector show",
       description:
-        "Tendulkar invited Lone to his hotel room, gifted him a signed bat, and posted a video of their interaction on his social media handle with a heartfelt caption.",
+        "Economists and research agencies projected the growth to be anywhere between 6 to 6.8 per cent. While the RBI has projected growth to be 6.5 per cent, SBI research sees it in the range of 6.7-69%,",
     },
     {
       title:
-        "IndiGo passenger discovers cockroaches in food section, airline responds after video goes viral",
+        "Infosys plans walk-in recruitment drive in Bengaluru on March 9 to hire ‘next great talents’: Report ",
       description:
-        "The incident was brought to light by journalist Tarun Shukla, who shared a video of the unsanitary conditions on social media. ",
+        "This is Infosys’ third recruitment drive after the one conducted in Hyderabad on January 6 and the one conducted in Chennai on February 3. ",
     },
     {
       title:
-        "Rajya Sabha elections: 36% Upper House candidates have criminal cases registered against them: ADR report",
+        "Logo and website of CII&#039;s &#039;Alliance for Global Good: Gender Equity and Equality&#039; launched",
       description:
-        "As per the ADR report, 8 out of 30 BJP candidates, 6 out of 9 Congress candidates have declared criminal cases against themselves in their affidavits.",
+        "The Alliance aims to bring together global good practices, knowledge sharing and investments in the field of women’s health, education, and enterprise and aligns with several Sustainable Development Goals (SDGs) including SDG 3 - Good Health and Well-Being; 4- Quality Education; 5 - Gender Equality and Empowerment; 17 - Global Partnership for Development and more, said a release by CII.",
     },
     {
       title:
-        "Anant Ambani-Radhika Merchant pre-wedding festivities: Check details about dress codes, themed nights and travel plans for guests",
+        "It&#039;s official! Reliance signs binding merger with Walt Disney; full details here",
       description:
-        "Each day is themed, with 'An Evening in Everland', 'A Walk on the Wildside', and 'Mela Rouge' being the themes for the first three days.",
+        "Reliance Industries, Viacom 18 Media, and Walt Disney partner up to create a joint venture merging Star India and Viacom18, with Reliance investing Rs 11,500 crore ($1.4 billion) into the new enterprise.",
     },
     {
       title:
-        "UAE dropped from financial crime watch list of high-risk money flow countries; here&#039;s what it means",
+        "Reliance Consumer partners with Elephant House to bring Sri Lankan beverage brand to India",
       description:
-        "The Financial Action Task Force (FATF), a body that groups countries from the United States to China to tackle financial crime, on Friday dropped the UAE from its 'grey list' of around two dozen nations considered risky.",
+        "Elephant House is owned by Ceylon Cold Stores PLC, a subsidiary of John Keells Holdings PLC, Sri Lanka's largest listed conglomerate.",
     },
     {
       title:
-        "Will India become the world’s largest economy by 2075? Here’s what financial experts say",
+        "Sunil Bharti Mittal first Indian to get Honorary Knighthood from King Charles III",
       description:
-        "While sharing his views at Anmi’s 13th International Convention 2024, Kansal said that India’s growth is phenomenal.",
+        "The KBE is among the highest honours conferred by the British Sovereign to civilians. It is awarded in an honorary capacity to foreign nationals",
+    },
+    {
+      title: "45-day payment rule to MSMEs: FinMin looking at a possible tweak",
+      description:
+        "Concerns aired from multiple corners. A section of MSMEs worry that this may impact relations with suppliers and buyers, others say their systems are not ready for this provision.",
     },
     {
       title:
-        "Adhir Chowdhury of Congress ‘biggest obstacle&#039; in seat sharing deal, say Trinamool sources",
+        "Historic drug bust: 3,300 kg of charas, meth seized off Gujarat coast",
       description:
-        "On Friday, the Congress said that the seat-sharing talks between the party and Trinamool were back on the table for the Lok Sabha elections in April-May.",
-    },
-    {
-      title:
-        "Exploring the spiritual and architectural marvels of Khajuraho Temples: Beyond erotic sculptures",
-      description:
-        "In recent years, concerted efforts have been made to preserve and protect the Khajuraho Temples for future generations.",
-    },
-    {
-      title:
-        "Indian remain poor because they are generating lower returns than inflation: Nilesh Shah, Kotak Mahindra AMC",
-      description:
-        "Sharing his views on investment trends, Shah shared that around 10 crore individuals are losing money while playing fantasy games, nearly 2 crore Indians have lost more than Rs 2 lakh crore in Ponzi schemes.",
-    },
-    {
-      title:
-        "Vested interests at play: Zee says taking all steps to protect interest of its shareholders",
-      description:
-        "Zee Entertainment Enterprises on Friday constituted an independent advisory committee headed by Satish Chandra, retired judge of Allahabad High Court, to curb erosion of its investor wealth in the wake of speculations, leading to negative public opinion of the company.",
-    },
-    {
-      title: "Vellayan Subbiah awarded EY Entrepreneur of the Year 2023",
-      description:
-        "Vellayan Subbiah will represent India at the EY World Entrepreneur of the Year Award in Monte Carlo from June 4-7",
+        "An Indian Navy mission-deployed ship which was at sea for two days stopped the suspicious boat as it entered Indian territorial waters, inputs from a a surveillance aircraft showed.",
     },
   ];
   return (
