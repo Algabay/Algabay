@@ -23,29 +23,45 @@ const DummyNews = () => {
 
   return (
     <>
-      <div className="grid gap-8 grid-cols-1 mt-8 max-sm:px-6 px-24 py-8">
-        <h4 className="text-2xl font-thin text-sky-400">TOP NEWS INSIGHTS ↘</h4>
-        {news.length === 0 ? (
-          <p>Loading...</p>
-        ) : (
-          news.map((data, index) => (
-            <div
-              key={index}
-              className="sm:flex gap-10 max-sm:px-10 justify-between align-middle bg-white border border-gray-300 p-4 rounded-md shadow-md"
-            >
-              <img
-                className="h-40 w-40 max-sm:h-16 max-sm:w-16 object-cover rounded-md mb-4 border border-gray-100"
-                src="/newsLogo.png" // Check if this path is correct
-                alt=" :') "
-              />
-              <div className="h-auto w-full py-4">
-                <h6 className="text-md font-semibold mb-2">{data.title}</h6>
-                <p className="text-gray-600">{data.description}</p>
+      <h4 className="text-2xl font-thin text-sky-400 ml-24">
+        TOP NEWS INSIGHTS ↘
+      </h4>
+      {news.length === 0 ? (
+        <p className="text-2xl font-thin text-gray-700 ml-24">Loading...</p>
+      ) : (
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-8 max-sm:px-6 px-24 py-8 justify-center items-center">
+          {news
+            .slice()
+            .reverse()
+            .map((data, index) => (
+              <div
+                key={index}
+                className="flex flex-col gap-4 bg-white border border-gray-300 p-4 rounded-md shadow-md h-full"
+              >
+                <div className="flex justify-center">
+                  {data.image ? (
+                    <img
+                      className="h-40 w-40 max-sm:h-16 max-sm:w-16 object-cover rounded-md mb-4 border border-gray-100"
+                      src={data.image}
+                      alt=" :') "
+                    />
+                  ) : (
+                    <img
+                      className="h-40 w-40 max-sm:h-16 max-sm:w-16 object-cover rounded-md mb-4 border border-gray-100"
+                      src="/newsLogo.png"
+                      alt=" :') "
+                    />
+                  )}
+                </div>
+
+                <div className="flex flex-col justify-center flex-grow">
+                  <h6 className="text-md font-semibold mb-2">{data.title}</h6>
+                  <p className="text-gray-600">{data.description}</p>
+                </div>
               </div>
-            </div>
-          ))
-        )}
-      </div>
+            ))}
+        </div>
+      )}
     </>
   );
 };
