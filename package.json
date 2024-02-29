@@ -12,6 +12,7 @@
     "@chatscope/chat-ui-kit-react": "^1.10.1",
     "axios": "^1.6.7",
     "chart.js": "^3.9.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "firebase": "^10.7.1",
