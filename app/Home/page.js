@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import Footer from "@/Components/Footer";
-import DummyNews from "@/Components/DummyNews";
+import News from "@/Components/News";
 import Portfolios from "../Portfolios/page";
 
 import CalculatorsBanner from "@/Components/CalculatorsBanner";
@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <div>
       <Portfolios />
-      <DummyNews />
+      <News />
       <Footer />
     </div>
   );
