@@ -12,7 +12,6 @@ const DummyNews = () => {
         );
         const newsData = res.data.data;
         setNews(newsData);
-        console.log(newsData);
       } catch (error) {
         console.error("Error fetching news:", error);
       }
