@@ -54,9 +54,9 @@ const Header = () => {
   const handleGoogle = async () => {
     try {
       const provider = new GoogleAuthProvider();
+
       await signInWithPopup(auth, provider);
       router.push("/Home");
-      console.log(user);
     } catch (error) {
       console.error("Google Sign-In Error:", error.message);
     }
