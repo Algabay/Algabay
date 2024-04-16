@@ -79,7 +79,7 @@ const InterestCalculator = () => {
     <>
       <div className="h-auto">
         <div className="max-sm:px-10">
-          <div className="w-full max-w-screen-lg mb-10 py-5 mx-auto mt-8 border border-gray-200 rounded-xl shadow-lg">
+          <div className="w-full bg-white max-w-screen-lg mb-10 py-5 mx-auto mt-8 border border-gray-200 rounded-xl shadow-lg">
             <div className="p-8 flex flex-col md:flex-row justify-between">
               <div className="w-full md:w-1/2 md:pr-8">
                 <h1 className="text-3xl text-gray-700 mb-4">

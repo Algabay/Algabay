@@ -5,7 +5,7 @@ const systemMessage = {
   role: "system",
   content: "Explain things like stock market.",
 };
-const API_KEY = "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";
+const API_KEY = "sk-proj-1I8zavqGFi9HNWi8ViEDT3BlbkFJpGhCqYtnedzbJEEz0bbV";
 
 const Chat = () => {
   const [messages, setMessages] = useState([
@@ -64,8 +64,8 @@ const Chat = () => {
       },
       body: JSON.stringify(apiRequestBody),
     }).then((data) => data.json());
-
-    const chatGPTResponse = response.choices[0].message.content;
+    console.log(response);
+    //const chatGPTResponse = response.choices[0].message.content;
 
     setMessages([
       ...chatMessages,
@@ -78,7 +78,7 @@ const Chat = () => {
     setIsTyping(false);
   };
   return (
-    <div className="bg-gradient-to-r from-pink-100 to-violet-200 pt-5 h-full">
+    <div className="bg-neutral-900 pt-5 h-full">
       <div
         ref={chatContainerRef}
         className="flex flex-col space-y-4 overflow-y-auto h-[76vh] max-sm:h-[70vh] px-4 pb-16"
@@ -93,8 +93,8 @@ const Chat = () => {
             <div
               className={`py-3 px-6 max-sm:p-3 mx-0 md:mx-10 rounded-lg max-w-[70%] md:flex ${
                 message.sender === "user"
-                  ? "bg-white text-gray-700 max-sm:text-sm"
-                  : "bg-white text-gray-700 max-sm:text-sm"
+                  ? "bg-black text-white max-sm:text-sm"
+                  : "bg-black text-white max-sm:text-sm"
               }`}
             >
               {message.sender === "user" ? (
@@ -128,11 +128,11 @@ const Chat = () => {
           </div>
         )}
       </div>
-      <div className="flex items-center py-6 px-4 md:px-10 gap-4 absolute bottom-0 w-full h-20 bg-gray-700 border border-gray-400">
+      <div className="flex items-center py-6 px-4 md:px-10 gap-4 absolute bottom-0 w-full h-20 bg-neutral-800 ">
         <input
           type="text"
           placeholder="Type message here"
-          className="flex-1 px-4 w-[70%] h-12 rounded-full focus:outline-none bg-gray-700 text-white border border-gray-500 md:w-3/4"
+          className="flex-1 px-4 w-[70%] h-12 rounded-full focus:outline-none bg-neutral-800 text-white border border-neutral-700 md:w-3/4"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => {
@@ -143,7 +143,7 @@ const Chat = () => {
           }}
         />
         <button
-          className="h-12 w-12 max-sm:h-10 max-sm:w-10 max-sm:text-xl text-3xl bg-gray-900 hover:bg-gray-950 text-white rounded-full focus:outline-none"
+          className="h-12 w-12 max-sm:h-10 max-sm:w-10 max-sm:text-xl text-3xl bg-neutral-900 hover:bg-neutral-950 text-white rounded-full focus:outline-none"
           onClick={handleSend}
         >
           ↗

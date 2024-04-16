@@ -23,7 +23,7 @@ const WidgetTop = () => {
           { proName: "BSE:ASIANPAINT", title: " Asian Paints Ltd" },
         ],
         showSymbolLogo: true,
-        colorTheme: "light",
+        colorTheme: "dark",
         isTransparent: false,
         displayMode: "adaptive",
         locale: "in",

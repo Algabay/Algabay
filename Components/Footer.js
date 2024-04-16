@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div className=" w-full text-center  px-16 pt-4 max-sm:pt-14 max-sm:px-2 border-2 border-gray-200 p-4">
+      <div className=" w-full bg-white text-center  px-16 pt-4 max-sm:pt-14 max-sm:px-2 border-2 border-gray-200 p-4">
         <div className="h-auto  pt-10  max-sm:content-center">
           <h3 className="text-center text-4xl pb-6 -mt-2 text-gray-700 max-sm:text-2xl underline">
             Supported By

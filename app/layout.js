@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        <div className="top-0 mt-14">
+        <div className="top-0 mt-20">
           <WidgetTop />
         </div>
 
