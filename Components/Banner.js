@@ -18,13 +18,13 @@ const Banner = () => {
   }, [user, router]);
 
   const handleGoogle = async () => {
-    try {
-      const provider = new GoogleAuthProvider();
-      await signInWithPopup(auth, provider);
-      router.push("/Home");
-    } catch (error) {
-      console.error("Google Sign-In Error:", error.message);
-    }
+    // try {
+    //   const provider = new GoogleAuthProvider();
+    //   await signInWithPopup(auth, provider);
+    router.push("/Home");
+    // } catch (error) {
+    //   console.error("Google Sign-In Error:", error.message);
+    // }
   };
 
   return (

@@ -51,25 +51,20 @@ const Header = () => {
   }, []);
 
   // google sign in
-  const handleGoogle = async () => {
-    try {
-      const provider = new GoogleAuthProvider();
+  // const handleGoogle = async () => {
+  //   try {
+  //     const provider = new GoogleAuthProvider();
 
-      await signInWithPopup(auth, provider);
-      router.push("/Home");
-    } catch (error) {
-      console.error("Google Sign-In Error:", error.message);
-    }
-  };
+  //     await signInWithPopup(auth, provider);
+  //     router.push("/Home");
+  //   } catch (error) {
+  //     console.error("Google Sign-In Error:", error.message);
+  //   }
+  // };
 
   // google logout
   const handleLogout = async () => {
-    try {
-      await signOut(auth);
-      router.push("/");
-    } catch (error) {
-      console.error("Logout Error:", error.message);
-    }
+    router.push("/");
   };
 
   const [popupVisible, setPopupVisible] = useState(false);
@@ -105,7 +100,10 @@ const Header = () => {
 
         <div className="flex gap-8 max-sm:gap-2 items-center mx-5 max-sm:mx-0">
           <button
-            onClick={handleAiChatClick}
+            // onClick={handleAiChatClick}
+            onClick={() => {
+              router.push("/Chat");
+            }}
             className="py-1 px-5 font-mono font-semibold max-sm:px-2 text-xl max-sm:text-sm rounded-md text-white bg-indigo-600 hover:brightness-105"
           >
             Finchat ↗
@@ -122,12 +120,15 @@ const Header = () => {
               </button>
             </>
           ) : (
-            <button
-              className="py-1 px-5 mt-2 max-sm:px-2 rounded-md text-xl max-sm:text-sm text-white hover:bg-blue-500 mb-2 bg-blue-400"
-              onClick={handleGoogle}
-            >
-              Sign In
-            </button>
+            // <button
+            //   className="py-1 px-5 mt-2 max-sm:px-2 rounded-md text-xl max-sm:text-sm text-white hover:bg-indigo-800 mb-2 bg-indigo-600"
+            //   onClick={() => {
+            //     router.push("/Home");
+            //   }}
+            // >
+            //   Start
+            // </button>
+            ""
           )}
         </div>
       </div>
