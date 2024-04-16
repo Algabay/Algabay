@@ -14,15 +14,15 @@ import Chat from "@/Components/Chat";
 //import ChatComponent from "@/Components/ChatBot";
 
 const Home = () => {
-  const [user] = useAuthState(auth);
-  const router = useRouter();
+  // const [user] = useAuthState(auth);
+  // const router = useRouter();
 
-  useEffect(() => {
-    const userSession = sessionStorage.getItem("user");
-    if (!user && !userSession) {
-      router.push("/");
-    }
-  }, [user, router]);
+  // useEffect(() => {
+  //   const userSession = sessionStorage.getItem("user");
+  //   if (!user && !userSession) {
+  //     router.push("/");
+  //   }
+  // }, [user, router]);
 
   return (
     <div>
