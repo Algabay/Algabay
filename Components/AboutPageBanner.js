@@ -147,7 +147,6 @@ const AboutPageBanner = () => {
                 (HR)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Aman
                 Singh Deo (Data
                 Analyst)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Neha
-                Sharma (Frontend Developer)
               </span>
 
               <br />

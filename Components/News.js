@@ -22,11 +22,11 @@ const DummyNews = () => {
 
   return (
     <>
-      <h4 className="text-2xl font-thin text-sky-400 ml-24">
+      <h4 className="text-2xl font-bold text-white ml-24 max-sm:m-10">
         TOP NEWS INSIGHTS ↘
       </h4>
       {news.length === 0 ? (
-        <p className="text-2xl font-thin text-gray-700 ml-24">Loading...</p>
+        <p className="text-2xl font-thin text-white ml-24">Loading...</p>
       ) : (
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-8 max-sm:px-6 px-24 py-8 justify-center items-center">
           {news
@@ -35,7 +35,7 @@ const DummyNews = () => {
             .map((data, index) => (
               <div
                 key={index}
-                className="flex flex-col gap-4 bg-white border border-gray-300 p-4 rounded-md shadow-md h-full"
+                className="flex flex-col gap-4 bg-neutral-900 border border-neutral-700 p-4 rounded-md shadow-md h-full"
               >
                 <div className="flex justify-center">
                   {data.image ? (
@@ -54,8 +54,10 @@ const DummyNews = () => {
                 </div>
 
                 <div className="flex flex-col justify-center flex-grow">
-                  <h6 className="text-md font-semibold mb-2">{data.title}</h6>
-                  <p className="text-gray-600">{data.description}</p>
+                  <h6 className="text-md text-white font-semibold mb-2">
+                    {data.title}
+                  </h6>
+                  <p className="text-white">{data.description}</p>
                 </div>
               </div>
             ))}

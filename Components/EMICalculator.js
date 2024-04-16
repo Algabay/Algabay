@@ -67,9 +67,9 @@ const EmiCalculator = () => {
 
   return (
     <>
-      <div className="h-auto">
+      <div className="h-aut0">
         <div className="max-sm:px-10">
-          <div className="w-full max-w-screen-lg mb-10 py-5 mx-auto mt-8 border border-gray-200 rounded-xl shadow-lg">
+          <div className="w-full max-w-screen-lg bg-white mb-10 py-5 mx-auto mt-8 border border-gray-200 rounded-xl shadow-lg">
             <div className="p-8 flex flex-col md:flex-row justify-between">
               <div className="w-full md:w-1/2 md:pr-8">
                 <h1 className="text-3xl text-gray-700 mb-4">EMI Calculator</h1>

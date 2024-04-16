@@ -31,7 +31,7 @@ const SipCalculator = () => {
   return (
     <>
       <div className="flex justify-center p-5">
-        <div className="w-full max-w-screen-lg border border-gray-300 shadow-lg p-10 rounded-lg flex flex-col md:flex-row justify-between">
+        <div className="w-full max-w-screen-lg bg-white border border-gray-300 shadow-lg p-10 rounded-lg flex flex-col md:flex-row justify-between">
           <div className="w-full md:w-1/2 md:pr-8">
             <h1 className="text-3xl text-gray-700 mb-4">SIP Calculator</h1>
             <div className="mb-4">
