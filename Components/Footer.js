@@ -18,13 +18,16 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-between max-sm:block ">
-          <div className="text-blue-500 text-left max-sm:text-center">
+          <div className="text-blue-600 text-left max-sm:text-center">
             <h2 className="text-2xl max-sm:text-sm">algabay AI</h2>
             <h4 className="max-sm:text-sm">Simplify Investments with AI</h4>
           </div>
-          <div className="text-blue-500 text-right max-sm:text-sm max-sm:text-center max-sm:mt-2 max-sm:mb-4">
-            <Link href="/About" className="mt-2 text-xl underline">
-              About Us
+          <div className="text-blue-600 text-right max-sm:text-sm max-sm:text-center max-sm:mt-2 max-sm:mb-4">
+            <Link
+              href="/About"
+              className="mt-2 text-xl underline text-blue-600 font-mono"
+            >
+              about us
             </Link>
             <br />
             <Link href="mailto:contact@algabay.com">→ contact@algabay.com</Link>

@@ -43,29 +43,28 @@ const PortfoliosBanner = () => {
 
   return (
     <>
-      <h4 className=" text-2xl mt-10  ml-24 font-bold text-white max-sm:text-xl max-sm:text-center max-sm:mt-10">
+      <h4 className=" text-2xl mt-10  ml-24 font-bold text-black max-sm:text-xl max-sm:text-center max-sm:mt-10">
         STOCK PREDICTIONS ↘
       </h4>
-      <div className="bg-black h-screen  text-white px-5 md:px-24  w-full flex flex-col md:flex-row justify-between items-center py-16 max-sm:py-4">
+      <div className="bg-white h-screen  px-5 md:px-24  w-full flex flex-col md:flex-row justify-between items-center py-16 max-sm:py-4">
         <TradingViewChart />
       </div>
-      <h4 className=" text-2xl mt-[80vh] ml-24 font-bold text-white max-sm:text-xl max-sm:text-center max-sm:mt-10">
+      <h4 className=" text-2xl ml-24 font-bold text-black max-sm:text-xl max-sm:text-center max-sm:mt-10">
         COMPANY HIGHLIGHTS ↘
       </h4>
-      <div className="bg-black h-screen   text-white px-5 md:px-24  w-full flex flex-col md:flex-row justify-between items-center py-16 max-sm:py-4">
+      <div className="bg-white h-screen   px-5 md:px-24  w-full flex flex-col md:flex-row justify-between items-center py-16 max-sm:py-4">
         <HeatMap />
       </div>
 
-      {/* Section 2: Stock Selection Dropdown */}
       <div
         ref={secondDivRef}
-        className="bg-black h-screen mt-[60vh] flex flex-col md:flex-row justify-around items-center w-full px-4 md:px-24 py-16 max-sm:py-4"
+        className="bg-white h-screen mt-[60vh] flex flex-col md:flex-row justify-around items-center w-full px-4 md:px-24 py-16 max-sm:py-4"
       >
-        <div className="h-auto w-full md:w-[40%] bg-black rounded-3xl p-4 md:p-5 border border-neutral-700">
+        <div className="h-auto w-full md:w-[40%] bg-white rounded-3xl p-4 md:p-5 border border-neutral-200">
           <select
             name="stock"
             id="stock"
-            className="w-full h-14 bg-white rounded-2xl text-lg md:text-xl font-light text-black text-center"
+            className="w-full h-14 bg-white rounded-2xl text-lg md:text-xl font-light text-center"
             value={selectedCategory}
             onChange={handleCategoryChange}
           >
@@ -78,7 +77,7 @@ const PortfoliosBanner = () => {
           {stockData[selectedCategory].map((stock, index) => (
             <div
               key={index}
-              className="h-auto w-full py-3 md:py-5 bg-inidgo-50 text-lg md:text-xl font-light text-white flex justify-center items-center rounded-2xl my-2"
+              className="h-auto w-full py-3 shadow-sm md:py-5 bg-inidgo-50 text-lg md:text-xl font-light text-black flex justify-center items-center rounded-2xl my-2"
             >
               {stock}
             </div>
