@@ -135,25 +135,7 @@ const AboutPageBanner = () => {
             </p>
           </div>
 
-          <div className="h-auto border border-gray-300 mt-8 justify-center p-6 rounded-md">
-            <p className="max-sm:text-sm">
-              <span className="text-2xl text-gray-800 underline">
-                Our other team members →
-              </span>
-              <br />
-              <br />
-              <span className="text-xl text-gray-600">
-                Akhil Joshua
-                (HR)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Aman
-                Singh Deo (Data
-                Analyst)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Neha
-                Sharma (Frontend Developer)
-              </span>
-
-              <br />
-              <br />
-            </p>
-          </div>
+          
         </div>
       </div>
     </>
