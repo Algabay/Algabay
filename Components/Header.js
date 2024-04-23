@@ -51,20 +51,24 @@ const Header = () => {
   }, []);
 
   // google sign in
-  // const handleGoogle = async () => {
-  //   try {
-  //     const provider = new GoogleAuthProvider();
+  const handleGoogle = async () => {
+    try {
+      const provider = new GoogleAuthProvider();
 
-  //     await signInWithPopup(auth, provider);
-  //     router.push("/Home");
-  //   } catch (error) {
-  //     console.error("Google Sign-In Error:", error.message);
-  //   }
-  // };
+      await signInWithPopup(auth, provider);
+      router.push("/Home");
+    } catch (error) {
+      console.error("Google Sign-In Error:", error.message);
+    }
+  };
 
-  // google logout
   const handleLogout = async () => {
-    router.push("/");
+    try {
+      await signOut(auth);
+      router.push("/");
+    } catch (error) {
+      console.error("Logout Error:", error.message);
+    }
   };
 
   const [popupVisible, setPopupVisible] = useState(false);
@@ -85,7 +89,7 @@ const Header = () => {
     }
   };
 
-  const headerClasses = `flex bg-black max-sm:h-14 h-20 px-6 max-sm:px-2 items-center justify-between fixed w-full z-10 top-0 ${
+  const headerClasses = `flex bg-white max-sm:h-14 h-20 px-6 max-sm:px-2 items-center justify-between fixed w-full z-10 top-0 ${
     scrolling ? "shadow-md" : ""
   }`;
 
@@ -93,18 +97,13 @@ const Header = () => {
     <>
       <div className={headerClasses}>
         <Link href="/Home">
-          <div className="text-[1.7rem] text-white font-mono font-semibold">
-            algabay AI
-          </div>
+          <img src="logo.png" className="h-10" />
         </Link>
 
         <div className="flex gap-8 max-sm:gap-2 items-center mx-5 max-sm:mx-0">
           <button
-            // onClick={handleAiChatClick}
-            onClick={() => {
-              router.push("/Chat");
-            }}
-            className="py-1 px-5 font-mono font-semibold max-sm:px-2 text-xl max-sm:text-sm rounded-md text-white bg-indigo-600 hover:brightness-105"
+            onClick={handleAiChatClick}
+            className="py-1 px-5 font-mono font-semibold max-sm:px-2 text-xl max-sm:text-sm rounded-md text-white bg-blue-600 hover:brightness-105"
           >
             Finchat ↗
           </button>
@@ -120,21 +119,18 @@ const Header = () => {
               </button>
             </>
           ) : (
-            // <button
-            //   className="py-1 px-5 mt-2 max-sm:px-2 rounded-md text-xl max-sm:text-sm text-white hover:bg-indigo-800 mb-2 bg-indigo-600"
-            //   onClick={() => {
-            //     router.push("/Home");
-            //   }}
-            // >
-            //   Start
-            // </button>
-            ""
+            <button
+              className="py-1 px-5 mt-2 max-sm:px-2 rounded-md text-xl max-sm:text-sm text-white hover:bg-blue-800 mb-2 bg-blue-600"
+              onClick={handleGoogle}
+            >
+              Start
+            </button>
           )}
         </div>
       </div>
 
       {popupVisible && (
-        <div className="fixed bottom-4 text-xs sm:text-base text-white right-4 bg-gradient-to-r from-indigo-300 to-inidgo-300 p-2 sm:p-4 rounded-md shadow-md">
+        <div className="fixed bottom-4 text-xs sm:text-base text-white right-4 bg-gradient-to-r from-blue-400 to-blue-600 p-2 sm:p-4 rounded-md shadow-md">
           Please Sign In first!
         </div>
       )}
@@ -145,14 +141,14 @@ const Header = () => {
         >
           {user ? (
             <>
-              <div className="h-auto w-48 bg-black  rounded-2xl shadow-xl p-4 sm:p-5">
+              <div className="h-auto w-48 bg-white  rounded-2xl shadow-xl p-4 sm:p-5">
                 <div className="flex flex-col items-center my-2 sm:my-4">
                   <img
                     src={user.photoURL || "/def.png"}
                     className="rounded-full h-9 w-9 mb-2 sm:mb-2"
                   />
                   {user.displayName && user.displayName.length > 0 && (
-                    <p className="text-white text-sm sm:text-md font-semibold">
+                    <p className="text-black text-sm sm:text-md font-semibold">
                       {user.displayName}
                     </p>
                   )}
@@ -161,7 +157,7 @@ const Header = () => {
                 <div className="flex justify-center py-2 sm:py-3 my-2 sm:my-4">
                   <button
                     onClick={handleLogout}
-                    className="text-xs sm:text-base text-gray-700 flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1 sm:py-2 rounded-full bg-white hover:bg-indigo-200 focus:outline-none focus:ring focus:border-blue-300"
+                    className="text-xs sm:text-base text-gray-700 flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1 sm:py-2 rounded-full bg-white hover:bg-blue-200 focus:outline-none focus:ring focus:border-blue-300"
                   >
                     <img
                       src="/logout-img.png"

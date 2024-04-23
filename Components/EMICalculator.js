@@ -106,7 +106,7 @@ const EmiCalculator = () => {
                 </div>
 
                 <button
-                  className="bg-blue-500 text-white px-4 py-2 rounded-md my-4"
+                  className="bg-blue-600 text-white px-4 py-2 rounded-md my-4"
                   onClick={calculateEmi}
                 >
                   Calculate

@@ -19,7 +19,7 @@ function TradingViewWidget() {
           "blockColor": "change",
           "locale": "en",
           "symbolUrl": "",
-          "colorTheme": "dark",
+          "colorTheme": "light",
           "hasTopBar": false,
           "isDataSetEnabled": false,
           "isZoomEnabled": true,

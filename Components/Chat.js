@@ -78,7 +78,7 @@ const Chat = () => {
     setIsTyping(false);
   };
   return (
-    <div className="bg-neutral-900 pt-5 h-full">
+    <div className="bg-white pt-5 h-full">
       <div
         ref={chatContainerRef}
         className="flex flex-col space-y-4 overflow-y-auto h-[76vh] max-sm:h-[70vh] px-4 pb-16"
@@ -93,8 +93,8 @@ const Chat = () => {
             <div
               className={`py-3 px-6 max-sm:p-3 mx-0 md:mx-10 rounded-lg max-w-[70%] md:flex ${
                 message.sender === "user"
-                  ? "bg-black text-white max-sm:text-sm"
-                  : "bg-black text-white max-sm:text-sm"
+                  ? "bg-white shadow-sm text-black max-sm:text-sm"
+                  : "bg-white shadow-sm text-black max-sm:text-sm"
               }`}
             >
               {message.sender === "user" ? (
@@ -128,7 +128,7 @@ const Chat = () => {
           </div>
         )}
       </div>
-      <div className="flex items-center py-6 px-4 md:px-10 gap-4 absolute bottom-0 w-full h-20 bg-neutral-800 ">
+      <div className="flex items-center py-6 px-4 md:px-10 gap-4 absolute bottom-0 w-full h-20 bg-neutral-900 ">
         <input
           type="text"
           placeholder="Type message here"
@@ -143,7 +143,7 @@ const Chat = () => {
           }}
         />
         <button
-          className="h-12 w-12 max-sm:h-10 max-sm:w-10 max-sm:text-xl text-3xl bg-neutral-900 hover:bg-neutral-950 text-white rounded-full focus:outline-none"
+          className="h-12 w-12 max-sm:h-10 max-sm:w-10 max-sm:text-xl text-3xl bg-neutral-950 hover:bg-neutral-950 text-white rounded-full focus:outline-none"
           onClick={handleSend}
         >
           ↗

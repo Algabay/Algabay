@@ -18,18 +18,18 @@ const Banner = () => {
   }, [user, router]);
 
   const handleGoogle = async () => {
-    // try {
-    //   const provider = new GoogleAuthProvider();
-    //   await signInWithPopup(auth, provider);
-    router.push("/Home");
-    // } catch (error) {
-    //   console.error("Google Sign-In Error:", error.message);
-    // }
+    try {
+      const provider = new GoogleAuthProvider();
+      await signInWithPopup(auth, provider);
+      router.push("/Home");
+    } catch (error) {
+      console.error("Google Sign-In Error:", error.message);
+    }
   };
 
   return (
     <>
-      <div className="flex bg-black flex-col md:flex-row h-[80vh] w-full justify-evenly items-center">
+      <div className="flex bg-white flex-col md:flex-row h-[80vh] w-full justify-evenly items-center">
         {" "}
         <div className="md:w-auto w-full max-sm:-mt-40 max-sm:px-4">
           <motion.div
@@ -38,10 +38,10 @@ const Banner = () => {
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 1 }}
           >
-            <h4 className="font max-md:text-[2.2rem] md:text-[5.5rem] text-center  font-semibold text-white max-sm:text-[28px]">
+            <h4 className="font max-md:text-[2.2rem] md:text-[5.5rem] text-center  font-semibold text-black max-sm:text-[28px]">
               Simplify&nbsp;Investments
               <br />
-              <span className="font max-md:text-[2.2rem] md:text-[5rem] text-left max-md:text-center font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-indigo-400 max-sm:text-2xl">
+              <span className="font max-md:text-[2.2rem] md:text-[5rem] text-left max-md:text-center font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 max-sm:text-2xl">
                 {" "}
                 with AI
               </span>
@@ -53,7 +53,7 @@ const Banner = () => {
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 1 }}
           >
-            <h4 className="font text-gray-200 font-light text-lg md:text-2xl mb-8 text-center max-sm:text-sm  ">
+            <h4 className="font text-neutral-600 font-light text-lg md:text-2xl mb-8 text-center max-sm:text-sm  ">
               AI tools for instant market insights, FinGPT, and portfolio
               optimization.
             </h4>
@@ -66,7 +66,7 @@ const Banner = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -50 }}
                 transition={{ duration: 1 }}
-                className="px-8 max-sm:px-3 max-sm:py-2 max-sm:text-sm md:px-16 py-3 bg-indigo-600 font-mono text-white rounded-lg shadow-md hover:bg-blue-500 focus:outline-none focus:ring focus:border-blue-300 text-lg"
+                className="px-8 max-sm:px-3 max-sm:py-2 max-sm:text-sm md:px-16 py-3 bg-blue-600 font-mono text-white rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300 text-lg"
                 onClick={handleGoogle}
               >
                 GET STARTED
@@ -76,7 +76,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="max-sm:p-2">
-        <div className="h-[80vh] text-white w-full bg-black flex flex-col md:flex-row items-center px-4 md:px-20 gap-6 md:gap-10 max-sm:-mt-40 max-sm:my-5 max-sm:border max-sm:border-gray-200  max-sm:p-4">
+        <div className="h-[80vh] text-black w-full bg-white flex flex-col md:flex-row items-center px-4 md:px-20 gap-6 md:gap-10 max-sm:-mt-40 max-sm:my-5 max-sm:border max-sm:border-gray-200  max-sm:p-4">
           <motion.div
             initial={{ opacity: 0, y: -80 }}
             animate={{ opacity: 1, y: 0 }}
@@ -102,7 +102,7 @@ const Banner = () => {
         </div>
 
         {/* Section 3: Experience AI optimized Portfolios */}
-        <div className="h-[80vh] text-white w-full bg-black flex flex-col md:flex-row items-center px-4 md:px-14 gap-6 md:gap-10 max-sm:my-5 max-sm:border max-sm:border-gray-200  max-sm:p-4">
+        <div className="h-[80vh] text-black w-full bg-white flex flex-col md:flex-row items-center px-4 md:px-14 gap-6 md:gap-10 max-sm:my-5 max-sm:border max-sm:border-gray-200  max-sm:p-4">
           <img
             src="/portfolio.png"
             className="h-[50vh] w-[50vw] max-sm:w-full  rounded-xl shadow-lg"
@@ -128,7 +128,7 @@ const Banner = () => {
         </div>
 
         {/* Section 4: Empower your finance with AI tools */}
-        <div className="h-[80vh] text-white w-full bg-black flex flex-col md:flex-row items-center px-4 md:px-20 gap-6 md:gap-10 max-sm:my-5 max-sm:border max-sm:border-gray-200 max-sm:p-4">
+        <div className="h-[80vh] text-black w-full bg-white flex flex-col md:flex-row items-center px-4 md:px-20 gap-6 md:gap-10 max-sm:my-5 max-sm:border max-sm:border-gray-200 max-sm:p-4">
           <motion.div
             initial={{ opacity: 0, y: -80 }}
             animate={{ opacity: 1, y: 0 }}

@@ -109,7 +109,7 @@ const MutualFundsCalculator = () => {
                   </div>
 
                   <button
-                    className="bg-blue-500 text-white px-4 py-2 rounded-md mt-4 col-span-2"
+                    className="bg-blue-600 text-white px-4 py-2 rounded-md mt-4 col-span-2"
                     onClick={calculateTotalReturn}
                   >
                     Calculate
