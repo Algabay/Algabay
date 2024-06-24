@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "algabay | We build Startups",
   description:
-    "We build software solutions to help startups and businesses scale. Our services include app development, website development, blockchain.",
+    "We specialize in app development, website creation, blockchain and software development",
   icons: {
     icon: "/icon.png",
   },

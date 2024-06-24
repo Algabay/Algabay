@@ -43,9 +43,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div className="mt-[10vh] bg-orange-500 h-screen flex items-center justify-evenly text-white">
-          We build startups
-        </div>
+        <div className="mt-[10vh] bg-orange-500 h-screen flex items-center justify-evenly text-white"></div>
       </div>
     </>
   );
